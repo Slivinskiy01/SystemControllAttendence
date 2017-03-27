@@ -15,7 +15,6 @@ namespace SystemControllAttendence
         public Form1()
         {
             InitializeComponent();
-           
         }
 
         private void bunifuCustomLabel2_Click(object sender, EventArgs e)
@@ -36,7 +35,7 @@ namespace SystemControllAttendence
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            bunifuFlatButton1.selected = true;
+            HomeBtn.selected = true;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -56,6 +55,31 @@ namespace SystemControllAttendence
                 LeftPanel.Visible = false;
                 LeftPanelTransition.ShowSync(LeftPanel);
             }
+        }
+
+        private void SerchInput_Validated(object sender, EventArgs e)
+        {
+            if (SerchInput.text == "")
+                SerchInput.text = "Serch...";
+            
+        }
+
+        private void SerchInput_Enter(object sender, EventArgs e)
+        {
+            if (SerchInput.text == "Serch...")
+                SerchInput.text = "";
+        }
+
+        private void HomeBtn_Click(object sender, EventArgs e)
+        {
+            homeUserControl1.Visible = true;
+            mannagerControl1.Visible = false;
+        }
+
+        private void ManagerBtn_Click(object sender, EventArgs e)
+        {
+            homeUserControl1.Visible = false;
+            mannagerControl1.Visible = true;
         }
     }
 }
