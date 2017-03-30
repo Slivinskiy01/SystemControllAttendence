@@ -12,14 +12,20 @@ namespace SystemControllAttendence
 {
     public partial class Form1 : Form
     {
+
+        
+
         public Form1()
         {
             InitializeComponent();
         }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            HomeBtn.selected = true;
+        }
 
         private void bunifuCustomLabel2_Click(object sender, EventArgs e)
         {
-           
             Close();
         }
 
@@ -28,16 +34,11 @@ namespace SystemControllAttendence
             WindowState = FormWindowState.Minimized;
         }
 
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            HomeBtn.selected = true;
-        }
-
+      /// <summary>
+      /// Анимирования выдвижения панели
+      /// </summary>
+      /// <param name="sender"></param>
+      /// <param name="e"></param>
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             if(LeftPanel.Width == 220)
@@ -56,30 +57,58 @@ namespace SystemControllAttendence
                 LeftPanelTransition.ShowSync(LeftPanel);
             }
         }
-
-        private void SerchInput_Validated(object sender, EventArgs e)
-        {
-            if (SerchInput.text == "")
-                SerchInput.text = "Serch...";
-            
-        }
-
-        private void SerchInput_Enter(object sender, EventArgs e)
-        {
-            if (SerchInput.text == "Serch...")
-                SerchInput.text = "";
-        }
-
+        
+        /// <summary>
+        /// События при нажатию на кнопку Домой
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void HomeBtn_Click(object sender, EventArgs e)
         {
-            homeUserControl1.Visible = true;
-            mannagerControl1.Visible = false;
+            StealthControllPanel();
+            Homes.Visible = true;
         }
-
+        /// <summary>
+        /// События при нажатие на кнопку Управление
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ManagerBtn_Click(object sender, EventArgs e)
         {
-            homeUserControl1.Visible = false;
-            mannagerControl1.Visible = true;
+            StealthControllPanel();
+            Managers.Visible = true;
         }
+        /// <summary>
+        /// Оттчет
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ReptBtn_Click(object sender, EventArgs e)
+        {
+            StealthControllPanel();
+            Rept.Visible = true;
+        }
+        /// <summary>
+        /// Кнопка нстроек
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SetingBtn_Click(object sender, EventArgs e)
+        {
+            StealthControllPanel();
+            Setings.Visible = true;
+        }
+        /// <summary>
+        /// Метод скрывает все панели
+        /// </summary>
+        private void StealthControllPanel()
+        {
+            Homes.Visible = false;
+            Managers.Visible = false;
+            Rept.Visible = false;
+            Setings.Visible = false;
+        }
+
+        
     }
 }
