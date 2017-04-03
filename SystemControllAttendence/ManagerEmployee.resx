@@ -117,38 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="user-512[1]" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user-512[1].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="bunifuDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="bunifuDragControl2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>177, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuThinButton22.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAM8AAAApCAYAAACSnH3AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI0SURBVHhe7dy7ThRRAIBh3mURWAEXyJLgagjI/SrExMrK
+        xmewseEZaKysrKhsbKiobKyoeJpD/rM5k53LjnhK5i++ZC8HqvlzzszOnJlerxck/T/jkTIZj5TJeKRM
+        xiNlMh4pU2s8/Rez4fNwLXx/txVuDnbD3dlRePjwXnq2OMY51n/sbocv68MwmJtrbANT4/m4Moj/iHAI
+        6GLwKoz6/cax0nPBMc6x/mltNVxvb8YGiKhpbC0eSuOPfu7vhOHCfOk7qWvaeijFw8DfxwdTS5O6ipXY
+        r6P90uqrFA+FGY7UjOUc50PpfREPZTE1pfeS6q7ejsLX0UZ8HePhqhonRp7jSO1ohVObrcWX43hYqrFk
+        qw6UVMfMwwwU4+GaNpfmqoMk1e0tLcbZJ8Zze3IYp6HqIEl1LN3uL8/H8fy9OG39JVVSGXcjxHh4Uf1S
+        0nTGI2UyHimT8UiZjEfKZDxSJuORMhmPlKmIh19L+dW0OkBSsyIe7qj2EWvp6Yp4eI6H53mqAyTVcR8o
+        94PGeNIt1tVBkurSIzwxHpZslOR5j/Rv6RGeGA++vXkdTQ6SVJb2MeR1EQ+zDpsbHC8vlQZLGmObAlZo
+        6fGdIh5wIpSez578XOo6wmFyYQed9FkpHjDzEFDaIUTqOs5vmHEmw0EtHrCE4+obpXFlwV111DUszdL5
+        DRcImp60bownoTQuyf05P4k/CkldwdYEaZ/2pjbQGo+k6YxHymQ8UibjkTIZj5SlFx4Buw19UD9JIu4A
+        AAAASUVORK5CYII=
+</value>
   </data>
-  <data name="search_magnifier_magnifying_glass-128[1]" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search_magnifier_magnifying_glass-128[1].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="active-search-xxl[1]" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\active-search-xxl[1].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Home.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Home_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Home_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Menu_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Menu_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Client_Company" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Client_Company.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="desktop-time-and-attendance-icon[1]" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\desktop-time-and-attendance-icon[1].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Settings_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Settings_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Start Menu_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Start Menu_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Search_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Search_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bunifuThinButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAM8AAAApCAYAAACSnH3AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIsSURBVHhe7dy/ahRBAIDxvMve3i4hogRCDBLBwiBYGEII
+        SIgkiCBp0tj4BjY2VjY2NhY2VjY2afJcE76Js9z+TTJl9it+cHeZXLUfO7O3O2tFUQRJ92c8UibjkTIZ
+        j5TJeKRMxiNlmoynLotw/KwMXw+W4cfbKvw5q8LVeS09WBzjHOvfDqtw+rwMj+rFYBsYjWd/exG/iHAI
+        6PXWIjzdGP8i6SHgGOdYP9opw5c3y9gAEQ2N7cVDafzT96MqbK4bi+ZtqodWPAz8dVKPlibNFTOxn8dV
+        a/bViofCDEcaxnSO9VB638RDWZya0ntJfZ9fleHi5TK+jvFwVY2FkWscaRqtsLTZfby4iYepGlO27kBJ
+        fZx5OAPFeLimzaW57iBJfS+e3FxYi/H8flfF01B3kKQ+pm6XH//H8+9DPflLqqQ27kaI8fCi+0dJ44xH
+        ymQ8UibjkTIZj5TJeKRMxiNlMh4pUxMPv5byq2l3gKRhTTzcUe0j1tLdNfHwHA/P83QHSOrjPlDuB43x
+        pFusu4Mk9aVHeGI8TNkoyXWPdLv0CE+MB5/2ymh1kKS2tI8hr5t4OOuwucHepmsfaQjbFDBDS4/vNPGA
+        hVB6Pnv1c2nuCIeTCzvopM9a8YAzDwGlHUKkuWN9wxlnNRz04gFTOK6+URpXFtxVR3PD1Cytb7hAMPSk
+        9WA8CaVxSe7vezd417ywNUHap32oDUzGI2mc8UiZjEfKZDxSJuORshThGgEaPuHDMUrmAAAAAElFTkSu
+        QmCC
+</value>
   </data>
 </root>

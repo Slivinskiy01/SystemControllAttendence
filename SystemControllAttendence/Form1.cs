@@ -22,6 +22,7 @@ namespace SystemControllAttendence
         private void Form1_Load(object sender, EventArgs e)
         {
             HomeBtn.selected = true;
+            
         }
 
         private void bunifuCustomLabel2_Click(object sender, EventArgs e)
@@ -44,10 +45,10 @@ namespace SystemControllAttendence
             if(LeftPanel.Width == 220)
             {
 
+                MenuLogo.Visible = false;
                 LeftPanel.Width = 50;
                 LeftPanel.Visible = false;
                 LeftPanelTransition.ShowSync(LeftPanel);
-                MenuLogo.Visible = false;
             }
             else
             {
@@ -55,6 +56,7 @@ namespace SystemControllAttendence
                 LeftPanel.Width = 220;
                 LeftPanel.Visible = false;
                 LeftPanelTransition.ShowSync(LeftPanel);
+                LeftPanelLogoTransition.ShowSync(MenuLogo);
             }
         }
         
@@ -108,7 +110,13 @@ namespace SystemControllAttendence
             Rept.Visible = false;
             Setings.Visible = false;
         }
+        ManagerEmployee ManEmp = new ManagerEmployee();
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            ManEmp.ShowDialog();
+            this.Visible = true;
 
-        
+        }
     }
 }

@@ -63,9 +63,29 @@ namespace SystemControllAttendence.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap active_search_xxl_1_ {
+            get {
+                object obj = ResourceManager.GetObject("active-search-xxl[1]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Client_Company {
             get {
                 object obj = ResourceManager.GetObject("Client_Company", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap desktop_time_and_attendance_icon_1_ {
+            get {
+                object obj = ResourceManager.GetObject("desktop-time-and-attendance-icon[1]", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,6 +123,26 @@ namespace SystemControllAttendence.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Search_96px {
+            get {
+                object obj = ResourceManager.GetObject("Search_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_magnifier_magnifying_glass_128_1_ {
+            get {
+                object obj = ResourceManager.GetObject("search_magnifier_magnifying_glass-128[1]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Settings_32px {
             get {
                 object obj = ResourceManager.GetObject("Settings_32px", resourceCulture);
@@ -116,6 +156,16 @@ namespace SystemControllAttendence.Properties {
         internal static System.Drawing.Bitmap Start_Menu_32px {
             get {
                 object obj = ResourceManager.GetObject("Start Menu_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_512_1_ {
+            get {
+                object obj = ResourceManager.GetObject("user-512[1]", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

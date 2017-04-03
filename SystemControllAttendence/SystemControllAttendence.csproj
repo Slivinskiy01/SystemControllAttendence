@@ -63,10 +63,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerEmployee.Designer.cs">
+      <DependentUpon>ManagerEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerEmployee.resx">
+      <DependentUpon>ManagerEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -94,6 +103,11 @@
   <ItemGroup>
     <Content Include="Client_Company.ico" />
     <Content Include="Fingerprint_Scan.ico" />
+    <None Include="Resources\Search_96px.png" />
+    <None Include="Resources\user-512[1].png" />
+    <None Include="Resources\active-search-xxl[1].png" />
+    <None Include="Resources\search_magnifier_magnifying_glass-128[1].png" />
+    <None Include="Resources\desktop-time-and-attendance-icon[1].png" />
     <None Include="Resources\Menu_32px.png" />
     <None Include="Resources\Settings_32px.png" />
     <None Include="Resources\Start Menu_32px.png" />
