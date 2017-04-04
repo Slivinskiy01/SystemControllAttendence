@@ -60,5 +60,16 @@ namespace SystemControllAttendence
                 password.Text = "password";
             }
         }
+        
+        private void password_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            BtnLogin_Click(sender, e);
+        }
+
+        private void password_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                BtnLogin_Click(sender, e);
+        }
     }
 }

@@ -88,6 +88,7 @@
             this.password.Text = "password";
             this.password.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.password.Enter += new System.EventHandler(this.password_Enter);
+            this.password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.password_KeyDown);
             this.password.Leave += new System.EventHandler(this.password_Leave);
             // 
             // BtnLogin

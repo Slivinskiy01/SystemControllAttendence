@@ -17,6 +17,12 @@ namespace SystemControllAttendence.DataModell
         public string Login { get; set; }
         public string Password { get; set; }
         public string email { get; set; }
-        public string roles { get; set; }
+        public Roles roles { get; set; }
+    }
+
+    public enum Roles
+    {
+        Admin,
+        User
     }
 }

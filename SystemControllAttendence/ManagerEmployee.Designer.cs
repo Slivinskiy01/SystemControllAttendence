@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManagerEmployee));
             this.Heder = new System.Windows.Forms.Panel();
-            this.bunifuCustomLabel1 = new ns1.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new ns1.BunifuCustomLabel();
-            this.bunifuDragControl1 = new ns1.BunifuDragControl(this.components);
             this.bunifuCustomLabel3 = new ns1.BunifuCustomLabel();
+            this.bunifuCustomLabel1 = new ns1.BunifuCustomLabel();
+            this.bunifuDragControl1 = new ns1.BunifuDragControl(this.components);
             this.bunifuDragControl2 = new ns1.BunifuDragControl(this.components);
             this.bunifuMaterialTextbox1 = new ns1.BunifuMaterialTextbox();
             this.bunifuCustomLabel4 = new ns1.BunifuCustomLabel();
@@ -64,23 +64,11 @@
             this.Heder.Size = new System.Drawing.Size(499, 35);
             this.Heder.TabIndex = 0;
             // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(470, 9);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(19, 21);
-            this.bunifuCustomLabel1.TabIndex = 1;
-            this.bunifuCustomLabel1.Text = "X";
-            this.bunifuCustomLabel1.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
-            // 
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.bunifuCustomLabel2.Location = new System.Drawing.Point(445, 9);
@@ -89,13 +77,6 @@
             this.bunifuCustomLabel2.TabIndex = 2;
             this.bunifuCustomLabel2.Text = "_";
             this.bunifuCustomLabel2.Click += new System.EventHandler(this.bunifuCustomLabel2_Click);
-            // 
-            // bunifuDragControl1
-            // 
-            this.bunifuDragControl1.Fixed = true;
-            this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.Heder;
-            this.bunifuDragControl1.Vertical = true;
             // 
             // bunifuCustomLabel3
             // 
@@ -107,6 +88,27 @@
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(216, 20);
             this.bunifuCustomLabel3.TabIndex = 4;
             this.bunifuCustomLabel3.Text = "Управление сотрудниками";
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(470, 9);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(19, 21);
+            this.bunifuCustomLabel1.TabIndex = 1;
+            this.bunifuCustomLabel1.Text = "X";
+            this.bunifuCustomLabel1.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.Heder;
+            this.bunifuDragControl1.Vertical = true;
             // 
             // bunifuDragControl2
             // 
