@@ -118,5 +118,12 @@ namespace SystemControllAttendence
             this.Visible = true;
 
         }
+        AddEmployee AddEmployee = new AddEmployee();
+        private void bunifuThinButton23_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            AddEmployee.ShowDialog();
+            this.Visible = true;
+        }
     }
 }

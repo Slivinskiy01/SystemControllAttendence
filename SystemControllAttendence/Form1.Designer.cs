@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             this.bunifuElipse1 = new ns1.BunifuElipse(this.components);
             this.LeftPanel = new System.Windows.Forms.Panel();
             this.MenuStrrep = new System.Windows.Forms.PictureBox();
@@ -79,8 +79,14 @@
             this.Managers = new System.Windows.Forms.Panel();
             this.Managerpanel2 = new System.Windows.Forms.Panel();
             this.Managerpanel3 = new System.Windows.Forms.Panel();
+            this.bunifuCustomLabel26 = new ns1.BunifuCustomLabel();
+            this.bunifuThinButton24 = new ns1.BunifuThinButton2();
+            this.bunifuCustomLabel24 = new ns1.BunifuCustomLabel();
             this.bunifuThinButton22 = new ns1.BunifuThinButton2();
             this.Managerpanel4 = new System.Windows.Forms.Panel();
+            this.bunifuThinButton23 = new ns1.BunifuThinButton2();
+            this.bunifuCustomLabel25 = new ns1.BunifuCustomLabel();
+            this.bunifuCustomLabel23 = new ns1.BunifuCustomLabel();
             this.bunifuThinButton21 = new ns1.BunifuThinButton2();
             this.Managerpanel1 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel7 = new ns1.BunifuCustomLabel();
@@ -89,12 +95,6 @@
             this.Setings = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel6 = new ns1.BunifuCustomLabel();
             this.LeftPanelLogoTransition = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.bunifuCustomLabel23 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel24 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel25 = new ns1.BunifuCustomLabel();
-            this.bunifuThinButton23 = new ns1.BunifuThinButton2();
-            this.bunifuThinButton24 = new ns1.BunifuThinButton2();
-            this.bunifuCustomLabel26 = new ns1.BunifuCustomLabel();
             this.LeftPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MenuStrrep)).BeginInit();
             this.MenuLogo.SuspendLayout();
@@ -439,22 +439,22 @@
             // 
             this.LeftPanelTransition.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndHorizSlide;
             this.LeftPanelTransition.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 0;
-            animation4.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 0F;
-            this.LeftPanelTransition.DefaultAnimation = animation4;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.LeftPanelTransition.DefaultAnimation = animation1;
             // 
             // Homes
             // 
@@ -842,6 +842,59 @@
             this.Managerpanel3.Size = new System.Drawing.Size(291, 374);
             this.Managerpanel3.TabIndex = 6;
             // 
+            // bunifuCustomLabel26
+            // 
+            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel26, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel26, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel26.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuCustomLabel26.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bunifuCustomLabel26.Location = new System.Drawing.Point(3, 42);
+            this.bunifuCustomLabel26.Name = "bunifuCustomLabel26";
+            this.bunifuCustomLabel26.Size = new System.Drawing.Size(272, 145);
+            this.bunifuCustomLabel26.TabIndex = 8;
+            this.bunifuCustomLabel26.Text = "Управления пользователями:\r\n - Добавление \r\n - Изминение\r\n - Удаление\r\n - назначе" +
+    "ние прав\r\n - Сброс пароля\r\n";
+            // 
+            // bunifuThinButton24
+            // 
+            this.bunifuThinButton24.ActiveBorderThickness = 1;
+            this.bunifuThinButton24.ActiveCornerRadius = 20;
+            this.bunifuThinButton24.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton24.ActiveForecolor = System.Drawing.SystemColors.ControlLight;
+            this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
+            this.bunifuThinButton24.ButtonText = "Добавить";
+            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LeftPanelLogoTransition.SetDecoration(this.bunifuThinButton24, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelTransition.SetDecoration(this.bunifuThinButton24, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuThinButton24.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton24.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton24.IdleBorderThickness = 1;
+            this.bunifuThinButton24.IdleCornerRadius = 20;
+            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton24.Location = new System.Drawing.Point(143, 275);
+            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton24.Name = "bunifuThinButton24";
+            this.bunifuThinButton24.Size = new System.Drawing.Size(129, 41);
+            this.bunifuThinButton24.TabIndex = 7;
+            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bunifuCustomLabel24
+            // 
+            this.bunifuCustomLabel24.AutoSize = true;
+            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel24, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel24, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel24.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuCustomLabel24.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bunifuCustomLabel24.Location = new System.Drawing.Point(3, 13);
+            this.bunifuCustomLabel24.Name = "bunifuCustomLabel24";
+            this.bunifuCustomLabel24.Size = new System.Drawing.Size(280, 22);
+            this.bunifuCustomLabel24.TabIndex = 5;
+            this.bunifuCustomLabel24.Text = "Управление пользователями";
+            // 
             // bunifuThinButton22
             // 
             this.bunifuThinButton22.ActiveBorderThickness = 1;
@@ -883,6 +936,60 @@
             this.Managerpanel4.Name = "Managerpanel4";
             this.Managerpanel4.Size = new System.Drawing.Size(291, 374);
             this.Managerpanel4.TabIndex = 5;
+            // 
+            // bunifuThinButton23
+            // 
+            this.bunifuThinButton23.ActiveBorderThickness = 1;
+            this.bunifuThinButton23.ActiveCornerRadius = 20;
+            this.bunifuThinButton23.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton23.ActiveForecolor = System.Drawing.SystemColors.ControlLight;
+            this.bunifuThinButton23.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.bunifuThinButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton23.BackgroundImage")));
+            this.bunifuThinButton23.ButtonText = "Добавить";
+            this.bunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LeftPanelLogoTransition.SetDecoration(this.bunifuThinButton23, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelTransition.SetDecoration(this.bunifuThinButton23, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuThinButton23.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton23.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton23.IdleBorderThickness = 1;
+            this.bunifuThinButton23.IdleCornerRadius = 20;
+            this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton23.Location = new System.Drawing.Point(139, 275);
+            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton23.Name = "bunifuThinButton23";
+            this.bunifuThinButton23.Size = new System.Drawing.Size(129, 41);
+            this.bunifuThinButton23.TabIndex = 6;
+            this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton23.Click += new System.EventHandler(this.bunifuThinButton23_Click);
+            // 
+            // bunifuCustomLabel25
+            // 
+            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel25, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel25, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel25.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuCustomLabel25.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bunifuCustomLabel25.Location = new System.Drawing.Point(12, 42);
+            this.bunifuCustomLabel25.Name = "bunifuCustomLabel25";
+            this.bunifuCustomLabel25.Size = new System.Drawing.Size(272, 145);
+            this.bunifuCustomLabel25.TabIndex = 5;
+            this.bunifuCustomLabel25.Text = "Управления сотрудниками:\r\n - Добавление \r\n - Изминение\r\n - Удаление\r\n - Настройка" +
+    " отдела\r\n - Назначене статуса\r\n";
+            // 
+            // bunifuCustomLabel23
+            // 
+            this.bunifuCustomLabel23.AutoSize = true;
+            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel23, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel23, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel23.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuCustomLabel23.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bunifuCustomLabel23.Location = new System.Drawing.Point(5, 13);
+            this.bunifuCustomLabel23.Name = "bunifuCustomLabel23";
+            this.bunifuCustomLabel23.Size = new System.Drawing.Size(272, 22);
+            this.bunifuCustomLabel23.TabIndex = 4;
+            this.bunifuCustomLabel23.Text = "Управление сотрудниками";
             // 
             // bunifuThinButton21
             // 
@@ -993,128 +1100,22 @@
             // 
             this.LeftPanelLogoTransition.AnimationType = BunifuAnimatorNS.AnimationType.Scale;
             this.LeftPanelLogoTransition.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.LeftPanelLogoTransition.DefaultAnimation = animation3;
-            // 
-            // bunifuCustomLabel23
-            // 
-            this.bunifuCustomLabel23.AutoSize = true;
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel23, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel23, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel23.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel23.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel23.Location = new System.Drawing.Point(5, 13);
-            this.bunifuCustomLabel23.Name = "bunifuCustomLabel23";
-            this.bunifuCustomLabel23.Size = new System.Drawing.Size(272, 22);
-            this.bunifuCustomLabel23.TabIndex = 4;
-            this.bunifuCustomLabel23.Text = "Управление сотрудниками";
-            // 
-            // bunifuCustomLabel24
-            // 
-            this.bunifuCustomLabel24.AutoSize = true;
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel24, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel24, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel24.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel24.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel24.Location = new System.Drawing.Point(3, 13);
-            this.bunifuCustomLabel24.Name = "bunifuCustomLabel24";
-            this.bunifuCustomLabel24.Size = new System.Drawing.Size(280, 22);
-            this.bunifuCustomLabel24.TabIndex = 5;
-            this.bunifuCustomLabel24.Text = "Управление пользователями";
-            // 
-            // bunifuCustomLabel25
-            // 
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel25, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel25, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel25.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel25.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel25.Location = new System.Drawing.Point(12, 42);
-            this.bunifuCustomLabel25.Name = "bunifuCustomLabel25";
-            this.bunifuCustomLabel25.Size = new System.Drawing.Size(272, 145);
-            this.bunifuCustomLabel25.TabIndex = 5;
-            this.bunifuCustomLabel25.Text = "Управления сотрудниками:\r\n - Добавление \r\n - Изминение\r\n - Удаление\r\n - Настройка" +
-    " отдела\r\n - Назначене статуса\r\n";
-            // 
-            // bunifuThinButton23
-            // 
-            this.bunifuThinButton23.ActiveBorderThickness = 1;
-            this.bunifuThinButton23.ActiveCornerRadius = 20;
-            this.bunifuThinButton23.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton23.ActiveForecolor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuThinButton23.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.bunifuThinButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton23.BackgroundImage")));
-            this.bunifuThinButton23.ButtonText = "Добавить";
-            this.bunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuThinButton23, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelTransition.SetDecoration(this.bunifuThinButton23, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuThinButton23.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton23.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton23.IdleBorderThickness = 1;
-            this.bunifuThinButton23.IdleCornerRadius = 20;
-            this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton23.Location = new System.Drawing.Point(139, 275);
-            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton23.Name = "bunifuThinButton23";
-            this.bunifuThinButton23.Size = new System.Drawing.Size(129, 41);
-            this.bunifuThinButton23.TabIndex = 6;
-            this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bunifuThinButton24
-            // 
-            this.bunifuThinButton24.ActiveBorderThickness = 1;
-            this.bunifuThinButton24.ActiveCornerRadius = 20;
-            this.bunifuThinButton24.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.ActiveForecolor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
-            this.bunifuThinButton24.ButtonText = "Добавить";
-            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuThinButton24, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelTransition.SetDecoration(this.bunifuThinButton24, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuThinButton24.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton24.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.IdleBorderThickness = 1;
-            this.bunifuThinButton24.IdleCornerRadius = 20;
-            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.Location = new System.Drawing.Point(143, 275);
-            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton24.Name = "bunifuThinButton24";
-            this.bunifuThinButton24.Size = new System.Drawing.Size(129, 41);
-            this.bunifuThinButton24.TabIndex = 7;
-            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bunifuCustomLabel26
-            // 
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel26, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel26, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel26.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel26.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel26.Location = new System.Drawing.Point(3, 42);
-            this.bunifuCustomLabel26.Name = "bunifuCustomLabel26";
-            this.bunifuCustomLabel26.Size = new System.Drawing.Size(272, 145);
-            this.bunifuCustomLabel26.TabIndex = 8;
-            this.bunifuCustomLabel26.Text = "Управления пользователями:\r\n - Добавление \r\n - Изминение\r\n - Удаление\r\n - назначе" +
-    "ние прав\r\n - Сброс пароля\r\n";
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.LeftPanelLogoTransition.DefaultAnimation = animation2;
             // 
             // Form1
             // 
