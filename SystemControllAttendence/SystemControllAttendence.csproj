@@ -86,6 +86,12 @@
     <Compile Include="DataModell\Document.cs" />
     <Compile Include="DataModell\Personnel.cs" />
     <Compile Include="DataModell\User.cs" />
+    <Compile Include="EditEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditEmployee.Designer.cs">
+      <DependentUpon>EditEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,11 +112,20 @@
       <DependentUpon>ProgresWaitForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterEnterOutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterEnterOutForm.Designer.cs">
+      <DependentUpon>RegisterEnterOutForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddEmployee.resx">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AutorizateForm.resx">
       <DependentUpon>AutorizateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditEmployee.resx">
+      <DependentUpon>EditEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -131,6 +146,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RegisterEnterOutForm.resx">
+      <DependentUpon>RegisterEnterOutForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -148,6 +166,12 @@
   <ItemGroup>
     <Content Include="Client_Company.ico" />
     <Content Include="Fingerprint_Scan.ico" />
+    <None Include="Resources\Exit Sign_96px_1.png" />
+    <None Include="Resources\Enter_96px_2.png" />
+    <None Include="Resources\Exit Sign_96px.png" />
+    <None Include="Resources\Enter_96px.png" />
+    <None Include="Resources\Exit_96px.png" />
+    <None Include="Resources\Delete_96px.png" />
     <None Include="Resources\Search_96px.png" />
     <None Include="Resources\user-512[1].png" />
     <None Include="Resources\active-search-xxl[1].png" />

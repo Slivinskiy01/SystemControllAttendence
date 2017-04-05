@@ -1123,8 +1123,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(959, 494);
-            this.Controls.Add(this.Managers);
             this.Controls.Add(this.Homes);
+            this.Controls.Add(this.Managers);
             this.Controls.Add(this.Setings);
             this.Controls.Add(this.Rept);
             this.Controls.Add(this.LeftPanel);
