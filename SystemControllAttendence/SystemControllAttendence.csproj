@@ -118,6 +118,7 @@
     <Compile Include="RegisterEnterOutForm.Designer.cs">
       <DependentUpon>RegisterEnterOutForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserManipulation.cs" />
     <EmbeddedResource Include="AddEmployee.resx">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </EmbeddedResource>

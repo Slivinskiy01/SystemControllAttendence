@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using SystemControllAttendence.DataModell;
 namespace SystemControllAttendence
 {
     public partial class AutorizateForm : Form
@@ -16,17 +16,39 @@ namespace SystemControllAttendence
         {
             InitializeComponent();
         }
-        Form1 Form = new Form1();
+        Form1 Form1 = new Form1();
+        RegisterEnterOutForm Form2 = new RegisterEnterOutForm();
+
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            if ((Login.Text == "admin") && (password.Text == "admin"))
+
+            var User = UserManipulation.Instance.Autorization(Login.Text, password.Text);
+
+            if(User != null)
             {
-                this.Visible = false;
-                Form.ShowDialog();
-                this.Visible = true;
+                if(User.roles == Roles.Admin)
+                {
+                    Visible = false;
+                    Form1.ShowDialog();
+                    Visible = true;
+                }
+                else if(User.roles == Roles.User)
+                {
+                    Visible = false;
+                    Form2.ShowDialog();
+                    Visible = true;
+                }
             }
             else
-            MessageBox.Show("Введенные данные не прошли проверку, на подлиность", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            {
+                MessageBox.Show("Неправильный логин или пароль", "Ошибка",MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void ClearInput()
+        {
+            Login.Text = "Login...";
+            password.Text = "password";
         }
 
         private void Login_Enter(object sender, EventArgs e)

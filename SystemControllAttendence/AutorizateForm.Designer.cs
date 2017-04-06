@@ -68,6 +68,7 @@
             this.Login.Text = "Login...";
             this.Login.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Login.Enter += new System.EventHandler(this.Login_Enter);
+            this.Login.KeyDown += new System.Windows.Forms.KeyEventHandler(this.password_KeyDown);
             this.Login.Leave += new System.EventHandler(this.Login_Leave);
             // 
             // password
@@ -114,6 +115,7 @@
             this.BtnLogin.Name = "BtnLogin";
             this.BtnLogin.Size = new System.Drawing.Size(181, 41);
             this.BtnLogin.TabIndex = 3;
+            this.BtnLogin.TabStop = false;
             this.BtnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
@@ -128,7 +130,6 @@
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(163, 17);
             this.linkLabel1.TabIndex = 4;
-            this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Забыли логин или пароль?";
             this.linkLabel1.VisitedLinkColor = System.Drawing.SystemColors.MenuHighlight;
             // 
