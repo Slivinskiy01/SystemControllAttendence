@@ -19,6 +19,8 @@ namespace SystemControllAttendence
         Form1 Form1 = new Form1();
         RegisterEnterOutForm Form2 = new RegisterEnterOutForm();
 
+        public User CurentUser { get; set; }
+
         private void BtnLogin_Click(object sender, EventArgs e)
         {
 
@@ -29,15 +31,18 @@ namespace SystemControllAttendence
                 if(User.roles == Roles.Admin)
                 {
                     Visible = false;
+                    CurentUser = User;
                     Form1.ShowDialog();
                     Visible = true;
                 }
                 else if(User.roles == Roles.User)
                 {
                     Visible = false;
+                    CurentUser = User;
                     Form2.ShowDialog();
                     Visible = true;
                 }
+                
             }
             else
             {

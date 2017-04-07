@@ -8,15 +8,19 @@ namespace SystemControllAttendence
 {
     static class Program
     {
+
+        internal static AutorizateForm AutorizateForms;
+
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
+        /// 
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AutorizateForm());
+            Application.Run(AutorizateForms = new AutorizateForm());
         }
     }
 }
