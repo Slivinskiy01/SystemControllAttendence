@@ -22,10 +22,10 @@ namespace SystemControllAttendence
             Application.SetCompatibleTextRenderingDefault(false);
 
             ManagerEmp = new ManagerEmployee();
-            Application.Run(AutorizateForms = new AutorizateForm());
+            //Application.Run(AutorizateForms = new AutorizateForm());
 
 
-            //Application.Run(new ManagerEmployee());
+            Application.Run(new RegisterEnterOutForm());
         }
     }
 }

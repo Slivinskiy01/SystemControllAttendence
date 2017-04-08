@@ -28,7 +28,8 @@ namespace SystemControllAttendence
 
             if(User != null)
             {
-                if(User.roles == Roles.Admin)
+                ClearInput();
+                if (User.roles == Roles.Admin)
                 {
                     Visible = false;
                     CurentUser = User;

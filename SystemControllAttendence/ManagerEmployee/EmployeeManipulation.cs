@@ -119,7 +119,7 @@ namespace SystemControllAttendence
                 }
                 else
                 {
-                    MessageBox.Show("Сотрудник не найден");
+                    //MessageBox.Show("Сотрудник не найден");
                     return null;
                 }
             }

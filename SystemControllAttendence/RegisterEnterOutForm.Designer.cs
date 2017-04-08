@@ -45,22 +45,22 @@
             this.bunifuCustomLabel7 = new ns1.BunifuCustomLabel();
             this.bunifuCustomLabel8 = new ns1.BunifuCustomLabel();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.DocNumber = new System.Windows.Forms.TextBox();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.DocName = new System.Windows.Forms.TextBox();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.Position = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel5 = new ns1.BunifuCustomLabel();
             this.bunifuCustomLabel4 = new ns1.BunifuCustomLabel();
             this.bunifuCustomLabel3 = new ns1.BunifuCustomLabel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.MiddleName = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Names = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.LastName = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.bunifuFlatButton2 = new ns1.BunifuFlatButton();
@@ -70,6 +70,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.bunifuCustomLabel2 = new ns1.BunifuCustomLabel();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.Status = new ns1.BunifuCustomLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -238,6 +239,7 @@
             // panel15
             // 
             this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel15.Controls.Add(this.Status);
             this.panel15.Controls.Add(this.bunifuCustomLabel6);
             this.panel15.Controls.Add(this.bunifuCustomLabel7);
             this.panel15.Controls.Add(this.bunifuCustomLabel8);
@@ -286,68 +288,68 @@
             // panel16
             // 
             this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel16.Controls.Add(this.textBox5);
+            this.panel16.Controls.Add(this.DocNumber);
             this.panel16.Enabled = false;
             this.panel16.Location = new System.Drawing.Point(9, 163);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(271, 40);
             this.panel16.TabIndex = 29;
             // 
-            // textBox5
+            // DocNumber
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox5.Location = new System.Drawing.Point(13, 9);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(242, 20);
-            this.textBox5.TabIndex = 0;
-            this.textBox5.Text = "14008";
+            this.DocNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.DocNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DocNumber.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DocNumber.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.DocNumber.Location = new System.Drawing.Point(13, 9);
+            this.DocNumber.Name = "DocNumber";
+            this.DocNumber.Size = new System.Drawing.Size(242, 20);
+            this.DocNumber.TabIndex = 0;
+            this.DocNumber.Text = "14008";
             // 
             // panel17
             // 
             this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel17.Controls.Add(this.textBox6);
+            this.panel17.Controls.Add(this.DocName);
             this.panel17.Enabled = false;
             this.panel17.Location = new System.Drawing.Point(9, 95);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(271, 40);
             this.panel17.TabIndex = 28;
             // 
-            // textBox6
+            // DocName
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox6.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox6.Location = new System.Drawing.Point(13, 9);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(242, 20);
-            this.textBox6.TabIndex = 0;
-            this.textBox6.Text = "Студенчиский";
+            this.DocName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.DocName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DocName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DocName.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.DocName.Location = new System.Drawing.Point(13, 9);
+            this.DocName.Name = "DocName";
+            this.DocName.Size = new System.Drawing.Size(242, 20);
+            this.DocName.TabIndex = 0;
+            this.DocName.Text = "Студенчиский";
             // 
             // panel18
             // 
             this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel18.Controls.Add(this.textBox7);
+            this.panel18.Controls.Add(this.Position);
             this.panel18.Enabled = false;
             this.panel18.Location = new System.Drawing.Point(9, 28);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(271, 40);
             this.panel18.TabIndex = 27;
             // 
-            // textBox7
+            // Position
             // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox7.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox7.Location = new System.Drawing.Point(13, 9);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(242, 20);
-            this.textBox7.TabIndex = 0;
-            this.textBox7.Text = "Студент";
+            this.Position.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.Position.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Position.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Position.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.Position.Location = new System.Drawing.Point(13, 9);
+            this.Position.Name = "Position";
+            this.Position.Size = new System.Drawing.Size(242, 20);
+            this.Position.TabIndex = 0;
+            this.Position.Text = "Студент";
             // 
             // panel5
             // 
@@ -411,68 +413,68 @@
             // panel8
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.textBox3);
+            this.panel8.Controls.Add(this.MiddleName);
             this.panel8.Enabled = false;
             this.panel8.Location = new System.Drawing.Point(4, 163);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(225, 40);
             this.panel8.TabIndex = 29;
             // 
-            // textBox3
+            // MiddleName
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox3.Location = new System.Drawing.Point(12, 9);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(196, 20);
-            this.textBox3.TabIndex = 0;
-            this.textBox3.Text = "Иванович";
+            this.MiddleName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.MiddleName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MiddleName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MiddleName.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.MiddleName.Location = new System.Drawing.Point(12, 9);
+            this.MiddleName.Name = "MiddleName";
+            this.MiddleName.Size = new System.Drawing.Size(196, 20);
+            this.MiddleName.TabIndex = 0;
+            this.MiddleName.Text = "Иванович";
             // 
             // panel7
             // 
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.textBox1);
+            this.panel7.Controls.Add(this.Names);
             this.panel7.Enabled = false;
             this.panel7.Location = new System.Drawing.Point(4, 95);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(225, 40);
             this.panel7.TabIndex = 28;
             // 
-            // textBox1
+            // Names
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox1.Location = new System.Drawing.Point(12, 9);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Иван";
+            this.Names.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.Names.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Names.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Names.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.Names.Location = new System.Drawing.Point(12, 9);
+            this.Names.Name = "Names";
+            this.Names.Size = new System.Drawing.Size(196, 20);
+            this.Names.TabIndex = 0;
+            this.Names.Text = "Иван";
             // 
             // panel9
             // 
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.textBox2);
+            this.panel9.Controls.Add(this.LastName);
             this.panel9.Enabled = false;
             this.panel9.Location = new System.Drawing.Point(4, 28);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(225, 40);
             this.panel9.TabIndex = 27;
             // 
-            // textBox2
+            // LastName
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox2.Location = new System.Drawing.Point(12, 9);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(196, 20);
-            this.textBox2.TabIndex = 0;
-            this.textBox2.Text = "Иванов";
+            this.LastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.LastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.LastName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LastName.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.LastName.Location = new System.Drawing.Point(12, 9);
+            this.LastName.Name = "LastName";
+            this.LastName.Size = new System.Drawing.Size(196, 20);
+            this.LastName.TabIndex = 0;
+            this.LastName.Text = "Иванов";
             // 
             // pictureBox1
             // 
@@ -598,6 +600,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(196, 20);
             this.textBox4.TabIndex = 0;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // bunifuCustomLabel2
             // 
@@ -619,6 +622,18 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(805, 139);
             this.panel13.TabIndex = 3;
+            // 
+            // Status
+            // 
+            this.Status.AutoSize = true;
+            this.Status.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Status.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.Status.Location = new System.Drawing.Point(77, 236);
+            this.Status.Name = "Status";
+            this.Status.Size = new System.Drawing.Size(122, 44);
+            this.Status.TabIndex = 33;
+            this.Status.Text = "Status";
+            this.Status.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // RegisterEnterOutForm
             // 
@@ -683,11 +698,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox MiddleName;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Names;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox LastName;
         private System.Windows.Forms.PictureBox IconLogo;
         private ns1.BunifuCustomLabel bunifuCustomLabel1;
         private System.Windows.Forms.Panel panel10;
@@ -712,10 +727,11 @@
         private ns1.BunifuCustomLabel bunifuCustomLabel7;
         private ns1.BunifuCustomLabel bunifuCustomLabel8;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox DocNumber;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox DocName;
         private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox Position;
+        private ns1.BunifuCustomLabel Status;
     }
 }

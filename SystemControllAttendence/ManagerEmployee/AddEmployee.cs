@@ -86,7 +86,7 @@ namespace SystemControllAttendence
         
         private void AddEmployees_Click(object sender, EventArgs e)
         {
-            if (Names.Text == "" || DocNumber.Text == "")
+            if (Names.Text == "" || DocNumber.Text == "" || placeholderText(DocNumber.Text))
             {
                 MessageBox.Show("Заполните все поля", "Ошибка");
                 return;
