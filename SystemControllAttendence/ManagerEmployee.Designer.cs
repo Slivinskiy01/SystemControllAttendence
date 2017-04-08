@@ -145,6 +145,7 @@
             this.Textbox1.Size = new System.Drawing.Size(296, 54);
             this.Textbox1.TabIndex = 2;
             this.Textbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Textbox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Textbox1_KeyPress);
             // 
             // LastName
             // 
@@ -203,6 +204,7 @@
             this.DeletEmployeeBtn.Size = new System.Drawing.Size(207, 41);
             this.DeletEmployeeBtn.TabIndex = 9;
             this.DeletEmployeeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DeletEmployeeBtn.Click += new System.EventHandler(this.DeletEmployeeBtn_Click);
             // 
             // EditEmployeeBtn
             // 

@@ -179,6 +179,7 @@
             this.LastName.TabIndex = 0;
             this.LastName.Text = "Фамилия";
             this.LastName.Enter += new System.EventHandler(this.RemoveText);
+            this.LastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LockInputNumber);
             this.LastName.Leave += new System.EventHandler(this.AddText);
             // 
             // panel2
@@ -202,6 +203,7 @@
             this.MiddleName.TabIndex = 0;
             this.MiddleName.Text = "Отчество";
             this.MiddleName.Enter += new System.EventHandler(this.RemoveText);
+            this.MiddleName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LockInputNumber);
             this.MiddleName.Leave += new System.EventHandler(this.AddText);
             // 
             // panel3
@@ -225,6 +227,7 @@
             this.Names.TabIndex = 0;
             this.Names.Text = "Имя";
             this.Names.Enter += new System.EventHandler(this.RemoveText);
+            this.Names.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LockInputNumber);
             this.Names.Leave += new System.EventHandler(this.AddText);
             // 
             // AddEmployees
@@ -304,6 +307,7 @@
             this.DocNumber.TabIndex = 0;
             this.DocNumber.Text = "Номер";
             this.DocNumber.Enter += new System.EventHandler(this.RemoveText);
+            this.DocNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DocNumber_KeyPress);
             this.DocNumber.Leave += new System.EventHandler(this.AddText);
             // 
             // AddEmployee

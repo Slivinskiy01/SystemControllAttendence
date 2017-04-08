@@ -75,8 +75,25 @@ namespace SystemControllAttendence
                     Photo = Helper.imageToByteArray(Photo.Image)
                 }    
             };
-
+            
             EmployeeManipulation.Instance.EditEmployee(Document, LastDoc);
+            Close();
+        }
+
+        private void DocNumber_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void LockInputNumber(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

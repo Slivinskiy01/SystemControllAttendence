@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SystemControllAttendence.DataModell;
-
+using SystemControllAttendence.Properties;
 
 namespace SystemControllAttendence
 {
@@ -32,6 +32,7 @@ namespace SystemControllAttendence
         static Document Doc;
         private void SerchPersonel_Click(object sender, EventArgs e)
         {
+            if(Textbox1.Text != "")
             Doc = EmployeeManipulation.Instance.GetPersonnelByDocNumber(int.Parse(Textbox1.Text));
             if (Doc != null)
             {
@@ -43,10 +44,43 @@ namespace SystemControllAttendence
             }
         }
 
+        
         private void EditEmployeeBtn_Click(object sender, EventArgs e)
         {
-            EditEmployee EditEmployee = new EditEmployee(Doc);
-            EditEmployee.ShowDialog();
+            if (Doc != null)
+            {
+                EditEmployee EditEmployee = new EditEmployee(Doc);
+                EditEmployee.ShowDialog();
+            }
+            else MessageBox.Show("Сотрудник не найден", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void DeletEmployeeBtn_Click(object sender, EventArgs e)
+        {
+            if (Doc != null)
+            {
+                EmployeeManipulation.Instance.DelletPersonnelById(Doc.Personnel.Id);
+                Clear_Form();
+            }
+            else MessageBox.Show("Сотрудник не найден", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void Clear_Form()
+        {
+            Doc = null;
+            Names.Text = "Имя";
+            LastName.Text = "Фамилия";
+            MiddleName.Text = "Отчество";
+            Textbox1.Text = "";
+            pictureBox1.Image = Resources.user_512_1_;
+        }
+
+        private void Textbox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

@@ -84,6 +84,7 @@
             this.DocNumber.Size = new System.Drawing.Size(196, 20);
             this.DocNumber.TabIndex = 0;
             this.DocNumber.Text = "Номер";
+            this.DocNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DocNumber_KeyPress);
             // 
             // bunifuCustomLabel4
             // 
@@ -107,6 +108,7 @@
             this.Names.Size = new System.Drawing.Size(196, 20);
             this.Names.TabIndex = 0;
             this.Names.Text = "Имя";
+            this.Names.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LockInputNumber);
             // 
             // panel3
             // 
@@ -128,6 +130,7 @@
             this.MiddleName.Size = new System.Drawing.Size(196, 20);
             this.MiddleName.TabIndex = 0;
             this.MiddleName.Text = "Отчество";
+            this.MiddleName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LockInputNumber);
             // 
             // panel2
             // 
@@ -149,6 +152,7 @@
             this.LastName.Size = new System.Drawing.Size(196, 20);
             this.LastName.TabIndex = 0;
             this.LastName.Text = "Фамилия";
+            this.LastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LockInputNumber);
             // 
             // panel4
             // 

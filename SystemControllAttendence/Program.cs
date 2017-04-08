@@ -10,7 +10,7 @@ namespace SystemControllAttendence
     {
 
         internal static AutorizateForm AutorizateForms;
-
+        internal static ManagerEmployee ManagerEmp;
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -20,10 +20,12 @@ namespace SystemControllAttendence
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(AutorizateForms = new AutorizateForm());
+
+            ManagerEmp = new ManagerEmployee();
+            Application.Run(AutorizateForms = new AutorizateForm());
 
 
-            Application.Run(new ManagerEmployee());
+            //Application.Run(new ManagerEmployee());
         }
     }
 }
