@@ -68,10 +68,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddEmployee.cs">
+    <Compile Include="ManagerEmployee\AddEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddEmployee.Designer.cs">
+    <Compile Include="ManagerEmployee\AddEmployee.Designer.cs">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="AutorizateForm.cs">
@@ -86,13 +86,13 @@
     <Compile Include="DataModell\Document.cs" />
     <Compile Include="DataModell\Personnel.cs" />
     <Compile Include="DataModell\User.cs" />
-    <Compile Include="EditEmployee.cs">
+    <Compile Include="ManagerEmployee\EditEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditEmployee.Designer.cs">
+    <Compile Include="ManagerEmployee\EditEmployee.Designer.cs">
       <DependentUpon>EditEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmployeeManipulation.cs" />
+    <Compile Include="ManagerEmployee\EmployeeManipulation.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,17 +100,17 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper.cs" />
-    <Compile Include="ManagerEmployee.cs">
+    <Compile Include="ManagerEmployee\ManagerEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManagerEmployee.Designer.cs">
+    <Compile Include="ManagerEmployee\ManagerEmployee.Designer.cs">
       <DependentUpon>ManagerEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="ProgresWaitForm.cs">
+    <Compile Include="TempDump\ProgresWaitForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProgresWaitForm.Designer.cs">
+    <Compile Include="TempDump\ProgresWaitForm.Designer.cs">
       <DependentUpon>ProgresWaitForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -120,23 +120,23 @@
     <Compile Include="RegisterEnterOutForm.Designer.cs">
       <DependentUpon>RegisterEnterOutForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserManipulation.cs" />
-    <EmbeddedResource Include="AddEmployee.resx">
+    <Compile Include="ManagerUser\UserManipulation.cs" />
+    <EmbeddedResource Include="ManagerEmployee\AddEmployee.resx">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AutorizateForm.resx">
       <DependentUpon>AutorizateForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditEmployee.resx">
+    <EmbeddedResource Include="ManagerEmployee\EditEmployee.resx">
       <DependentUpon>EditEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManagerEmployee.resx">
+    <EmbeddedResource Include="ManagerEmployee\ManagerEmployee.resx">
       <DependentUpon>ManagerEmployee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProgresWaitForm.resx">
+    <EmbeddedResource Include="TempDump\ProgresWaitForm.resx">
       <DependentUpon>ProgresWaitForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -187,9 +187,7 @@
     <None Include="Resources\Home.ico" />
     <None Include="Resources\Client_Company.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ManagerUser\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

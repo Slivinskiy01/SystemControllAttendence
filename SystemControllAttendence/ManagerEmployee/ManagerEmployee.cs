@@ -60,6 +60,7 @@ namespace SystemControllAttendence
             if (Doc != null)
             {
                 EmployeeManipulation.Instance.DelletPersonnelById(Doc.Personnel.Id);
+                MessageBox.Show("Сотрудник был удален", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Clear_Form();
             }
             else MessageBox.Show("Сотрудник не найден", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
