@@ -22,7 +22,7 @@ namespace SystemControllAttendence
         /// <returns></returns>
         public User Autorization(string login, string password)
         {
-            using(var db = new DataBaseModel())
+            using (var db = new DataBaseModel())
             {
                 var User = db.Users.Where(x => x.Login == login).FirstOrDefault();
 

@@ -21,6 +21,9 @@ namespace SystemControllAttendence
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(AutorizateForms = new AutorizateForm());
+
+
+            //Application.Run(new AddEmployee());
         }
     }
 }
