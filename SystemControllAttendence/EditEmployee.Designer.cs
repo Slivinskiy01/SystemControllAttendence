@@ -32,13 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditEmployee));
             this.bunifuElipse1 = new ns1.BunifuElipse(this.components);
             this.bunifuElipse2 = new ns1.BunifuElipse(this.components);
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.DocNumber = new System.Windows.Forms.TextBox();
             this.bunifuCustomLabel4 = new ns1.BunifuCustomLabel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Names = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.MiddleName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.LastName = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuDragControl2 = new ns1.BunifuDragControl(this.components);
@@ -50,17 +50,17 @@
             this.bunifuElipse3 = new ns1.BunifuElipse(this.components);
             this.bunifuDragControl1 = new ns1.BunifuDragControl(this.components);
             this.bunifuElipse4 = new ns1.BunifuElipse(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bunifuThinButton21 = new ns1.BunifuThinButton2();
+            this.Photo = new System.Windows.Forms.PictureBox();
+            this.SaveChange = new ns1.BunifuThinButton2();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.DocName = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.Heder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IconLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Photo)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -73,17 +73,17 @@
             this.bunifuElipse2.ElipseRadius = 5;
             this.bunifuElipse2.TargetControl = this;
             // 
-            // textBox4
+            // DocNumber
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox4.Location = new System.Drawing.Point(12, 9);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(196, 20);
-            this.textBox4.TabIndex = 0;
-            this.textBox4.Text = "Номер";
+            this.DocNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.DocNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DocNumber.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DocNumber.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.DocNumber.Location = new System.Drawing.Point(12, 9);
+            this.DocNumber.Name = "DocNumber";
+            this.DocNumber.Size = new System.Drawing.Size(196, 20);
+            this.DocNumber.TabIndex = 0;
+            this.DocNumber.Text = "Номер";
             // 
             // bunifuCustomLabel4
             // 
@@ -96,64 +96,64 @@
             this.bunifuCustomLabel4.TabIndex = 27;
             this.bunifuCustomLabel4.Text = "Документ:";
             // 
-            // textBox3
+            // Names
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox3.Location = new System.Drawing.Point(12, 9);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(196, 20);
-            this.textBox3.TabIndex = 0;
-            this.textBox3.Text = "Имя";
+            this.Names.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.Names.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Names.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Names.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.Names.Location = new System.Drawing.Point(12, 9);
+            this.Names.Name = "Names";
+            this.Names.Size = new System.Drawing.Size(196, 20);
+            this.Names.TabIndex = 0;
+            this.Names.Text = "Имя";
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.Names);
             this.panel3.Location = new System.Drawing.Point(149, 84);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(222, 40);
             this.panel3.TabIndex = 23;
             // 
-            // textBox2
+            // MiddleName
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox2.Location = new System.Drawing.Point(12, 9);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(196, 20);
-            this.textBox2.TabIndex = 0;
-            this.textBox2.Text = "Отчество";
+            this.MiddleName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.MiddleName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MiddleName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MiddleName.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.MiddleName.Location = new System.Drawing.Point(12, 9);
+            this.MiddleName.Name = "MiddleName";
+            this.MiddleName.Size = new System.Drawing.Size(196, 20);
+            this.MiddleName.TabIndex = 0;
+            this.MiddleName.Text = "Отчество";
             // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.MiddleName);
             this.panel2.Location = new System.Drawing.Point(149, 130);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(222, 40);
             this.panel2.TabIndex = 24;
             // 
-            // textBox1
+            // LastName
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox1.Location = new System.Drawing.Point(12, 9);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Фамилия";
+            this.LastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.LastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.LastName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LastName.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.LastName.Location = new System.Drawing.Point(12, 9);
+            this.LastName.Name = "LastName";
+            this.LastName.Size = new System.Drawing.Size(196, 20);
+            this.LastName.TabIndex = 0;
+            this.LastName.Text = "Фамилия";
             // 
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.textBox4);
+            this.panel4.Controls.Add(this.DocNumber);
             this.panel4.Location = new System.Drawing.Point(149, 176);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(222, 40);
@@ -162,7 +162,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.LastName);
             this.panel1.Location = new System.Drawing.Point(149, 38);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(222, 40);
@@ -254,42 +254,43 @@
             this.bunifuElipse4.ElipseRadius = 5;
             this.bunifuElipse4.TargetControl = this;
             // 
-            // pictureBox1
+            // Photo
             // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::SystemControllAttendence.Properties.Resources.user_512_1_;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 36);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(140, 140);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.Photo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Photo.Image = global::SystemControllAttendence.Properties.Resources.user_512_1_;
+            this.Photo.Location = new System.Drawing.Point(3, 36);
+            this.Photo.Name = "Photo";
+            this.Photo.Size = new System.Drawing.Size(140, 140);
+            this.Photo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Photo.TabIndex = 21;
+            this.Photo.TabStop = false;
+            this.Photo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // bunifuThinButton21
+            // SaveChange
             // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(106)))), ((int)(((byte)(40)))));
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(106)))), ((int)(((byte)(40)))));
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Зафиксировать изменения";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(106)))), ((int)(((byte)(40)))));
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(106)))), ((int)(((byte)(40)))));
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(106)))), ((int)(((byte)(40)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(274, 398);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(247, 41);
-            this.bunifuThinButton21.TabIndex = 29;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SaveChange.ActiveBorderThickness = 1;
+            this.SaveChange.ActiveCornerRadius = 20;
+            this.SaveChange.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(106)))), ((int)(((byte)(40)))));
+            this.SaveChange.ActiveForecolor = System.Drawing.SystemColors.ControlLight;
+            this.SaveChange.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(106)))), ((int)(((byte)(40)))));
+            this.SaveChange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.SaveChange.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SaveChange.BackgroundImage")));
+            this.SaveChange.ButtonText = "Зафиксировать изменения";
+            this.SaveChange.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SaveChange.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveChange.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(106)))), ((int)(((byte)(40)))));
+            this.SaveChange.IdleBorderThickness = 1;
+            this.SaveChange.IdleCornerRadius = 20;
+            this.SaveChange.IdleFillColor = System.Drawing.Color.Transparent;
+            this.SaveChange.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(106)))), ((int)(((byte)(40)))));
+            this.SaveChange.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(106)))), ((int)(((byte)(40)))));
+            this.SaveChange.Location = new System.Drawing.Point(274, 398);
+            this.SaveChange.Margin = new System.Windows.Forms.Padding(5);
+            this.SaveChange.Name = "SaveChange";
+            this.SaveChange.Size = new System.Drawing.Size(247, 41);
+            this.SaveChange.TabIndex = 29;
+            this.SaveChange.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SaveChange.Click += new System.EventHandler(this.SaveChange_Click);
             // 
             // listBox1
             // 
@@ -308,19 +309,19 @@
             this.listBox1.Size = new System.Drawing.Size(138, 42);
             this.listBox1.TabIndex = 30;
             // 
-            // comboBox1
+            // DocName
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.White;
-            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.DocName.BackColor = System.Drawing.Color.White;
+            this.DocName.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DocName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DocName.FormattingEnabled = true;
+            this.DocName.Items.AddRange(new object[] {
             "Студенчиский",
             "Паспорт"});
-            this.comboBox1.Location = new System.Drawing.Point(377, 183);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(144, 29);
-            this.comboBox1.TabIndex = 31;
+            this.DocName.Location = new System.Drawing.Point(377, 183);
+            this.DocName.Name = "DocName";
+            this.DocName.Size = new System.Drawing.Size(144, 29);
+            this.DocName.TabIndex = 31;
             // 
             // EditEmployee
             // 
@@ -328,18 +329,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(539, 453);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.DocName);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.bunifuThinButton21);
+            this.Controls.Add(this.SaveChange);
             this.Controls.Add(this.bunifuCustomLabel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Photo);
             this.Controls.Add(this.Heder);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EditEmployee";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditEmployee";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -352,7 +354,7 @@
             this.Heder.ResumeLayout(false);
             this.Heder.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IconLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Photo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -364,14 +366,14 @@
         private ns1.BunifuElipse bunifuElipse2;
         private ns1.BunifuCustomLabel bunifuCustomLabel4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Names;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox MiddleName;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox DocNumber;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox LastName;
+        private System.Windows.Forms.PictureBox Photo;
         private System.Windows.Forms.Panel Heder;
         private System.Windows.Forms.PictureBox IconLogo;
         private ns1.BunifuCustomLabel bunifuCustomLabel2;
@@ -381,8 +383,8 @@
         private ns1.BunifuElipse bunifuElipse3;
         private ns1.BunifuDragControl bunifuDragControl1;
         private ns1.BunifuElipse bunifuElipse4;
-        private ns1.BunifuThinButton2 bunifuThinButton21;
+        private ns1.BunifuThinButton2 SaveChange;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox DocName;
     }
 }

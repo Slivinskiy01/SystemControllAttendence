@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SystemControllAttendence.DataModell;
+
 
 namespace SystemControllAttendence
 {
@@ -27,9 +29,24 @@ namespace SystemControllAttendence
             WindowState = FormWindowState.Minimized;
         }
 
-        private void bunifuMaterialTextbox1_Enter(object sender, EventArgs e)
+        static Document Doc;
+        private void SerchPersonel_Click(object sender, EventArgs e)
         {
+            Doc = EmployeeManipulation.Instance.GetPersonnelByDocNumber(int.Parse(Textbox1.Text));
+            if (Doc != null)
+            {
+                LastName.Text = Doc.Personnel.LastName;
+                Names.Text = Doc.Personnel.Name;
+                MiddleName.Text = Doc.Personnel.MiddleName;
 
+                pictureBox1.Image = Helper.byteArrayToImage(Doc.Personnel.Photo);
+            }
+        }
+
+        private void EditEmployeeBtn_Click(object sender, EventArgs e)
+        {
+            EditEmployee EditEmployee = new EditEmployee(Doc);
+            EditEmployee.ShowDialog();
         }
     }
 }

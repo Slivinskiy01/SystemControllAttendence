@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SystemControllAttendence.DataModell;
@@ -53,6 +53,32 @@ namespace SystemControllAttendence
             }
         }
         /// <summary>
+        /// Метод фиксации изминений.
+        /// </summary>
+        /// <param name="Doc">Модель которую нужно изменить</param>
+        /// <param name="LastDoc">Модель на которую произайдет замена, </param>
+        public void EditEmployee(Document Doc, Document LastDoc)
+        {
+            using (var db = new DataBaseModel())
+            {
+                var Per1 = db.Personnels.Single(x => x.Id == Doc.Personnel.Id);
+                var Doc1 = db.Documents.Single(x => x.Personnel.Id == Doc.Personnel.Id);
+
+                Per1.Name = LastDoc.Personnel.Name;
+                Per1.LastName = LastDoc.Personnel.LastName;
+                Per1.MiddleName = LastDoc.Personnel.MiddleName;
+
+                Per1.Photo = LastDoc.Personnel.Photo;
+
+                Doc1.Name = LastDoc.Name;
+                Doc1.Number = LastDoc.Number;
+                Doc1.Personnel = Per1;
+                db.SaveChanges();
+                //Helper.AddPersonnel(Per, Doc);
+                MessageBox.Show("Данные Сохраненны");
+            }
+        }
+        /// <summary>
         /// Метод удаления сотрудника и его документов по Id сотрудника
         /// </summary>
         /// <param name="id">Id Сотрудника</param>
@@ -80,7 +106,7 @@ namespace SystemControllAttendence
         /// </summary>
         /// <param name="id">Номер документа</param>
         /// <returns></returns>
-        public static Document GetPersonnelByDocNumber(int id)
+        public Document GetPersonnelByDocNumber(int id)
         {
             using (var Db = new DataBaseModel())
             {

@@ -7,14 +7,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SystemControllAttendence.DataModell;
 
 namespace SystemControllAttendence
 {
     public partial class EditEmployee : Form
     {
-        public EditEmployee()
+        static Document Document;
+
+        public EditEmployee(Document Doc)
         {
             InitializeComponent();
+            
+            if (Doc != null)
+            {
+                LastName.Text = Doc.Personnel.LastName;
+                Names.Text = Doc.Personnel.Name;
+                MiddleName.Text = Doc.Personnel.MiddleName;
+
+                DocNumber.Text = Doc.Number.ToString();
+                DocName.Text = Doc.Name;
+
+                Photo.Image = Helper.byteArrayToImage(Doc.Personnel.Photo);
+                Document = Doc;
+            }
         }
 
         private void Close(object sender, EventArgs e)
@@ -36,10 +52,31 @@ namespace SystemControllAttendence
 
             if (dlg.ShowDialog() == DialogResult.OK)
             {
-                pictureBox1.Image = Image.FromFile(dlg.FileName);
+                Photo.Image = Image.FromFile(dlg.FileName);
 
             }
             dlg.Dispose();
+        }
+        /// <summary>
+        /// Сохранение изминений
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SaveChange_Click(object sender, EventArgs e)
+        {
+            var LastDoc = new Document() {
+                Name = DocName.Text,
+                Number = int.Parse(DocNumber.Text),
+                Personnel = new Personnel()
+                {
+                    Name = Names.Text,
+                    LastName = LastName.Text,
+                    MiddleName = MiddleName.Text,
+                    Photo = Helper.imageToByteArray(Photo.Image)
+                }    
+            };
+
+            EmployeeManipulation.Instance.EditEmployee(Document, LastDoc);
         }
     }
 }
