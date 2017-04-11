@@ -80,7 +80,7 @@
             this.Managerpanel2 = new System.Windows.Forms.Panel();
             this.Managerpanel3 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel26 = new ns1.BunifuCustomLabel();
-            this.bunifuThinButton24 = new ns1.BunifuThinButton2();
+            this.AddUserBtn = new ns1.BunifuThinButton2();
             this.bunifuCustomLabel24 = new ns1.BunifuCustomLabel();
             this.bunifuThinButton22 = new ns1.BunifuThinButton2();
             this.Managerpanel4 = new System.Windows.Forms.Panel();
@@ -831,7 +831,7 @@
             // 
             this.Managerpanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Managerpanel3.Controls.Add(this.bunifuCustomLabel26);
-            this.Managerpanel3.Controls.Add(this.bunifuThinButton24);
+            this.Managerpanel3.Controls.Add(this.AddUserBtn);
             this.Managerpanel3.Controls.Add(this.bunifuCustomLabel24);
             this.Managerpanel3.Controls.Add(this.bunifuThinButton22);
             this.LeftPanelLogoTransition.SetDecoration(this.Managerpanel3, BunifuAnimatorNS.DecorationType.None);
@@ -855,32 +855,33 @@
             this.bunifuCustomLabel26.Text = "Управления пользователями:\r\n - Добавление \r\n - Изминение\r\n - Удаление\r\n - назначе" +
     "ние прав\r\n - Сброс пароля\r\n";
             // 
-            // bunifuThinButton24
+            // AddUserBtn
             // 
-            this.bunifuThinButton24.ActiveBorderThickness = 1;
-            this.bunifuThinButton24.ActiveCornerRadius = 20;
-            this.bunifuThinButton24.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.ActiveForecolor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
-            this.bunifuThinButton24.ButtonText = "Добавить";
-            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuThinButton24, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelTransition.SetDecoration(this.bunifuThinButton24, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuThinButton24.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton24.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.IdleBorderThickness = 1;
-            this.bunifuThinButton24.IdleCornerRadius = 20;
-            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.Location = new System.Drawing.Point(143, 275);
-            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton24.Name = "bunifuThinButton24";
-            this.bunifuThinButton24.Size = new System.Drawing.Size(129, 41);
-            this.bunifuThinButton24.TabIndex = 7;
-            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.AddUserBtn.ActiveBorderThickness = 1;
+            this.AddUserBtn.ActiveCornerRadius = 20;
+            this.AddUserBtn.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.AddUserBtn.ActiveForecolor = System.Drawing.SystemColors.ControlLight;
+            this.AddUserBtn.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.AddUserBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.AddUserBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddUserBtn.BackgroundImage")));
+            this.AddUserBtn.ButtonText = "Добавить";
+            this.AddUserBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LeftPanelLogoTransition.SetDecoration(this.AddUserBtn, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelTransition.SetDecoration(this.AddUserBtn, BunifuAnimatorNS.DecorationType.None);
+            this.AddUserBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddUserBtn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.AddUserBtn.IdleBorderThickness = 1;
+            this.AddUserBtn.IdleCornerRadius = 20;
+            this.AddUserBtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.AddUserBtn.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.AddUserBtn.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.AddUserBtn.Location = new System.Drawing.Point(143, 275);
+            this.AddUserBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.AddUserBtn.Name = "AddUserBtn";
+            this.AddUserBtn.Size = new System.Drawing.Size(129, 41);
+            this.AddUserBtn.TabIndex = 7;
+            this.AddUserBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.AddUserBtn.Click += new System.EventHandler(this.AddUserBtn_Click);
             // 
             // bunifuCustomLabel24
             // 
@@ -1123,8 +1124,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(959, 494);
-            this.Controls.Add(this.Homes);
             this.Controls.Add(this.Managers);
+            this.Controls.Add(this.Homes);
             this.Controls.Add(this.Setings);
             this.Controls.Add(this.Rept);
             this.Controls.Add(this.LeftPanel);
@@ -1233,7 +1234,7 @@
         private ns1.BunifuCustomLabel bunifuCustomLabel22;
         private System.Windows.Forms.PictureBox pictureBox4;
         private ns1.BunifuCustomLabel bunifuCustomLabel26;
-        private ns1.BunifuThinButton2 bunifuThinButton24;
+        private ns1.BunifuThinButton2 AddUserBtn;
         private ns1.BunifuCustomLabel bunifuCustomLabel24;
         private ns1.BunifuThinButton2 bunifuThinButton23;
         private ns1.BunifuCustomLabel bunifuCustomLabel25;

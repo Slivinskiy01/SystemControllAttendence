@@ -35,5 +35,49 @@ namespace SystemControllAttendence
             }
             return null;
         }
+        /// <summary>
+        /// Метод добавления нового пользователя
+        /// </summary>
+        /// <param name="_User">Модель пользователя</param>
+        public void AddUser(User _User)
+        {
+            DialogResult dialogResult = MessageBox.Show("Вы действительно хотите добавить пользователя?", "Подтверждение", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                using (var Db = new DataBaseModel())
+                {
+                    var Users = Db.Users.ToList();
+                    foreach (var a in Users)
+                    {
+                        if (_User.Login == a.Login)
+                        {
+                            MessageBox.Show("Такой логин уже существует", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                        if (_User.email == a.email)
+                        {
+                            MessageBox.Show("Такой email уже существует", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                    }
+                    Db.Users.Add(_User);
+                    try
+                    {
+                        Db.SaveChanges();
+                        MessageBox.Show("Пользователь добавлен", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Ошибка при добавлении записи в БД", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                MessageBox.Show("Изменения не сохранены", "Информация");
+            }
+        }
+
+
     }
 }

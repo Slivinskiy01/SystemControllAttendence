@@ -68,6 +68,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagerEmployee\AddEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
       <DependentUpon>RegisterEnterOutForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ManagerUser\UserManipulation.cs" />
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManagerEmployee\AddEmployee.resx">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </EmbeddedResource>
