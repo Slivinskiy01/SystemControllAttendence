@@ -54,7 +54,7 @@ namespace SystemControllAttendence
         }
         /// <summary>
         /// Метод фиксации изминений.
-        /// </summary>
+        /// </summary> 
         /// <param name="Doc">Модель которую нужно изменить</param>
         /// <param name="LastDoc">Модель на которую произайдет замена, </param>
         public void EditEmployee(Document Doc, Document LastDoc)
