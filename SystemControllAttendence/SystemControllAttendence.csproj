@@ -74,10 +74,10 @@
     <Compile Include="ManagerEmployee\AddEmployee.Designer.cs">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="AutorizateForm.cs">
+    <Compile Include="Autorizate\AutorizateForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AutorizateForm.Designer.cs">
+    <Compile Include="Autorizate\AutorizateForm.Designer.cs">
       <DependentUpon>AutorizateForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DataModell\Attendance.cs" />
@@ -123,17 +123,17 @@
       <DependentUpon>ProgresWaitForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegisterEnterOutForm.cs">
+    <Compile Include="RegisterEnterOut\RegisterEnterOutForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegisterEnterOutForm.Designer.cs">
+    <Compile Include="RegisterEnterOut\RegisterEnterOutForm.Designer.cs">
       <DependentUpon>RegisterEnterOutForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ManagerUser\UserManipulation.cs" />
     <EmbeddedResource Include="ManagerEmployee\AddEmployee.resx">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AutorizateForm.resx">
+    <EmbeddedResource Include="Autorizate\AutorizateForm.resx">
       <DependentUpon>AutorizateForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerEmployee\EditEmployee.resx">
@@ -164,7 +164,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RegisterEnterOutForm.resx">
+    <EmbeddedResource Include="RegisterEnterOut\RegisterEnterOutForm.resx">
       <DependentUpon>RegisterEnterOutForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

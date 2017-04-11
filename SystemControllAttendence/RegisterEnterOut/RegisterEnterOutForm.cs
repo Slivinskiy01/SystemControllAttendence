@@ -55,7 +55,6 @@ namespace SystemControllAttendence
                         {
                            if(LastAten.LoginTime != null && LastAten.OutTime != null)
                             {
-                                MessageBox.Show(LastAten.OutTime - LastAten.LoginTime+ " jg");
                                 var Atend = new Attendance()
                                 {
                                     DayWeek = DateTime.Now.DayOfWeek.ToString(),
@@ -107,6 +106,14 @@ namespace SystemControllAttendence
             DocName.Text = "";
             DocNumber.Text = "";
             textBox4.Text = "";
+        }
+
+        private void SecureInput(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

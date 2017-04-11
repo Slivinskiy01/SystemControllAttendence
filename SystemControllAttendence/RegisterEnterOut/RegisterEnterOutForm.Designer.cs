@@ -259,9 +259,8 @@
             this.Status.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.Status.Location = new System.Drawing.Point(77, 236);
             this.Status.Name = "Status";
-            this.Status.Size = new System.Drawing.Size(122, 44);
+            this.Status.Size = new System.Drawing.Size(0, 44);
             this.Status.TabIndex = 33;
-            this.Status.Text = "Status";
             this.Status.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bunifuCustomLabel6
@@ -317,7 +316,7 @@
             this.DocNumber.Name = "DocNumber";
             this.DocNumber.Size = new System.Drawing.Size(242, 20);
             this.DocNumber.TabIndex = 0;
-            this.DocNumber.Text = "14008";
+            this.DocNumber.Text = " ";
             // 
             // panel17
             // 
@@ -339,7 +338,7 @@
             this.DocName.Name = "DocName";
             this.DocName.Size = new System.Drawing.Size(242, 20);
             this.DocName.TabIndex = 0;
-            this.DocName.Text = "Студенчиский";
+            this.DocName.Text = " ";
             // 
             // panel18
             // 
@@ -361,7 +360,7 @@
             this.PositionName.Name = "PositionName";
             this.PositionName.Size = new System.Drawing.Size(242, 20);
             this.PositionName.TabIndex = 0;
-            this.PositionName.Text = "Студент";
+            this.PositionName.Text = " ";
             // 
             // panel5
             // 
@@ -442,7 +441,7 @@
             this.MiddleName.Name = "MiddleName";
             this.MiddleName.Size = new System.Drawing.Size(196, 20);
             this.MiddleName.TabIndex = 0;
-            this.MiddleName.Text = "Иванович";
+            this.MiddleName.Text = " ";
             // 
             // panel7
             // 
@@ -464,7 +463,7 @@
             this.Names.Name = "Names";
             this.Names.Size = new System.Drawing.Size(196, 20);
             this.Names.TabIndex = 0;
-            this.Names.Text = "Иван";
+            this.Names.Text = " ";
             // 
             // panel9
             // 
@@ -486,7 +485,7 @@
             this.LastName.Name = "LastName";
             this.LastName.Size = new System.Drawing.Size(196, 20);
             this.LastName.TabIndex = 0;
-            this.LastName.Text = "Иванов";
+            this.LastName.Text = " ";
             // 
             // pictureBox1
             // 
@@ -613,6 +612,7 @@
             this.textBox4.Size = new System.Drawing.Size(196, 20);
             this.textBox4.TabIndex = 0;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SecureInput);
             // 
             // bunifuCustomLabel2
             // 

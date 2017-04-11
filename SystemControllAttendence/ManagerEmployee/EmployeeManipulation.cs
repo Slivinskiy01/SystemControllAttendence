@@ -97,6 +97,16 @@ namespace SystemControllAttendence
                     }
                     else break;
                 }
+                while (true)
+                {
+                    var Atend = db.Attendances.FirstOrDefault(x => x.Personnel.Id == Per.Id);
+                    if (Atend != null)
+                    {
+                        db.Attendances.Remove(Atend);
+                        db.SaveChanges();
+                    }
+                    else break;
+                }
                 db.Personnels.Remove(Per);
                 db.SaveChanges();
             }
