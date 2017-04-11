@@ -106,6 +106,15 @@
     <Compile Include="ManagerEmployee\ManagerEmployee.Designer.cs">
       <DependentUpon>ManagerEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704061554087_InitialCreate.cs" />
+    <Compile Include="Migrations\201704061554087_InitialCreate.Designer.cs">
+      <DependentUpon>201704061554087_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704111326189_position.cs" />
+    <Compile Include="Migrations\201704111326189_position.Designer.cs">
+      <DependentUpon>201704111326189_position.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="TempDump\ProgresWaitForm.cs">
       <SubType>Form</SubType>
@@ -135,6 +144,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerEmployee\ManagerEmployee.resx">
       <DependentUpon>ManagerEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704061554087_InitialCreate.resx">
+      <DependentUpon>201704061554087_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704111326189_position.resx">
+      <DependentUpon>201704111326189_position.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TempDump\ProgresWaitForm.resx">
       <DependentUpon>ProgresWaitForm.cs</DependentUpon>

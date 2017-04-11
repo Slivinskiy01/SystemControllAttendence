@@ -11,11 +11,11 @@ using SystemControllAttendence.DataModell;
 
 namespace SystemControllAttendence
 {
-    public partial class EditEmployee : Form
+    public partial class Position : Form
     {
         static Document Document;
 
-        public EditEmployee(Document Doc)
+        public Position(Document Doc)
         {
             InitializeComponent();
             
@@ -24,6 +24,7 @@ namespace SystemControllAttendence
                 LastName.Text = Doc.Personnel.LastName;
                 Names.Text = Doc.Personnel.Name;
                 MiddleName.Text = Doc.Personnel.MiddleName;
+                PositionName.Text = Doc.Personnel.Position;
 
                 DocNumber.Text = Doc.Number.ToString();
                 DocName.Text = Doc.Name;
@@ -72,6 +73,7 @@ namespace SystemControllAttendence
                     Name = Names.Text,
                     LastName = LastName.Text,
                     MiddleName = MiddleName.Text,
+                    Position = PositionName.SelectedItem.ToString(),
                     Photo = Helper.imageToByteArray(Photo.Image)
                 }    
             };

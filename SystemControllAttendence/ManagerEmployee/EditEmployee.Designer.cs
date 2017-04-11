@@ -1,6 +1,6 @@
 ﻿namespace SystemControllAttendence
 {
-    partial class EditEmployee
+    partial class Position
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditEmployee));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Position));
             this.bunifuElipse1 = new ns1.BunifuElipse(this.components);
             this.bunifuElipse2 = new ns1.BunifuElipse(this.components);
             this.DocNumber = new System.Windows.Forms.TextBox();
@@ -54,6 +54,8 @@
             this.SaveChange = new ns1.BunifuThinButton2();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.DocName = new System.Windows.Forms.ComboBox();
+            this.bunifuCustomLabel5 = new ns1.BunifuCustomLabel();
+            this.PositionName = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -327,12 +329,39 @@
             this.DocName.Size = new System.Drawing.Size(144, 29);
             this.DocName.TabIndex = 31;
             // 
-            // EditEmployee
+            // bunifuCustomLabel5
+            // 
+            this.bunifuCustomLabel5.AutoSize = true;
+            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuCustomLabel5.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(55, 243);
+            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(95, 20);
+            this.bunifuCustomLabel5.TabIndex = 33;
+            this.bunifuCustomLabel5.Text = "Должность:";
+            // 
+            // PositionName
+            // 
+            this.PositionName.BackColor = System.Drawing.Color.White;
+            this.PositionName.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PositionName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PositionName.FormattingEnabled = true;
+            this.PositionName.Items.AddRange(new object[] {
+            "Студент",
+            "Преподователь"});
+            this.PositionName.Location = new System.Drawing.Point(162, 239);
+            this.PositionName.Name = "PositionName";
+            this.PositionName.Size = new System.Drawing.Size(144, 29);
+            this.PositionName.TabIndex = 34;
+            // 
+            // Position
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(539, 453);
+            this.Controls.Add(this.PositionName);
+            this.Controls.Add(this.bunifuCustomLabel5);
             this.Controls.Add(this.DocName);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.SaveChange);
@@ -344,7 +373,7 @@
             this.Controls.Add(this.Photo);
             this.Controls.Add(this.Heder);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "EditEmployee";
+            this.Name = "Position";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditEmployee";
             this.panel3.ResumeLayout(false);
@@ -390,5 +419,7 @@
         private ns1.BunifuThinButton2 SaveChange;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ComboBox DocName;
+        private ns1.BunifuCustomLabel bunifuCustomLabel5;
+        private System.Windows.Forms.ComboBox PositionName;
     }
 }

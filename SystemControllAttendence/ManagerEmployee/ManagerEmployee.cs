@@ -49,7 +49,7 @@ namespace SystemControllAttendence
         {
             if (Doc != null)
             {
-                EditEmployee EditEmployee = new EditEmployee(Doc);
+                Position EditEmployee = new Position(Doc);
                 EditEmployee.ShowDialog();
             }
             else MessageBox.Show("Сотрудник не найден", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);

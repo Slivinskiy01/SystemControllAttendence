@@ -47,10 +47,12 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.Names = new System.Windows.Forms.TextBox();
             this.AddEmployees = new ns1.BunifuThinButton2();
-            this.bunifuDropdown1 = new ns1.BunifuDropdown();
+            this.DocName = new ns1.BunifuDropdown();
             this.bunifuCustomLabel4 = new ns1.BunifuCustomLabel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.DocNumber = new System.Windows.Forms.TextBox();
+            this.bunifuCustomLabel5 = new ns1.BunifuCustomLabel();
+            this.Position = new ns1.BunifuDropdown();
             this.Heder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IconLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Photo)).BeginInit();
@@ -256,24 +258,24 @@
             this.AddEmployees.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AddEmployees.Click += new System.EventHandler(this.AddEmployees_Click);
             // 
-            // bunifuDropdown1
+            // DocName
             // 
-            this.bunifuDropdown1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown1.BorderRadius = 3;
-            this.bunifuDropdown1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuDropdown1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuDropdown1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuDropdown1.Items = new string[] {
+            this.DocName.BackColor = System.Drawing.Color.Transparent;
+            this.DocName.BorderRadius = 3;
+            this.DocName.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DocName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DocName.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.DocName.Items = new string[] {
         "Студенчиский",
         "Паспорт"};
-            this.bunifuDropdown1.Location = new System.Drawing.Point(150, 191);
-            this.bunifuDropdown1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.bunifuDropdown1.Name = "bunifuDropdown1";
-            this.bunifuDropdown1.NomalColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown1.onHoverColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown1.selectedIndex = 0;
-            this.bunifuDropdown1.Size = new System.Drawing.Size(157, 40);
-            this.bunifuDropdown1.TabIndex = 17;
+            this.DocName.Location = new System.Drawing.Point(150, 191);
+            this.DocName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.DocName.Name = "DocName";
+            this.DocName.NomalColor = System.Drawing.Color.Transparent;
+            this.DocName.onHoverColor = System.Drawing.Color.Transparent;
+            this.DocName.selectedIndex = 0;
+            this.DocName.Size = new System.Drawing.Size(157, 40);
+            this.DocName.TabIndex = 17;
             // 
             // bunifuCustomLabel4
             // 
@@ -310,15 +312,47 @@
             this.DocNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DocNumber_KeyPress);
             this.DocNumber.Leave += new System.EventHandler(this.AddText);
             // 
+            // bunifuCustomLabel5
+            // 
+            this.bunifuCustomLabel5.AutoSize = true;
+            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuCustomLabel5.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(58, 251);
+            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(95, 20);
+            this.bunifuCustomLabel5.TabIndex = 21;
+            this.bunifuCustomLabel5.Text = "Должность:";
+            // 
+            // Position
+            // 
+            this.Position.BackColor = System.Drawing.Color.Transparent;
+            this.Position.BorderRadius = 3;
+            this.Position.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Position.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Position.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.Position.Items = new string[] {
+        "Студент",
+        "Преподователь"};
+            this.Position.Location = new System.Drawing.Point(152, 241);
+            this.Position.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Position.Name = "Position";
+            this.Position.NomalColor = System.Drawing.Color.Transparent;
+            this.Position.onHoverColor = System.Drawing.Color.Transparent;
+            this.Position.selectedIndex = 0;
+            this.Position.Size = new System.Drawing.Size(157, 40);
+            this.Position.TabIndex = 20;
+            // 
             // AddEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(539, 453);
+            this.Controls.Add(this.bunifuCustomLabel5);
+            this.Controls.Add(this.Position);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.bunifuCustomLabel4);
-            this.Controls.Add(this.bunifuDropdown1);
+            this.Controls.Add(this.DocName);
             this.Controls.Add(this.AddEmployees);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -365,9 +399,11 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox MiddleName;
         private ns1.BunifuThinButton2 AddEmployees;
-        private ns1.BunifuDropdown bunifuDropdown1;
+        private ns1.BunifuDropdown DocName;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox DocNumber;
         private ns1.BunifuCustomLabel bunifuCustomLabel4;
+        private ns1.BunifuCustomLabel bunifuCustomLabel5;
+        private ns1.BunifuDropdown Position;
     }
 }

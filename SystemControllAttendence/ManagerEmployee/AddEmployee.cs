@@ -96,16 +96,17 @@ namespace SystemControllAttendence
                 Name = Names.Text,
                 LastName = LastName.Text,
                 MiddleName = MiddleName.Text,
+                Position = Position.selectedValue,
                 Photo = Helper.imageToByteArray(Photo.Image)
             };
 
             var Doc = new Document()
             {
-                Name = "Студенчиский",
+                Name = DocName.selectedValue,
                 Number = int.Parse(DocNumber.Text),
                 Personnel = Per
             };
-
+            
             Enabled = false;
             UseWaitCursor = true;
             EmployeeManipulation.Instance.AddEmployee(Per, Doc);

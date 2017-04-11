@@ -67,7 +67,7 @@ namespace SystemControllAttendence
                 Per1.Name = LastDoc.Personnel.Name;
                 Per1.LastName = LastDoc.Personnel.LastName;
                 Per1.MiddleName = LastDoc.Personnel.MiddleName;
-
+                Per1.Position = LastDoc.Personnel.Position;
                 Per1.Photo = LastDoc.Personnel.Photo;
 
                 Doc1.Name = LastDoc.Name;

@@ -41,6 +41,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.Status = new ns1.BunifuCustomLabel();
             this.bunifuCustomLabel6 = new ns1.BunifuCustomLabel();
             this.bunifuCustomLabel7 = new ns1.BunifuCustomLabel();
             this.bunifuCustomLabel8 = new ns1.BunifuCustomLabel();
@@ -49,7 +50,7 @@
             this.panel17 = new System.Windows.Forms.Panel();
             this.DocName = new System.Windows.Forms.TextBox();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.Position = new System.Windows.Forms.TextBox();
+            this.PositionName = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel5 = new ns1.BunifuCustomLabel();
@@ -70,7 +71,6 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.bunifuCustomLabel2 = new ns1.BunifuCustomLabel();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.Status = new ns1.BunifuCustomLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -252,6 +252,18 @@
             this.panel15.Size = new System.Drawing.Size(291, 327);
             this.panel15.TabIndex = 3;
             // 
+            // Status
+            // 
+            this.Status.AutoSize = true;
+            this.Status.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Status.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.Status.Location = new System.Drawing.Point(77, 236);
+            this.Status.Name = "Status";
+            this.Status.Size = new System.Drawing.Size(122, 44);
+            this.Status.TabIndex = 33;
+            this.Status.Text = "Status";
+            this.Status.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // bunifuCustomLabel6
             // 
             this.bunifuCustomLabel6.AutoSize = true;
@@ -332,24 +344,24 @@
             // panel18
             // 
             this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel18.Controls.Add(this.Position);
+            this.panel18.Controls.Add(this.PositionName);
             this.panel18.Enabled = false;
             this.panel18.Location = new System.Drawing.Point(9, 28);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(271, 40);
             this.panel18.TabIndex = 27;
             // 
-            // Position
+            // PositionName
             // 
-            this.Position.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.Position.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Position.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Position.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.Position.Location = new System.Drawing.Point(13, 9);
-            this.Position.Name = "Position";
-            this.Position.Size = new System.Drawing.Size(242, 20);
-            this.Position.TabIndex = 0;
-            this.Position.Text = "Студент";
+            this.PositionName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.PositionName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PositionName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PositionName.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.PositionName.Location = new System.Drawing.Point(13, 9);
+            this.PositionName.Name = "PositionName";
+            this.PositionName.Size = new System.Drawing.Size(242, 20);
+            this.PositionName.TabIndex = 0;
+            this.PositionName.Text = "Студент";
             // 
             // panel5
             // 
@@ -623,18 +635,6 @@
             this.panel13.Size = new System.Drawing.Size(805, 139);
             this.panel13.TabIndex = 3;
             // 
-            // Status
-            // 
-            this.Status.AutoSize = true;
-            this.Status.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Status.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.Status.Location = new System.Drawing.Point(77, 236);
-            this.Status.Name = "Status";
-            this.Status.Size = new System.Drawing.Size(122, 44);
-            this.Status.TabIndex = 33;
-            this.Status.Text = "Status";
-            this.Status.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // RegisterEnterOutForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -731,7 +731,7 @@
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.TextBox DocName;
         private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.TextBox Position;
+        private System.Windows.Forms.TextBox PositionName;
         private ns1.BunifuCustomLabel Status;
     }
 }
