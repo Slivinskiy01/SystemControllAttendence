@@ -43,11 +43,9 @@
             this.LastName = new System.Windows.Forms.TextBox();
             this.bunifuDragControl1 = new ns1.BunifuDragControl(this.components);
             this.Heder = new System.Windows.Forms.Panel();
-            this.IconLogo = new System.Windows.Forms.PictureBox();
             this.Minim = new ns1.BunifuCustomLabel();
             this.bunifuCustomLabel3 = new ns1.BunifuCustomLabel();
             this.Closed = new ns1.BunifuCustomLabel();
-            this.Photo = new System.Windows.Forms.PictureBox();
             this.bunifuDragControl2 = new ns1.BunifuDragControl(this.components);
             this.bunifuElipse3 = new ns1.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
@@ -58,14 +56,16 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.Email = new System.Windows.Forms.TextBox();
             this.AddUserBtn = new ns1.BunifuThinButton2();
+            this.Photo = new System.Windows.Forms.PictureBox();
+            this.IconLogo = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.Heder.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IconLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Photo)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Photo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -210,16 +210,6 @@
             this.Heder.Size = new System.Drawing.Size(572, 35);
             this.Heder.TabIndex = 22;
             // 
-            // IconLogo
-            // 
-            this.IconLogo.Image = global::SystemControllAttendence.Properties.Resources.Client_Company;
-            this.IconLogo.Location = new System.Drawing.Point(6, 7);
-            this.IconLogo.Name = "IconLogo";
-            this.IconLogo.Size = new System.Drawing.Size(31, 24);
-            this.IconLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.IconLogo.TabIndex = 5;
-            this.IconLogo.TabStop = false;
-            // 
             // Minim
             // 
             this.Minim.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -258,18 +248,6 @@
             this.Closed.TabIndex = 1;
             this.Closed.Text = "X";
             this.Closed.Click += new System.EventHandler(this.Closed_Click);
-            // 
-            // Photo
-            // 
-            this.Photo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Photo.Image = global::SystemControllAttendence.Properties.Resources.user_512_1_;
-            this.Photo.Location = new System.Drawing.Point(6, 58);
-            this.Photo.Name = "Photo";
-            this.Photo.Size = new System.Drawing.Size(140, 140);
-            this.Photo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Photo.TabIndex = 23;
-            this.Photo.TabStop = false;
-            this.Photo.Click += new System.EventHandler(this.Photo_Click);
             // 
             // bunifuDragControl2
             // 
@@ -349,7 +327,6 @@
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(196, 20);
             this.Email.TabIndex = 0;
-            this.Email.UseSystemPasswordChar = true;
             this.Email.WordWrap = false;
             // 
             // AddUserBtn
@@ -378,6 +355,28 @@
             this.AddUserBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AddUserBtn.Click += new System.EventHandler(this.AddUserBtn_Click);
             // 
+            // Photo
+            // 
+            this.Photo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Photo.Image = global::SystemControllAttendence.Properties.Resources.user_512_1_;
+            this.Photo.Location = new System.Drawing.Point(6, 58);
+            this.Photo.Name = "Photo";
+            this.Photo.Size = new System.Drawing.Size(140, 140);
+            this.Photo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Photo.TabIndex = 23;
+            this.Photo.TabStop = false;
+            this.Photo.Click += new System.EventHandler(this.Photo_Click);
+            // 
+            // IconLogo
+            // 
+            this.IconLogo.Image = global::SystemControllAttendence.Properties.Resources.Client_Company;
+            this.IconLogo.Location = new System.Drawing.Point(6, 7);
+            this.IconLogo.Name = "IconLogo";
+            this.IconLogo.Size = new System.Drawing.Size(31, 24);
+            this.IconLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.IconLogo.TabIndex = 5;
+            this.IconLogo.TabStop = false;
+            // 
             // AddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -399,6 +398,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddUser";
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -408,12 +408,12 @@
             this.panel2.PerformLayout();
             this.Heder.ResumeLayout(false);
             this.Heder.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IconLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Photo)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Photo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SystemControllAttendence.Properties;
 
 namespace SystemControllAttendence
 {
@@ -28,6 +29,8 @@ namespace SystemControllAttendence
         /// <returns>Imagine</returns>
         public static Image byteArrayToImage(byte[] byteArrayIn)
         {
+            if (byteArrayIn == null) return Resources.user_512_1_;//Временный код
+
             MemoryStream ms = new MemoryStream(byteArrayIn);
             Image returnImage = Image.FromStream(ms);
             return returnImage;

@@ -45,6 +45,7 @@
             this.EditEmployeeBtn = new ns1.BunifuThinButton2();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.SerchPersonel = new ns1.BunifuImageButton();
+            this.bunifuCustomLabel4 = new ns1.BunifuCustomLabel();
             this.Heder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IconLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -257,12 +258,24 @@
             this.SerchPersonel.Zoom = 10;
             this.SerchPersonel.Click += new System.EventHandler(this.SerchPersonel_Click);
             // 
+            // bunifuCustomLabel4
+            // 
+            this.bunifuCustomLabel4.AutoSize = true;
+            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuCustomLabel4.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(11, 43);
+            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(86, 16);
+            this.bunifuCustomLabel4.TabIndex = 20;
+            this.bunifuCustomLabel4.Text = "№ Документа";
+            // 
             // ManagerEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(499, 423);
+            this.Controls.Add(this.bunifuCustomLabel4);
             this.Controls.Add(this.DeletEmployeeBtn);
             this.Controls.Add(this.EditEmployeeBtn);
             this.Controls.Add(this.MiddleName);
@@ -303,5 +316,6 @@
         private ns1.BunifuCustomLabel MiddleName;
         private ns1.BunifuThinButton2 EditEmployeeBtn;
         private ns1.BunifuThinButton2 DeletEmployeeBtn;
+        private ns1.BunifuCustomLabel bunifuCustomLabel4;
     }
 }

@@ -77,7 +77,50 @@ namespace SystemControllAttendence
                 MessageBox.Show("Изменения не сохранены", "Информация");
             }
         }
-
-
+        /// <summary>
+        /// Метод изминения сотрудника
+        /// </summary>
+        /// <param name="IdOldModel"></param>
+        /// <param name="_User"></param>
+        public void EditUser(int IdOldModel, User _User)
+        {
+            using(var db = new DataBaseModel())
+            {
+                var NewUser = db.Users.Single(x => x.Id == IdOldModel);
+                NewUser = _User;
+                db.SaveChanges();
+                MessageBox.Show("Данные Сохраненны");
+            }
+        }
+        /// <summary>
+        /// Получения пользователя по email
+        /// </summary>
+        /// <param name="_email">Email</param>
+        /// <returns>User</returns>
+        public User GetUserByEmail(string _email)
+        {
+            using(var db = new DataBaseModel())
+            {
+                var _User = db.Users.Where(x => x.email == _email).FirstOrDefault();
+                return _User;
+            }
+        }
+        /// <summary>
+        /// Меод удаления сотрудника по ИД
+        /// </summary>
+        /// <param name="_id">Id</param>
+        public void DeleteUserById(int _id)
+        {
+            using (var db = new DataBaseModel())
+            {
+                var _User = db.Users.Where(x => x.Id == _id).FirstOrDefault();
+                if(_User != null)
+                {
+                    db.Users.Remove(_User);
+                    db.SaveChanges();
+                    MessageBox.Show("Пользователь удален", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
     }
 }

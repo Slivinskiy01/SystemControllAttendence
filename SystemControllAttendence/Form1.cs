@@ -125,10 +125,15 @@ namespace SystemControllAttendence
             AddEmployee.ShowDialog();
             this.Visible = true;
         }
-
+        AddUser AddUser = new AddUser();
         private void AddUserBtn_Click(object sender, EventArgs e)
         {
-
+            AddUser.Show();
+        }
+        ManagerUser ManagerUser = new ManagerUser();
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            ManagerUser.Show();
         }
     }
 }

@@ -922,6 +922,7 @@
             this.bunifuThinButton22.Size = new System.Drawing.Size(252, 41);
             this.bunifuThinButton22.TabIndex = 3;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
             // Managerpanel4
             // 

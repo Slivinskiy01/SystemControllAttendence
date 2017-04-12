@@ -25,7 +25,7 @@ namespace SystemControllAttendence
             //Application.Run(AutorizateForms = new AutorizateForm());
 
 
-            Application.Run(new AddUser());
+            Application.Run(new Form1());
         }
     }
 }
