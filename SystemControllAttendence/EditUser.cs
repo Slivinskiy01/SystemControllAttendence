@@ -78,6 +78,7 @@ namespace SystemControllAttendence
                 };
                 UserManipulation.Instance.EditUser(User.Id, _User);
             }
+            Close();
         }
     }
 }

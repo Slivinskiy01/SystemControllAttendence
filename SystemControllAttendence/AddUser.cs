@@ -120,6 +120,7 @@ namespace SystemControllAttendence
                     Password = Password.Text
                 };
                 UserManipulation.Instance.AddUser(_User);
+                Close();
             }
         }
     }

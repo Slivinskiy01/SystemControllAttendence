@@ -87,7 +87,13 @@ namespace SystemControllAttendence
             using(var db = new DataBaseModel())
             {
                 var NewUser = db.Users.Single(x => x.Id == IdOldModel);
-                NewUser = _User;
+                    NewUser.LastName = _User.LastName;
+                    NewUser.Name = _User.Name;
+                    NewUser.Login = _User.Login;
+                    NewUser.Password = _User.Password;
+                    NewUser.Photo = _User.Photo;
+                    NewUser.email = _User.email;
+                    NewUser.roles = _User.roles;
                 db.SaveChanges();
                 MessageBox.Show("Данные Сохраненны");
             }

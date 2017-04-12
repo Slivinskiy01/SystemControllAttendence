@@ -128,12 +128,16 @@ namespace SystemControllAttendence
         AddUser AddUser = new AddUser();
         private void AddUserBtn_Click(object sender, EventArgs e)
         {
-            AddUser.Show();
+            Visible = false;
+            AddUser.ShowDialog();
+            Visible = true;
         }
         ManagerUser ManagerUser = new ManagerUser();
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
-            ManagerUser.Show();
+            Visible = false;
+            ManagerUser.ShowDialog();
+            Visible = true;
         }
     }
 }
