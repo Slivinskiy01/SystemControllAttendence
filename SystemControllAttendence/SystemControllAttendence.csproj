@@ -68,16 +68,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddUser.cs">
+    <Compile Include="ManagerUser\AddUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddUser.Designer.cs">
+    <Compile Include="ManagerUser\AddUser.Designer.cs">
       <DependentUpon>AddUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditUser.cs">
+    <Compile Include="ManagerUser\EditUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditUser.Designer.cs">
+    <Compile Include="ManagerUser\EditUser.Designer.cs">
       <DependentUpon>EditUser.cs</DependentUpon>
     </Compile>
     <Compile Include="ManagerEmployee\AddEmployee.cs">
@@ -118,10 +118,10 @@
     <Compile Include="ManagerEmployee\ManagerEmployee.Designer.cs">
       <DependentUpon>ManagerEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManagerUser.cs">
+    <Compile Include="ManagerUser\ManagerUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManagerUser.Designer.cs">
+    <Compile Include="ManagerUser\ManagerUser.Designer.cs">
       <DependentUpon>ManagerUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201704061554087_InitialCreate.cs" />
@@ -148,10 +148,10 @@
       <DependentUpon>RegisterEnterOutForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ManagerUser\UserManipulation.cs" />
-    <EmbeddedResource Include="AddUser.resx">
+    <EmbeddedResource Include="ManagerUser\AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditUser.resx">
+    <EmbeddedResource Include="ManagerUser\EditUser.resx">
       <DependentUpon>EditUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerEmployee\AddEmployee.resx">
@@ -169,7 +169,7 @@
     <EmbeddedResource Include="ManagerEmployee\ManagerEmployee.resx">
       <DependentUpon>ManagerEmployee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManagerUser.resx">
+    <EmbeddedResource Include="ManagerUser\ManagerUser.resx">
       <DependentUpon>ManagerUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704061554087_InitialCreate.resx">

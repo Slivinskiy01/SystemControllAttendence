@@ -633,7 +633,7 @@
             this.panel13.Location = new System.Drawing.Point(260, 533);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(805, 139);
-            this.panel13.TabIndex = 3;
+            this.panel13.TabIndex = 4;
             // 
             // RegisterEnterOutForm
             // 
@@ -720,7 +720,6 @@
         private ns1.BunifuCustomLabel bunifuCustomLabel5;
         private ns1.BunifuCustomLabel bunifuCustomLabel4;
         private ns1.BunifuCustomLabel bunifuCustomLabel3;
-        private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel15;
         private ns1.BunifuCustomLabel bunifuCustomLabel6;
@@ -733,5 +732,6 @@
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.TextBox PositionName;
         private ns1.BunifuCustomLabel Status;
+        private System.Windows.Forms.Panel panel13;
     }
 }

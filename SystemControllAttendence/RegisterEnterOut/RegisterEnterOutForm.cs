@@ -23,13 +23,17 @@ namespace SystemControllAttendence
         {
             Close();
         }
-
+        /// <summary>
+        /// Evet, register Enter & Out
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
             if(textBox4.Text.Length == 5)
             {
                 var Doc = EmployeeManipulation.Instance.GetPersonnelByDocNumber(int.Parse(textBox4.Text));
-
+                
                 if(Doc != null)
                 {
                     LastName.Text = Doc.Personnel.LastName;
@@ -95,7 +99,9 @@ namespace SystemControllAttendence
                 }
             }
         }
-
+        /// <summary>
+        /// Clear Form
+        /// </summary>
         private void FormClear()
         {
             LastName.Text = "";
@@ -107,7 +113,11 @@ namespace SystemControllAttendence
             DocNumber.Text = "";
             textBox4.Text = "";
         }
-
+        /// <summary>
+        /// Event Key Press, Lock Input char
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SecureInput(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
