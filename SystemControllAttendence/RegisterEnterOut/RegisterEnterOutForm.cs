@@ -23,6 +23,30 @@ namespace SystemControllAttendence
         {
             Close();
         }
+
+        int Npp=0;
+        /// <summary>
+        /// Метод принимающий информацию о входе \ выходе и записывает в строку dataGread
+        /// 
+        /// </summary>
+        /// <param name="_info"></param>
+        /// 
+        private void InputDataViewNewRow(Attendance _info)
+        {
+            dataGridView1.Rows.Add(
+                Npp++,
+                _info.Personnel.LastName,
+                _info.Personnel.Name,
+                _info.Personnel.MiddleName,
+                DocName.Text,
+                DocNumber.Text,
+                _info.LoginTime,
+                _info.OutTime
+                );
+            dataGridView1.FirstDisplayedCell = dataGridView1.Rows[dataGridView1.Rows.Count - 1].Cells[0];
+
+        }
+
         /// <summary>
         /// Evet, register Enter & Out
         /// </summary>
@@ -32,51 +56,43 @@ namespace SystemControllAttendence
         {
             if(textBox4.Text.Length == 5)
             {
-                var Doc = EmployeeManipulation.Instance.GetPersonnelByDocNumber(int.Parse(textBox4.Text));
-                
-                if(Doc != null)
+                //
+                RegEnterOut(int.Parse(textBox4.Text));
+            }
+        }
+        /// <summary>
+        /// Алшоритм анализа, Входит либо выходит субьект.
+        /// 
+        /// </summary>
+        /// <param name="DocNumbers">Номер документа сотрудника</param>
+        private void RegEnterOut(int DocNumbers)
+        {
+            var Doc = EmployeeManipulation.Instance.GetPersonnelByDocNumber(DocNumbers);
+
+            if (Doc != null)
+            {
+                LastName.Text = Doc.Personnel.LastName;
+                Names.Text = Doc.Personnel.Name;
+                MiddleName.Text = Doc.Personnel.MiddleName;
+                pictureBox1.Image = Helper.byteArrayToImage(Doc.Personnel.Photo);
+                PositionName.Text = Doc.Personnel.Position;
+
+                DocName.Text = Doc.Name;
+                DocNumber.Text = Doc.Number.ToString();
+
+                Status.BackColor = Color.SeaGreen;
+                Status.Text = "Allowed";
+                textBox4.Text = "";
+
+                using (var db = new DataBaseModel())
                 {
-                    LastName.Text = Doc.Personnel.LastName;
-                    Names.Text = Doc.Personnel.Name;
-                    MiddleName.Text = Doc.Personnel.MiddleName;
-                    pictureBox1.Image = Helper.byteArrayToImage(Doc.Personnel.Photo);
-                    PositionName.Text = Doc.Personnel.Position;
+                    var Per = db.Personnels.Find(Doc.Personnel.Id);
+                    var At = db.Attendances.ToList();
+                    Attendance LastAten = Per.Attendances.ToList().LastOrDefault();
 
-                    DocName.Text = Doc.Name;
-                    DocNumber.Text = Doc.Number.ToString();
-
-                    Status.BackColor = Color.SeaGreen;
-                    Status.Text = "Allowed";
-                    textBox4.Text = "";
-                    
-                    using(var db = new DataBaseModel())
+                    if (LastAten != null)
                     {
-                        var Per = db.Personnels.Find(Doc.Personnel.Id);
-                        var At = db.Attendances.ToList();
-                        Attendance LastAten = Per.Attendances.ToList().LastOrDefault();
-                        
-                        if (LastAten != null)
-                        {
-                           if(LastAten.LoginTime != null && LastAten.OutTime != null)
-                            {
-                                var Atend = new Attendance()
-                                {
-                                    DayWeek = DateTime.Now.DayOfWeek.ToString(),
-                                    LoginTime = DateTime.Now,
-                                    OutTime = null,
-                                    Personnel = Per
-                                };
-                                db.Attendances.Add(Atend);
-                                db.SaveChanges();
-                            }
-                           else if (LastAten.LoginTime != null && LastAten.OutTime == null)
-                            {
-                                var AtendEdit = db.Attendances.Single(x => x.Id ==LastAten.Id);
-                                AtendEdit.OutTime = DateTime.Now;
-                                db.SaveChanges();
-                            }
-                        }
-                        else
+                        if (LastAten.LoginTime != null && LastAten.OutTime != null)
                         {
                             var Atend = new Attendance()
                             {
@@ -84,21 +100,45 @@ namespace SystemControllAttendence
                                 LoginTime = DateTime.Now,
                                 OutTime = null,
                                 Personnel = Per
-                                
                             };
+
+                            InputDataViewNewRow(Atend);
                             db.Attendances.Add(Atend);
                             db.SaveChanges();
                         }
+                        else if (LastAten.LoginTime != null && LastAten.OutTime == null)
+                        {
+                            var AtendEdit = db.Attendances.Single(x => x.Id == LastAten.Id);
+                            AtendEdit.OutTime = DateTime.Now;
+                            InputDataViewNewRow(AtendEdit);
+                            db.SaveChanges();
+                        }
+                    }
+                    else
+                    {
+                        var Atend = new Attendance()
+                        {
+                            DayWeek = DateTime.Now.DayOfWeek.ToString(),
+                            LoginTime = DateTime.Now,
+                            OutTime = null,
+                            Personnel = Per
+
+                        };
+
+                        InputDataViewNewRow(Atend);
+                        db.Attendances.Add(Atend);
+                        db.SaveChanges();
                     }
                 }
-                else
-                {
-                    Status.BackColor = Color.FromArgb(217, 83, 79);
-                    Status.Text = "Locked";
-                    FormClear();
-                }
+            }
+            else
+            {
+                Status.BackColor = Color.FromArgb(217, 83, 79);
+                Status.Text = "Locked";
+                FormClear();
             }
         }
+
         /// <summary>
         /// Clear Form
         /// </summary>
@@ -111,7 +151,9 @@ namespace SystemControllAttendence
 
             DocName.Text = "";
             DocNumber.Text = "";
+            PositionName.Text = "";
             textBox4.Text = "";
+
         }
         /// <summary>
         /// Event Key Press, Lock Input char

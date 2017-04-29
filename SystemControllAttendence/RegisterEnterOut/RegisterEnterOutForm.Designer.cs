@@ -28,6 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuImageButton2 = new ns1.BunifuImageButton();
             this.bunifuImageButton1 = new ns1.BunifuImageButton();
@@ -71,6 +76,15 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.bunifuCustomLabel2 = new ns1.BunifuCustomLabel();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -94,6 +108,8 @@
             this.panel4.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
+            this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -169,7 +185,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 33);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(5);
-            this.panel2.Size = new System.Drawing.Size(260, 639);
+            this.panel2.Size = new System.Drawing.Size(264, 639);
             this.panel2.TabIndex = 1;
             // 
             // panel10
@@ -179,7 +195,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(5, 5);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(250, 115);
+            this.panel10.Size = new System.Drawing.Size(254, 115);
             this.panel10.TabIndex = 0;
             // 
             // MenuLogo
@@ -189,7 +205,7 @@
             this.MenuLogo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MenuLogo.Location = new System.Drawing.Point(0, 0);
             this.MenuLogo.Name = "MenuLogo";
-            this.MenuLogo.Size = new System.Drawing.Size(248, 113);
+            this.MenuLogo.Size = new System.Drawing.Size(252, 113);
             this.MenuLogo.TabIndex = 5;
             // 
             // LogoLabelLeftPanel
@@ -199,7 +215,7 @@
             this.LogoLabelLeftPanel.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.LogoLabelLeftPanel.Location = new System.Drawing.Point(62, 0);
             this.LogoLabelLeftPanel.Name = "LogoLabelLeftPanel";
-            this.LogoLabelLeftPanel.Size = new System.Drawing.Size(186, 113);
+            this.LogoLabelLeftPanel.Size = new System.Drawing.Size(190, 113);
             this.LogoLabelLeftPanel.TabIndex = 1;
             this.LogoLabelLeftPanel.Text = "Система контроля и управления доступом";
             this.LogoLabelLeftPanel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -217,13 +233,14 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.panel3.Controls.Add(this.panel14);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(260, 33);
+            this.panel3.Location = new System.Drawing.Point(264, 33);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(805, 500);
+            this.panel3.Size = new System.Drawing.Size(801, 500);
             this.panel3.TabIndex = 2;
             // 
             // panel14
@@ -233,7 +250,7 @@
             this.panel14.Location = new System.Drawing.Point(250, 0);
             this.panel14.Name = "panel14";
             this.panel14.Padding = new System.Windows.Forms.Padding(7);
-            this.panel14.Size = new System.Drawing.Size(305, 365);
+            this.panel14.Size = new System.Drawing.Size(301, 365);
             this.panel14.TabIndex = 2;
             // 
             // panel15
@@ -249,7 +266,7 @@
             this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel15.Location = new System.Drawing.Point(7, 7);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(291, 327);
+            this.panel15.Size = new System.Drawing.Size(287, 327);
             this.panel15.TabIndex = 3;
             // 
             // Status
@@ -300,7 +317,6 @@
             // 
             this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel16.Controls.Add(this.DocNumber);
-            this.panel16.Enabled = false;
             this.panel16.Location = new System.Drawing.Point(9, 163);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(271, 40);
@@ -310,10 +326,13 @@
             // 
             this.DocNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.DocNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DocNumber.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.DocNumber.Enabled = false;
             this.DocNumber.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DocNumber.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.DocNumber.Location = new System.Drawing.Point(13, 9);
             this.DocNumber.Name = "DocNumber";
+            this.DocNumber.ReadOnly = true;
             this.DocNumber.Size = new System.Drawing.Size(242, 20);
             this.DocNumber.TabIndex = 0;
             this.DocNumber.Text = " ";
@@ -322,7 +341,6 @@
             // 
             this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel17.Controls.Add(this.DocName);
-            this.panel17.Enabled = false;
             this.panel17.Location = new System.Drawing.Point(9, 95);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(271, 40);
@@ -332,10 +350,13 @@
             // 
             this.DocName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.DocName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DocName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.DocName.Enabled = false;
             this.DocName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DocName.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.DocName.Location = new System.Drawing.Point(13, 9);
             this.DocName.Name = "DocName";
+            this.DocName.ReadOnly = true;
             this.DocName.Size = new System.Drawing.Size(242, 20);
             this.DocName.TabIndex = 0;
             this.DocName.Text = " ";
@@ -344,7 +365,6 @@
             // 
             this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel18.Controls.Add(this.PositionName);
-            this.panel18.Enabled = false;
             this.panel18.Location = new System.Drawing.Point(9, 28);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(271, 40);
@@ -354,6 +374,8 @@
             // 
             this.PositionName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.PositionName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PositionName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.PositionName.Enabled = false;
             this.PositionName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PositionName.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.PositionName.Location = new System.Drawing.Point(13, 9);
@@ -425,7 +447,6 @@
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.MiddleName);
-            this.panel8.Enabled = false;
             this.panel8.Location = new System.Drawing.Point(4, 163);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(225, 40);
@@ -435,19 +456,23 @@
             // 
             this.MiddleName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.MiddleName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MiddleName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.MiddleName.Enabled = false;
             this.MiddleName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MiddleName.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.MiddleName.HideSelection = false;
             this.MiddleName.Location = new System.Drawing.Point(12, 9);
             this.MiddleName.Name = "MiddleName";
+            this.MiddleName.ReadOnly = true;
             this.MiddleName.Size = new System.Drawing.Size(196, 20);
             this.MiddleName.TabIndex = 0;
+            this.MiddleName.TabStop = false;
             this.MiddleName.Text = " ";
             // 
             // panel7
             // 
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.Names);
-            this.panel7.Enabled = false;
             this.panel7.Location = new System.Drawing.Point(4, 95);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(225, 40);
@@ -457,10 +482,13 @@
             // 
             this.Names.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.Names.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Names.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.Names.Enabled = false;
             this.Names.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Names.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.Names.Location = new System.Drawing.Point(12, 9);
             this.Names.Name = "Names";
+            this.Names.ReadOnly = true;
             this.Names.Size = new System.Drawing.Size(196, 20);
             this.Names.TabIndex = 0;
             this.Names.Text = " ";
@@ -469,7 +497,6 @@
             // 
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.LastName);
-            this.panel9.Enabled = false;
             this.panel9.Location = new System.Drawing.Point(4, 28);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(225, 40);
@@ -479,10 +506,13 @@
             // 
             this.LastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.LastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.LastName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.LastName.Enabled = false;
             this.LastName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LastName.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.LastName.Location = new System.Drawing.Point(12, 9);
             this.LastName.Name = "LastName";
+            this.LastName.ReadOnly = true;
             this.LastName.Size = new System.Drawing.Size(196, 20);
             this.LastName.TabIndex = 0;
             this.LastName.Text = " ";
@@ -501,11 +531,12 @@
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.panel4.Controls.Add(this.bunifuFlatButton2);
             this.panel4.Controls.Add(this.bunifuFlatButton1);
             this.panel4.Controls.Add(this.panel11);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(555, 0);
+            this.panel4.Location = new System.Drawing.Point(551, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(250, 500);
             this.panel4.TabIndex = 0;
@@ -629,11 +660,127 @@
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.panel13.Controls.Add(this.dataGridView1);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel13.Location = new System.Drawing.Point(260, 533);
+            this.panel13.Location = new System.Drawing.Point(264, 533);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(805, 139);
+            this.panel13.Size = new System.Drawing.Size(801, 139);
             this.panel13.TabIndex = 4;
+            // 
+            // dataGridView1
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Enabled = false;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dataGridView1.Size = new System.Drawing.Size(801, 139);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "№п/п";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 66;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Фамилия";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 96;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Имя";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 61;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Отчество";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 98;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Документ";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 101;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Док.№";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 79;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Время входа";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Width = 111;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Время выхода";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Width = 121;
             // 
             // RegisterEnterOutForm
             // 
@@ -684,6 +831,8 @@
             this.panel11.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
+            this.panel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -733,5 +882,14 @@
         private System.Windows.Forms.TextBox PositionName;
         private ns1.BunifuCustomLabel Status;
         private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
     }
 }
