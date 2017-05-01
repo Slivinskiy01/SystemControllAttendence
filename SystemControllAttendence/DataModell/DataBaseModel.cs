@@ -20,7 +20,7 @@
         public DbSet<Personnel> Personnels { get; set; }
         public DbSet<Document> Documents { get; set; }
         public DbSet<Attendance> Attendances { get; set; }
-        public DbSet<Departament> Departaments { get; set; }
+        //public DbSet<Departament> Departaments { get; set; }
 
         public DbSet<User> Users { get; set; }
         

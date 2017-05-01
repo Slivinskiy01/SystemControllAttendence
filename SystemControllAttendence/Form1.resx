@@ -123,8 +123,24 @@
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>37</value>
   </metadata>
-  <metadata name="LeftPanelTransition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>300, 17</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuThinButton24.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAM4AAAApCAYAAAB9Xhb+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAInSURBVHhe7dzLSsNAGIZh7yUm1poWxROCilCkWEREFMG1
+        4EIQuhDEhSC4KHjRY76/nbaTpEFnad7FAz2MrvIykzSTtSRJHIC/IRwgAuEAEQgHiEA4QATCASI0h5Ol
+        bmO477pP5y4fj1z+ce363/fAv6TjW8f51vPQbYwO3Xo3q++isDKc7GzH/pGiUTzZybZLt7u1Y4H/QMe3
+        jvNssOu6jwM7/hVQ3dhKOKpMf7T1cuHWe53gO6BNmloIwtHA/O1qZWVAG9nq6/UyWHEF4aguogGqtITT
+        +Y9/Pw9HVWlK8u8BhDoPp27z9theT8PJUjsR4pwGaKBOilOZdC+fhqPlmZZplYEAAppxNPNYOLpurUtw
+        5UEAQulBbrOOhZO/T6ef8iAAJcVyrT+5m4bT+7pt/JUUwILuMrBw9KL8JYB6hANEIBwgAuEAEQgHiEA4
+        QATCASIQDhBhEc7kzn4RLQ8AUDUPR3dGsy0a+J15ONqHo/045QEAQrqnU/d2Wjj+VunyIAAhvwXHwtEy
+        TRVxngM081twLBzp3J+Y5UEAFvwzBvV6Ho5tCx2PXHrUDwYDSOyxAlqV+e03i3AKduIz21O9/DnQZhZN
+        ManoSTf+syAc0YyjePzTPIA20/mMZprlaKQSjimWbbrKpsp0FYGn36BNtBzz5zO6GFC3O7o+nBlVpktv
+        vc8b+9EHaAM9SsA/M72uC2kMB0A9wgEiEA4QgXCACIQD/FnifgAzq4iSP4WV6wAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="LeftPanelLogoTransition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>455, 17</value>
   </metadata>
   <data name="animation1.BlindCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
@@ -158,11 +174,11 @@
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
-        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAACAPwAAAAAL
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
   </data>
-  <metadata name="LeftPanelLogoTransition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>455, 17</value>
+  <metadata name="LeftPanelTransition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>300, 17</value>
   </metadata>
   <data name="animation2.BlindCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
@@ -196,10 +212,9 @@
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
-        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAACAPwAAAAAL
 </value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="AddUserBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIEAAAApCAYAAAAS70rTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8

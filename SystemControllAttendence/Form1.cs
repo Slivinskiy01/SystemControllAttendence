@@ -139,5 +139,53 @@ namespace SystemControllAttendence
             ManagerUser.ShowDialog();
             Visible = true;
         }
+
+        private void bunifuDatepicker2_onValueChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show(""+bunifuDatepicker2.Value);
+            DateTime Lol = bunifuDatepicker2.Value;
+        }
+
+
+        static Document Doc;
+        private void SerchUser_Click(object sender, EventArgs e)
+        {
+            if (Textbox1.Text != "")
+                Doc = EmployeeManipulation.Instance.GetPersonnelByDocNumber(int.Parse(Textbox1.Text));
+            if (Doc != null)
+            {
+                LastName.Text = Doc.Personnel.LastName;
+                Names.Text = Doc.Personnel.Name;
+                pictureBox5.Image = Helper.byteArrayToImage(Doc.Personnel.Photo);
+            }
+        }
+
+        private void Textbox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void bunifuCheckbox1_OnChange(object sender, EventArgs e)
+        {
+            checkClear();
+            bunifuCheckbox1.Checked = true;
+            panel4.Visible = true;
+        }
+        private void bunifuCheckbox2_OnChange(object sender, EventArgs e)
+        {
+            checkClear();
+            bunifuCheckbox2.Checked = true;
+        }
+        private void checkClear()
+        {
+            bunifuCheckbox2.Checked = false;
+            bunifuCheckbox1.Checked = false;
+            panel4.Visible = false;
+        }
+
+        
     }
 }

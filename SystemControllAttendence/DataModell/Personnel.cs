@@ -19,13 +19,13 @@ namespace SystemControllAttendence.DataModell
 
         public ICollection<Document> Documents { get; set; }
         public ICollection<Attendance> Attendances { get; set; }
-        public ICollection<Departament> Departaments { get; set; }
+       // public ICollection<Departament> Departaments { get; set; }
         
         public Personnel()
         {
             Documents = new List<Document>();
             Attendances = new List<Attendance>();
-            Departaments = new List<Departament>();
+           // Departaments = new List<Departament>();
         }
     }
 }
