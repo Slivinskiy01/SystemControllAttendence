@@ -190,7 +190,7 @@ namespace SystemControllAttendence
         
         private void bunifuThinButton24_Click_1(object sender, EventArgs e)
         {
-            Helper.GenerateReport();
+            Helper.GenerateReport(bunifuDatepicker1.Value, bunifuDatepicker2.Value, Doc);
         }
     }
 }
