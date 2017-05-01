@@ -24,8 +24,9 @@ namespace SystemControllAttendence
             ManagerEmp = new ManagerEmployee();
            // Application.Run(AutorizateForms = new AutorizateForm());
 
+            Application.Run(new RegisterEnterOutForm());
+
             Application.Run(new Form1());
-            //Application.Run(new RegisterEnterOutForm());
         }
     }
 }

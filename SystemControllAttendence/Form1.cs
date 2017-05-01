@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SystemControllAttendence.DataModell;
+using System.Data.Entity;
+
 namespace SystemControllAttendence
 {
     public partial class Form1 : Form
@@ -185,7 +187,10 @@ namespace SystemControllAttendence
             bunifuCheckbox1.Checked = false;
             panel4.Visible = false;
         }
-
         
+        private void bunifuThinButton24_Click_1(object sender, EventArgs e)
+        {
+            Helper.GenerateReport();
+        }
     }
 }
