@@ -226,6 +226,9 @@
   <ItemGroup>
     <Content Include="Client_Company.ico" />
     <Content Include="Fingerprint_Scan.ico" />
+    <None Include="Resources\bFCN6iCe2Tc[3].jpg" />
+    <None Include="Resources\sEmeO7KaGVw[1].jpg" />
+    <None Include="Resources\mU_SI23s0fs[1].jpg" />
     <None Include="Resources\Exit Sign_96px_1.png" />
     <None Include="Resources\Enter_96px_2.png" />
     <None Include="Resources\Exit Sign_96px.png" />

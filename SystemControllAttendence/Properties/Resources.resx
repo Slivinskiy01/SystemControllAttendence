@@ -118,11 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Menu_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Client_Company" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Client_Company.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Enter_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Enter_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search_magnifier_magnifying_glass-128[1]" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_magnifier_magnifying_glass-128[1].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="active-search-xxl[1]" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\active-search-xxl[1].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,11 +136,17 @@
   <data name="Exit Sign_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Exit Sign_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sEmeO7KaGVw[1]" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sEmeO7KaGVw[1].jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Search_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Search_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Start Menu_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Start Menu_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enter_96px_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enter_96px_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Home_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Home_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,8 +157,8 @@
   <data name="Settings_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Settings_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search_magnifier_magnifying_glass-128[1]" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search_magnifier_magnifying_glass-128[1].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Exit Sign_96px_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Exit Sign_96px_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="desktop-time-and-attendance-icon[1]" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\desktop-time-and-attendance-icon[1].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,16 +169,13 @@
   <data name="Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Home.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Enter_96px_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Enter_96px_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mU_SI23s0fs[1]" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mU_SI23s0fs[1].jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Delete_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Delete_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Menu_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Menu_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Exit Sign_96px_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Exit Sign_96px_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bFCN6iCe2Tc[3]" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bFCN6iCe2Tc[3].jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -21,12 +21,13 @@ namespace SystemControllAttendence
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            ManagerEmp = new ManagerEmployee();
-           // Application.Run(AutorizateForms = new AutorizateForm());
+            //ManagerEmp = new ManagerEmployee();
+             Application.Run(AutorizateForms = new AutorizateForm());
 
-            Application.Run(new RegisterEnterOutForm());
+           // MessageBox.Show(""+ Environment.CurrentDirectory);
+           // Application.Run(new RegisterEnterOutForm());
 
-            Application.Run(new Form1());
+            //Application.Run(new Form1());
         }
     }
 }

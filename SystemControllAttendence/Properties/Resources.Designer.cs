@@ -73,6 +73,16 @@ namespace SystemControllAttendence.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bFCN6iCe2Tc_3_ {
+            get {
+                object obj = ResourceManager.GetObject("bFCN6iCe2Tc[3]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Client_Company {
             get {
                 object obj = ResourceManager.GetObject("Client_Company", resourceCulture);
@@ -183,6 +193,16 @@ namespace SystemControllAttendence.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mU_SI23s0fs_1_ {
+            get {
+                object obj = ResourceManager.GetObject("mU_SI23s0fs[1]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Search_96px {
             get {
                 object obj = ResourceManager.GetObject("Search_96px", resourceCulture);
@@ -196,6 +216,16 @@ namespace SystemControllAttendence.Properties {
         internal static System.Drawing.Bitmap search_magnifier_magnifying_glass_128_1_ {
             get {
                 object obj = ResourceManager.GetObject("search_magnifier_magnifying_glass-128[1]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sEmeO7KaGVw_1_ {
+            get {
+                object obj = ResourceManager.GetObject("sEmeO7KaGVw[1]", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

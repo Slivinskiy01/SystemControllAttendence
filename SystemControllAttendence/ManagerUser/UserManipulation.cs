@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SystemControllAttendence.DataModell;
+using SystemControllAttendence.Properties;
+
 namespace SystemControllAttendence
 {
     public class UserManipulation
@@ -22,6 +24,8 @@ namespace SystemControllAttendence
         /// <returns></returns>
         public User Autorization(string login, string password)
         {
+            ControllDataBaseDacaEsteDesharta();
+
             using (var db = new DataBaseModel())
             {
                 var User = db.Users.Where(x => x.Login == login).FirstOrDefault();
@@ -125,6 +129,91 @@ namespace SystemControllAttendence
                     db.Users.Remove(_User);
                     db.SaveChanges();
                     MessageBox.Show("Пользователь удален", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
+        private void ControllDataBaseDacaEsteDesharta()
+        {
+            using(var db = new DataBaseModel())
+            {
+                if(db.Users.Where(x => x.Login == "admin").FirstOrDefault() == null)
+                {
+                    db.Users.Add(new User()
+                    {
+                        Name = "Admin",
+                        LastName = "Admin",
+                        Login = "admin",
+                        Password = "admin",
+                        email = "admin@mail.ru",
+                        roles = Roles.Admin,
+                        Photo = Helper.imageToByteArray(Resources.user_512_1_)
+                    });
+
+                    db.Users.Add(new User()
+                    {
+                        Name = "User",
+                        LastName = "User",
+                        Login = "user",
+                        Password = "user",
+                        email = "user@mail.ru",
+                        roles = Roles.User,
+                        Photo = Helper.imageToByteArray(Resources.user_512_1_)
+                    });
+
+                    db.SaveChanges();
+                     
+                    var Per = new Personnel()
+                    {
+                        Name = "Максим",
+                        LastName = "Сливинский",
+                        MiddleName = "Леонидович",
+                        Position = "Студент",
+                        Photo = Helper.imageToByteArray(Resources.mU_SI23s0fs_1_)
+                    };
+
+                    var Doc = new Document()
+                    {
+                        Name = "Студенчиский",
+                        Number = 14008,
+                        Personnel = Per
+                    };
+                    EmployeeManipulation.Instance.AddEmployee(Per,Doc);
+
+                    var Per1 = new Personnel()
+                    {
+                        Name = "Сергей",
+                        LastName = "Варнава",
+                        MiddleName = " ",
+                        Position = "Студент",
+                        Photo = Helper.imageToByteArray(Resources.sEmeO7KaGVw_1_)
+                    };
+
+                    var Doc1 = new Document()
+                    {
+                        Name = "Студенчиский",
+                        Number = 14040,
+                        Personnel = Per1
+                    };
+                    EmployeeManipulation.Instance.AddEmployee(Per1, Doc1);
+
+                    var Per2 = new Personnel()
+                    {
+                        Name = "Михаил",
+                        LastName = "Скрипцов",
+                        MiddleName = " ",
+                        Position = "Студент",
+                        Photo = Helper.imageToByteArray(Resources.bFCN6iCe2Tc_3_)
+                    };
+
+                    var Doc2 = new Document()
+                    {
+                        Name = "Студенчиский",
+                        Number = 14007,
+                        Personnel = Per2
+                    };
+                    EmployeeManipulation.Instance.AddEmployee(Per2, Doc2);
+
                 }
             }
         }

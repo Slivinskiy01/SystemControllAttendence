@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             this.Homepanel3 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel18 = new ns1.BunifuCustomLabel();
@@ -112,6 +112,7 @@
             this.HederDragControl1 = new ns1.BunifuDragControl(this.components);
             this.bunifuElipse1 = new ns1.BunifuElipse(this.components);
             this.LeftPanelLogoTransition = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.Homepanel3.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -488,22 +489,22 @@
             // 
             this.LeftPanelTransition.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndHorizSlide;
             this.LeftPanelTransition.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.LeftPanelTransition.DefaultAnimation = animation3;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.LeftPanelTransition.DefaultAnimation = animation1;
             // 
             // Rept
             // 
@@ -546,6 +547,7 @@
             this.bunifuThinButton24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
             this.bunifuThinButton24.ButtonText = "Сгенерировать отчёт";
+            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LeftPanelLogoTransition.SetDecoration(this.bunifuThinButton24, BunifuAnimatorNS.DecorationType.None);
             this.LeftPanelTransition.SetDecoration(this.bunifuThinButton24, BunifuAnimatorNS.DecorationType.None);
             this.bunifuThinButton24.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -632,6 +634,7 @@
             // 
             // Textbox1
             // 
+            this.Textbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.LeftPanelLogoTransition.SetDecoration(this.Textbox1, BunifuAnimatorNS.DecorationType.None);
             this.LeftPanelTransition.SetDecoration(this.Textbox1, BunifuAnimatorNS.DecorationType.None);
             this.Textbox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -835,6 +838,7 @@
             this.SetingBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SetingBtn.BorderRadius = 0;
             this.SetingBtn.ButtonText = "Настройки";
+            this.SetingBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LeftPanelLogoTransition.SetDecoration(this.SetingBtn, BunifuAnimatorNS.DecorationType.None);
             this.LeftPanelTransition.SetDecoration(this.SetingBtn, BunifuAnimatorNS.DecorationType.None);
             this.SetingBtn.DisabledColor = System.Drawing.Color.Gray;
@@ -871,6 +875,7 @@
             this.ReptBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ReptBtn.BorderRadius = 0;
             this.ReptBtn.ButtonText = "Отчет";
+            this.ReptBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LeftPanelLogoTransition.SetDecoration(this.ReptBtn, BunifuAnimatorNS.DecorationType.None);
             this.LeftPanelTransition.SetDecoration(this.ReptBtn, BunifuAnimatorNS.DecorationType.None);
             this.ReptBtn.DisabledColor = System.Drawing.Color.Gray;
@@ -907,6 +912,7 @@
             this.ManagerBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ManagerBtn.BorderRadius = 0;
             this.ManagerBtn.ButtonText = "Управление";
+            this.ManagerBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LeftPanelLogoTransition.SetDecoration(this.ManagerBtn, BunifuAnimatorNS.DecorationType.None);
             this.LeftPanelTransition.SetDecoration(this.ManagerBtn, BunifuAnimatorNS.DecorationType.None);
             this.ManagerBtn.DisabledColor = System.Drawing.Color.Gray;
@@ -979,6 +985,7 @@
             this.HomeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HomeBtn.BorderRadius = 0;
             this.HomeBtn.ButtonText = "Домой";
+            this.HomeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LeftPanelLogoTransition.SetDecoration(this.HomeBtn, BunifuAnimatorNS.DecorationType.None);
             this.LeftPanelTransition.SetDecoration(this.HomeBtn, BunifuAnimatorNS.DecorationType.None);
             this.HomeBtn.DisabledColor = System.Drawing.Color.Gray;
@@ -1185,6 +1192,7 @@
             this.AddUserBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.AddUserBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddUserBtn.BackgroundImage")));
             this.AddUserBtn.ButtonText = "Добавить";
+            this.AddUserBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LeftPanelLogoTransition.SetDecoration(this.AddUserBtn, BunifuAnimatorNS.DecorationType.None);
             this.LeftPanelTransition.SetDecoration(this.AddUserBtn, BunifuAnimatorNS.DecorationType.None);
             this.AddUserBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1225,6 +1233,7 @@
             this.bunifuThinButton22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
             this.bunifuThinButton22.ButtonText = "Изменить \\ Удалить";
+            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LeftPanelLogoTransition.SetDecoration(this.bunifuThinButton22, BunifuAnimatorNS.DecorationType.None);
             this.LeftPanelTransition.SetDecoration(this.bunifuThinButton22, BunifuAnimatorNS.DecorationType.None);
             this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1267,6 +1276,7 @@
             this.bunifuThinButton23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.bunifuThinButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton23.BackgroundImage")));
             this.bunifuThinButton23.ButtonText = "Добавить";
+            this.bunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LeftPanelLogoTransition.SetDecoration(this.bunifuThinButton23, BunifuAnimatorNS.DecorationType.None);
             this.LeftPanelTransition.SetDecoration(this.bunifuThinButton23, BunifuAnimatorNS.DecorationType.None);
             this.bunifuThinButton23.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1320,6 +1330,7 @@
             this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.ButtonText = "Изменить \\ Удалить";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LeftPanelLogoTransition.SetDecoration(this.bunifuThinButton21, BunifuAnimatorNS.DecorationType.None);
             this.LeftPanelTransition.SetDecoration(this.bunifuThinButton21, BunifuAnimatorNS.DecorationType.None);
             this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1378,22 +1389,22 @@
             // 
             this.LeftPanelLogoTransition.AnimationType = BunifuAnimatorNS.AnimationType.Scale;
             this.LeftPanelLogoTransition.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 0;
-            animation4.Padding = new System.Windows.Forms.Padding(0);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 0F;
-            this.LeftPanelLogoTransition.DefaultAnimation = animation4;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.LeftPanelLogoTransition.DefaultAnimation = animation2;
             // 
             // Form1
             // 
@@ -1538,6 +1549,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private ns1.BunifuCustomLabel LogoLabelLeftPanel;
         private ns1.BunifuFlatButton HomeBtn;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 

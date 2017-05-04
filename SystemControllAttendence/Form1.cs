@@ -14,9 +14,6 @@ namespace SystemControllAttendence
 {
     public partial class Form1 : Form
     {
-
-        
-
         public Form1()
         {
             InitializeComponent();
@@ -190,7 +187,26 @@ namespace SystemControllAttendence
         
         private void bunifuThinButton24_Click_1(object sender, EventArgs e)
         {
-            Helper.GenerateReport(bunifuDatepicker1.Value, bunifuDatepicker2.Value, Doc);
+            if (Doc != null)
+            {
+                saveFileDialog1.Filter = "Word | *.docx";
+                saveFileDialog1.DefaultExt = "docx";
+                DialogResult Save = MessageBox.Show("Выберите путь для сохранения файла", "Сохранение",
+                    MessageBoxButtons.OKCancel,
+                    MessageBoxIcon.Asterisk,
+                    MessageBoxDefaultButton.Button1,
+                    MessageBoxOptions.DefaultDesktopOnly);
+                if (Save == DialogResult.OK)
+                {
+                    if (saveFileDialog1.ShowDialog() == DialogResult.Cancel)
+                        return;
+                    // получаем выбранный файл
+                    string filenameSave = saveFileDialog1.FileName;
+                    Helper.GenerateReport(bunifuDatepicker1.Value, bunifuDatepicker2.Value, Doc, filenameSave);
+                }
+                
+            }
+
         }
     }
 }

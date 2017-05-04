@@ -33,12 +33,10 @@
             this.bunifuElipse1 = new ns1.BunifuElipse(this.components);
             this.bunifuElipse2 = new ns1.BunifuElipse(this.components);
             this.Heder = new System.Windows.Forms.Panel();
-            this.IconLogo = new System.Windows.Forms.PictureBox();
             this.bunifuCustomLabel2 = new ns1.BunifuCustomLabel();
             this.bunifuCustomLabel3 = new ns1.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new ns1.BunifuCustomLabel();
             this.bunifuDragControl2 = new ns1.BunifuDragControl(this.components);
-            this.Photo = new System.Windows.Forms.PictureBox();
             this.bunifuDragControl1 = new ns1.BunifuDragControl(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.LastName = new System.Windows.Forms.TextBox();
@@ -46,20 +44,22 @@
             this.MiddleName = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Names = new System.Windows.Forms.TextBox();
-            this.AddEmployees = new ns1.BunifuThinButton2();
             this.DocName = new ns1.BunifuDropdown();
             this.bunifuCustomLabel4 = new ns1.BunifuCustomLabel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.DocNumber = new System.Windows.Forms.TextBox();
             this.bunifuCustomLabel5 = new ns1.BunifuCustomLabel();
             this.Position = new ns1.BunifuDropdown();
+            this.AddEmployees = new ns1.BunifuThinButton2();
+            this.IconLogo = new System.Windows.Forms.PictureBox();
+            this.Photo = new System.Windows.Forms.PictureBox();
             this.Heder.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IconLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Photo)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IconLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Photo)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -84,16 +84,6 @@
             this.Heder.Name = "Heder";
             this.Heder.Size = new System.Drawing.Size(539, 35);
             this.Heder.TabIndex = 10;
-            // 
-            // IconLogo
-            // 
-            this.IconLogo.Image = global::SystemControllAttendence.Properties.Resources.Client_Company;
-            this.IconLogo.Location = new System.Drawing.Point(6, 7);
-            this.IconLogo.Name = "IconLogo";
-            this.IconLogo.Size = new System.Drawing.Size(31, 24);
-            this.IconLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.IconLogo.TabIndex = 5;
-            this.IconLogo.TabStop = false;
             // 
             // bunifuCustomLabel2
             // 
@@ -140,18 +130,6 @@
             this.bunifuDragControl2.Horizontal = true;
             this.bunifuDragControl2.TargetControl = this.bunifuCustomLabel3;
             this.bunifuDragControl2.Vertical = true;
-            // 
-            // Photo
-            // 
-            this.Photo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Photo.Image = global::SystemControllAttendence.Properties.Resources.user_512_1_;
-            this.Photo.Location = new System.Drawing.Point(6, 48);
-            this.Photo.Name = "Photo";
-            this.Photo.Size = new System.Drawing.Size(140, 140);
-            this.Photo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Photo.TabIndex = 13;
-            this.Photo.TabStop = false;
-            this.Photo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // bunifuDragControl1
             // 
@@ -231,32 +209,6 @@
             this.Names.Enter += new System.EventHandler(this.RemoveText);
             this.Names.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LockInputNumber);
             this.Names.Leave += new System.EventHandler(this.AddText);
-            // 
-            // AddEmployees
-            // 
-            this.AddEmployees.ActiveBorderThickness = 1;
-            this.AddEmployees.ActiveCornerRadius = 20;
-            this.AddEmployees.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.AddEmployees.ActiveForecolor = System.Drawing.SystemColors.ControlLight;
-            this.AddEmployees.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.AddEmployees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.AddEmployees.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddEmployees.BackgroundImage")));
-            this.AddEmployees.ButtonText = "Отправить";
-            this.AddEmployees.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddEmployees.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddEmployees.ForeColor = System.Drawing.Color.SeaGreen;
-            this.AddEmployees.IdleBorderThickness = 1;
-            this.AddEmployees.IdleCornerRadius = 20;
-            this.AddEmployees.IdleFillColor = System.Drawing.Color.Transparent;
-            this.AddEmployees.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.AddEmployees.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.AddEmployees.Location = new System.Drawing.Point(322, 398);
-            this.AddEmployees.Margin = new System.Windows.Forms.Padding(5);
-            this.AddEmployees.Name = "AddEmployees";
-            this.AddEmployees.Size = new System.Drawing.Size(181, 41);
-            this.AddEmployees.TabIndex = 16;
-            this.AddEmployees.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.AddEmployees.Click += new System.EventHandler(this.AddEmployees_Click);
             // 
             // DocName
             // 
@@ -342,6 +294,54 @@
             this.Position.Size = new System.Drawing.Size(157, 40);
             this.Position.TabIndex = 20;
             // 
+            // AddEmployees
+            // 
+            this.AddEmployees.ActiveBorderThickness = 1;
+            this.AddEmployees.ActiveCornerRadius = 20;
+            this.AddEmployees.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.AddEmployees.ActiveForecolor = System.Drawing.SystemColors.ControlLight;
+            this.AddEmployees.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.AddEmployees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.AddEmployees.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddEmployees.BackgroundImage")));
+            this.AddEmployees.ButtonText = "Отправить";
+            this.AddEmployees.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddEmployees.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddEmployees.ForeColor = System.Drawing.Color.SeaGreen;
+            this.AddEmployees.IdleBorderThickness = 1;
+            this.AddEmployees.IdleCornerRadius = 20;
+            this.AddEmployees.IdleFillColor = System.Drawing.Color.Transparent;
+            this.AddEmployees.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.AddEmployees.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.AddEmployees.Location = new System.Drawing.Point(322, 398);
+            this.AddEmployees.Margin = new System.Windows.Forms.Padding(5);
+            this.AddEmployees.Name = "AddEmployees";
+            this.AddEmployees.Size = new System.Drawing.Size(181, 41);
+            this.AddEmployees.TabIndex = 16;
+            this.AddEmployees.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.AddEmployees.Click += new System.EventHandler(this.AddEmployees_Click);
+            // 
+            // IconLogo
+            // 
+            this.IconLogo.Image = global::SystemControllAttendence.Properties.Resources.Client_Company;
+            this.IconLogo.Location = new System.Drawing.Point(6, 7);
+            this.IconLogo.Name = "IconLogo";
+            this.IconLogo.Size = new System.Drawing.Size(31, 24);
+            this.IconLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.IconLogo.TabIndex = 5;
+            this.IconLogo.TabStop = false;
+            // 
+            // Photo
+            // 
+            this.Photo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Photo.Image = global::SystemControllAttendence.Properties.Resources.bFCN6iCe2Tc_3_;
+            this.Photo.Location = new System.Drawing.Point(6, 48);
+            this.Photo.Name = "Photo";
+            this.Photo.Size = new System.Drawing.Size(140, 140);
+            this.Photo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Photo.TabIndex = 13;
+            this.Photo.TabStop = false;
+            this.Photo.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // AddEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -365,8 +365,6 @@
             this.Text = "AddEmployee";
             this.Heder.ResumeLayout(false);
             this.Heder.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IconLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Photo)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -375,6 +373,8 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IconLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Photo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

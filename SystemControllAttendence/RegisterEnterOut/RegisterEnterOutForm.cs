@@ -105,13 +105,33 @@ namespace SystemControllAttendence
                             InputDataViewNewRow(Atend);
                             db.Attendances.Add(Atend);
                             db.SaveChanges();
+                           // CreateNewEnter(Per);
                         }
                         else if (LastAten.LoginTime != null && LastAten.OutTime == null)
                         {
-                            var AtendEdit = db.Attendances.Single(x => x.Id == LastAten.Id);
-                            AtendEdit.OutTime = DateTime.Now;
-                            InputDataViewNewRow(AtendEdit);
-                            db.SaveChanges();
+                            //!((DateTime.Now - LastAten.LoginTime) > TimeSpan.FromHours(12))
+                            if (DateTime.Now.Date == LastAten.LoginTime.Value.Date)
+                           {
+                                var AtendEdit = db.Attendances.Single(x => x.Id == LastAten.Id);
+                                AtendEdit.OutTime = DateTime.Now;
+                                InputDataViewNewRow(AtendEdit);
+                                db.SaveChanges();
+                            }
+                            else
+                            {
+                                var Atend = new Attendance()
+                                {
+                                    DayWeek = DateTime.Now.DayOfWeek.ToString(),
+                                    LoginTime = DateTime.Now,
+                                    OutTime = null,
+                                    Personnel = Per
+                                };
+
+                                InputDataViewNewRow(Atend);
+                                db.Attendances.Add(Atend);
+                                db.SaveChanges();
+                                //CreateNewEnter(Per);
+                            }
                         }
                     }
                     else
@@ -122,12 +142,12 @@ namespace SystemControllAttendence
                             LoginTime = DateTime.Now,
                             OutTime = null,
                             Personnel = Per
-
                         };
 
                         InputDataViewNewRow(Atend);
                         db.Attendances.Add(Atend);
                         db.SaveChanges();
+                        //CreateNewEnter(Per);
                     }
                 }
             }
@@ -136,6 +156,24 @@ namespace SystemControllAttendence
                 Status.BackColor = Color.FromArgb(217, 83, 79);
                 Status.Text = "Locked";
                 FormClear();
+            }
+        }
+
+        private void CreateNewEnter(Personnel Per)
+        {
+            using(var db = new DataBaseModel())
+            {
+                var Atend = new Attendance()
+                {
+                    DayWeek = DateTime.Now.DayOfWeek.ToString(),
+                    LoginTime = DateTime.Now,
+                    OutTime = null,
+                    Personnel = Per
+                };
+
+                InputDataViewNewRow(Atend);
+                db.Attendances.Add(Atend);
+                db.SaveChanges();
             }
         }
 
