@@ -141,11 +141,9 @@ namespace SystemControllAttendence
 
         private void bunifuDatepicker2_onValueChanged(object sender, EventArgs e)
         {
-            MessageBox.Show(""+bunifuDatepicker2.Value);
-            DateTime Lol = bunifuDatepicker2.Value;
+           
         }
-
-
+        
         static Document Doc;
         private void SerchUser_Click(object sender, EventArgs e)
         {
@@ -172,14 +170,23 @@ namespace SystemControllAttendence
             checkClear();
             bunifuCheckbox1.Checked = true;
             panel4.Visible = true;
+            dateTimePicker1.Enabled = true;
+            dateTimePicker2.Enabled = true;
         }
         private void bunifuCheckbox2_OnChange(object sender, EventArgs e)
         {
             checkClear();
             bunifuCheckbox2.Checked = true;
+            panel8.Visible = true;
+            panel8.Size = new Size(321,272);
+            dateTimePicker1.Enabled = false;
+            dateTimePicker2.Enabled = false;
+            dateTimePicker3.Format = DateTimePickerFormat.Custom;
+            dateTimePicker3.CustomFormat = "MM/yyyy";
         }
         private void checkClear()
         {
+            panel8.Size = new Size(1, 272);
             bunifuCheckbox2.Checked = false;
             bunifuCheckbox1.Checked = false;
             panel4.Visible = false;
@@ -187,26 +194,83 @@ namespace SystemControllAttendence
         
         private void bunifuThinButton24_Click_1(object sender, EventArgs e)
         {
+           
+
+        }
+
+        private void StringBarCode_TextChanged(object sender, EventArgs e)
+        {
+            if (StringBarCode.Text != "")
+            {
+                Zen.Barcode.BarcodeSymbology s = Zen.Barcode.BarcodeSymbology.Code128;
+                Zen.Barcode.BarcodeDraw drawObject = Zen.Barcode.BarcodeDrawFactory.GetSymbology(s);
+                var metrics = drawObject.GetDefaultMetrics(60);
+                metrics.Scale = 2;
+                PicerBarCode.Image = drawObject.Draw(StringBarCode.Text, metrics);
+            }
+            else PicerBarCode.Image = null;
+        }
+
+        private void BtnPrinterShowDialog_Click(object sender, EventArgs e)
+        {
+            // printPreviewDialog1.Document = PicerBarCode.Image;
+            try
+            {
+                printDocument1.DocumentName = PicerBarCode.Image.ToString();
+                printDialog1.Document = printDocument1;
+                printPreviewDialog1.Document = printDialog1.Document;
+                printPreviewDialog1.ShowDialog();
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка печати", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(PicerBarCode.Image, 30, 30);
+        }
+
+        private void SerchUser_Click_1(object sender, EventArgs e)
+        {
+            if (Textbox1.Text != "")
+                Doc = EmployeeManipulation.Instance.GetPersonnelByDocNumber(int.Parse(Textbox1.Text));
+            if (Doc != null)
+            {
+                LastName.Text = Doc.Personnel.LastName;
+                Names.Text = Doc.Personnel.Name;
+                pictureBox5.Image = Helper.byteArrayToImage(Doc.Personnel.Photo);
+            }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bunifuThinButton24_Click(object sender, EventArgs e)
+        {
             if (Doc != null)
             {
                 saveFileDialog1.Filter = "Word | *.docx";
                 saveFileDialog1.DefaultExt = "docx";
+                /*
                 DialogResult Save = MessageBox.Show("Выберите путь для сохранения файла", "Сохранение",
                     MessageBoxButtons.OKCancel,
                     MessageBoxIcon.Asterisk,
                     MessageBoxDefaultButton.Button1,
                     MessageBoxOptions.DefaultDesktopOnly);
                 if (Save == DialogResult.OK)
-                {
+                {*/
                     if (saveFileDialog1.ShowDialog() == DialogResult.Cancel)
                         return;
-                    // получаем выбранный файл
-                    string filenameSave = saveFileDialog1.FileName;
-                    Helper.GenerateReport(bunifuDatepicker1.Value, bunifuDatepicker2.Value, Doc, filenameSave);
-                }
-                
+                        
+                // получаем выбранный файл
+                string filenameSave = saveFileDialog1.FileName;
+                Helper.GenerateReport(dateTimePicker1.Value, dateTimePicker2.Value, Doc, filenameSave);
+                //}
             }
-
         }
     }
 }

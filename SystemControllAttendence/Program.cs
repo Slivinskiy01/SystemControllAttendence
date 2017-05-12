@@ -21,7 +21,8 @@ namespace SystemControllAttendence
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //ManagerEmp = new ManagerEmployee();
+            ManagerEmp = new ManagerEmployee();
+
              Application.Run(AutorizateForms = new AutorizateForm());
 
            // MessageBox.Show(""+ Environment.CurrentDirectory);

@@ -127,6 +127,49 @@ namespace SystemControllAttendence
             }
         }
 
+
+        public static void GenerateGroopReport()
+        {
+            
+
+            var db = new DataBaseModel();
+
+            var Per = db.Personnels.Include(x => x.Attendances).ToList();
+
+
+
+            int i = 3;
+            foreach(var a in Per)
+            {
+                table.Rows.Add();
+                table.Cell(i, 1).Range.Text = a.LastName+" "+a.Name;
+
+                
+                for (int j = 1; j < DateTime.DaysInMonth(2017, 5); j++)
+                {
+                    foreach (var b in a.Attendances)
+                    {
+                        if (b.LoginTime.Value.Month == DateTime.Now.Month)
+                        {
+                            if (b.LoginTime.Value.Day == j)
+                            {
+                                MessageBox.Show("lol" + b.LoginTime.Value.Day);
+                                table.Cell(i, j).Range.Text = "";
+                            }
+                            else table.Cell(i, j).Range.Text = "Н";
+                        }
+                    }
+                }
+            }
+            //
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="stubToReplace"></param>
+        /// <param name="text"></param>
+        /// <param name="WordDocument"></param>
         private static void ReplaceWordSub(string stubToReplace, string text, Microsoft.Office.Interop.Word.Document WordDocument)
         {
             var range = WordDocument.Content;

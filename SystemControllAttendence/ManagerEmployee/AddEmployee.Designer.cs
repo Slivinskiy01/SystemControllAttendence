@@ -33,6 +33,7 @@
             this.bunifuElipse1 = new ns1.BunifuElipse(this.components);
             this.bunifuElipse2 = new ns1.BunifuElipse(this.components);
             this.Heder = new System.Windows.Forms.Panel();
+            this.IconLogo = new System.Windows.Forms.PictureBox();
             this.bunifuCustomLabel2 = new ns1.BunifuCustomLabel();
             this.bunifuCustomLabel3 = new ns1.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new ns1.BunifuCustomLabel();
@@ -51,14 +52,13 @@
             this.bunifuCustomLabel5 = new ns1.BunifuCustomLabel();
             this.Position = new ns1.BunifuDropdown();
             this.AddEmployees = new ns1.BunifuThinButton2();
-            this.IconLogo = new System.Windows.Forms.PictureBox();
             this.Photo = new System.Windows.Forms.PictureBox();
             this.Heder.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IconLogo)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IconLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Photo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,6 +84,16 @@
             this.Heder.Name = "Heder";
             this.Heder.Size = new System.Drawing.Size(539, 35);
             this.Heder.TabIndex = 10;
+            // 
+            // IconLogo
+            // 
+            this.IconLogo.Image = global::SystemControllAttendence.Properties.Resources.Client_Company;
+            this.IconLogo.Location = new System.Drawing.Point(6, 7);
+            this.IconLogo.Name = "IconLogo";
+            this.IconLogo.Size = new System.Drawing.Size(31, 24);
+            this.IconLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.IconLogo.TabIndex = 5;
+            this.IconLogo.TabStop = false;
             // 
             // bunifuCustomLabel2
             // 
@@ -320,20 +330,10 @@
             this.AddEmployees.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AddEmployees.Click += new System.EventHandler(this.AddEmployees_Click);
             // 
-            // IconLogo
-            // 
-            this.IconLogo.Image = global::SystemControllAttendence.Properties.Resources.Client_Company;
-            this.IconLogo.Location = new System.Drawing.Point(6, 7);
-            this.IconLogo.Name = "IconLogo";
-            this.IconLogo.Size = new System.Drawing.Size(31, 24);
-            this.IconLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.IconLogo.TabIndex = 5;
-            this.IconLogo.TabStop = false;
-            // 
             // Photo
             // 
             this.Photo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Photo.Image = global::SystemControllAttendence.Properties.Resources.bFCN6iCe2Tc_3_;
+            this.Photo.Image = global::SystemControllAttendence.Properties.Resources.user_512_1_;
             this.Photo.Location = new System.Drawing.Point(6, 48);
             this.Photo.Name = "Photo";
             this.Photo.Size = new System.Drawing.Size(140, 140);
@@ -365,6 +365,7 @@
             this.Text = "AddEmployee";
             this.Heder.ResumeLayout(false);
             this.Heder.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IconLogo)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -373,7 +374,6 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IconLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Photo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

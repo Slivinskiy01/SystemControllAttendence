@@ -37,6 +37,7 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.bunifuElipse1 = new ns1.BunifuElipse(this.components);
             this.bunifuElipse2 = new ns1.BunifuElipse(this.components);
+            this.bunifuDragControl1 = new ns1.BunifuDragControl(this.components);
             this.SuspendLayout();
             // 
             // bunifuCustomLabel1
@@ -130,6 +131,7 @@
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(163, 17);
             this.linkLabel1.TabIndex = 4;
+            this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Забыли логин или пароль?";
             this.linkLabel1.VisitedLinkColor = System.Drawing.SystemColors.MenuHighlight;
             // 
@@ -142,6 +144,13 @@
             // 
             this.bunifuElipse2.ElipseRadius = 5;
             this.bunifuElipse2.TargetControl = this;
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.bunifuCustomLabel1;
+            this.bunifuDragControl1.Vertical = true;
             // 
             // AutorizateForm
             // 
@@ -171,5 +180,6 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private ns1.BunifuElipse bunifuElipse1;
         private ns1.BunifuElipse bunifuElipse2;
+        private ns1.BunifuDragControl bunifuDragControl1;
     }
 }

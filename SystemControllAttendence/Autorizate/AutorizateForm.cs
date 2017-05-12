@@ -15,6 +15,8 @@ namespace SystemControllAttendence
         public AutorizateForm()
         {
             InitializeComponent();
+           Helper.GenerateGroopReport();
+
         }
         Form1 Form1 = new Form1();
         RegisterEnterOutForm Form2 = new RegisterEnterOutForm();
@@ -41,7 +43,11 @@ namespace SystemControllAttendence
                     Visible = false;
                     CurentUser = User;
                     Form2.ShowDialog();
-                    Visible = true;
+                    try
+                    {
+                        Visible = true;
+                    }
+                    catch { }
                 }
                 
             }
@@ -98,6 +104,16 @@ namespace SystemControllAttendence
         {
             if (e.KeyCode == Keys.Enter)
                 BtnLogin_Click(sender, e);
+        }
+
+        private void Closed_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        public void Close_aplication()
+        {
+            this.Close();
         }
     }
 }
