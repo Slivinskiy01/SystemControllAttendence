@@ -136,16 +136,24 @@ namespace SystemControllAttendence
 
             var Per = db.Personnels.Include(x => x.Attendances).ToList();
 
+            var app = new Microsoft.Office.Interop.Word.Application();
+            app.Visible = false;
 
 
-            int i = 3;
-            foreach(var a in Per)
+            var doc = app.Documents.Open(Environment.CurrentDirectory + @"\GroupAplicationReport.docx");
+            
+            Table table = doc.Tables[1];
+
+
+            int i = 3, PerPresent = 0;
+
+            foreach (var a in Per)
             {
                 table.Rows.Add();
                 table.Cell(i, 1).Range.Text = a.LastName+" "+a.Name;
 
                 
-                for (int j = 1; j < DateTime.DaysInMonth(2017, 5); j++)
+                for (int j = 1; j <= DateTime.DaysInMonth(2017, 5); j++)
                 {
                     foreach (var b in a.Attendances)
                     {
@@ -154,13 +162,21 @@ namespace SystemControllAttendence
                             if (b.LoginTime.Value.Day == j)
                             {
                                 MessageBox.Show("lol" + b.LoginTime.Value.Day);
-                                table.Cell(i, j).Range.Text = "";
+                                PerPresent++;
+                                table.Cell(i, j+1).Range.Text = "";
                             }
-                            else table.Cell(i, j).Range.Text = "Н";
+                            else table.Cell(i, j+1).Range.Text = "Н";
                         }
                     }
                 }
             }
+
+            table.Cell(i, 33).Range.Text = ""+(DateTime.DaysInMonth(2017, 5) - PerPresent);
+            ReplaceWordSub("{Departaments}", "413 Группа", doc);
+            ReplaceWordSub("{Monath}", DateTime.Now.Month+"", doc);
+
+            doc.SaveAs(@"C:\Users\Maxim\Desktop\1.docx");
+            doc.Close();
             //
         }
 
