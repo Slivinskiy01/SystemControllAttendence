@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation5 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            BunifuAnimatorNS.Animation animation6 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             this.Homepanel3 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel18 = new ns1.BunifuCustomLabel();
@@ -60,7 +60,24 @@
             this.bunifuCustomLabel4 = new ns1.BunifuCustomLabel();
             this.LeftPanelTransition = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.Rept = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.bunifuThinButton24 = new ns1.BunifuThinButton2();
+            this.Names = new ns1.BunifuCustomLabel();
+            this.LastName = new ns1.BunifuCustomLabel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.bunifuCustomLabel31 = new ns1.BunifuCustomLabel();
+            this.SerchUser = new ns1.BunifuImageButton();
+            this.Textbox1 = new ns1.BunifuMaterialTextbox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.bunifuCustomLabel34 = new ns1.BunifuCustomLabel();
+            this.bunifuCustomLabel33 = new ns1.BunifuCustomLabel();
+            this.bunifuThinButton25 = new ns1.BunifuThinButton2();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.bunifuCustomLabel30 = new ns1.BunifuCustomLabel();
             this.bunifuCustomLabel5 = new ns1.BunifuCustomLabel();
             this.bunifuCustomLabel29 = new ns1.BunifuCustomLabel();
@@ -112,23 +129,6 @@
             this.bunifuDragControl1 = new ns1.BunifuDragControl(this.components);
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.bunifuThinButton24 = new ns1.BunifuThinButton2();
-            this.Names = new ns1.BunifuCustomLabel();
-            this.LastName = new ns1.BunifuCustomLabel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.bunifuCustomLabel31 = new ns1.BunifuCustomLabel();
-            this.SerchUser = new ns1.BunifuImageButton();
-            this.Textbox1 = new ns1.BunifuMaterialTextbox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.bunifuThinButton25 = new ns1.BunifuThinButton2();
-            this.bunifuCustomLabel33 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel34 = new ns1.BunifuCustomLabel();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.Homepanel3.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -139,6 +139,10 @@
             this.Homes.SuspendLayout();
             this.Homepanel1.SuspendLayout();
             this.Rept.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SerchUser)).BeginInit();
+            this.panel8.SuspendLayout();
             this.panel5.SuspendLayout();
             this.LeftPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MenuStrrep)).BeginInit();
@@ -155,10 +159,6 @@
             this.Managerpanel3.SuspendLayout();
             this.Managerpanel4.SuspendLayout();
             this.Managerpanel1.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SerchUser)).BeginInit();
             this.SuspendLayout();
             // 
             // Homepanel3
@@ -509,22 +509,22 @@
             // 
             this.LeftPanelTransition.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndHorizSlide;
             this.LeftPanelTransition.Cursor = null;
-            animation5.AnimateOnlyDifferences = true;
-            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
-            animation5.LeafCoeff = 0F;
-            animation5.MaxTime = 1F;
-            animation5.MinTime = 0F;
-            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
-            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
-            animation5.MosaicSize = 0;
-            animation5.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            animation5.RotateCoeff = 0F;
-            animation5.RotateLimit = 0F;
-            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
-            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
-            animation5.TimeCoeff = 0F;
-            animation5.TransparencyCoeff = 0F;
-            this.LeftPanelTransition.DefaultAnimation = animation5;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.LeftPanelTransition.DefaultAnimation = animation3;
             // 
             // Rept
             // 
@@ -540,6 +540,266 @@
             this.Rept.Size = new System.Drawing.Size(739, 459);
             this.Rept.TabIndex = 4;
             this.Rept.Visible = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.bunifuThinButton24);
+            this.panel4.Controls.Add(this.Names);
+            this.panel4.Controls.Add(this.LastName);
+            this.panel4.Controls.Add(this.pictureBox5);
+            this.panel4.Controls.Add(this.bunifuCustomLabel31);
+            this.panel4.Controls.Add(this.SerchUser);
+            this.panel4.Controls.Add(this.Textbox1);
+            this.LeftPanelLogoTransition.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelTransition.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(386, 187);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(416, 272);
+            this.panel4.TabIndex = 24;
+            // 
+            // bunifuThinButton24
+            // 
+            this.bunifuThinButton24.ActiveBorderThickness = 1;
+            this.bunifuThinButton24.ActiveCornerRadius = 20;
+            this.bunifuThinButton24.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton24.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
+            this.bunifuThinButton24.ButtonText = "Сгенерировать отчёт";
+            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LeftPanelLogoTransition.SetDecoration(this.bunifuThinButton24, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelTransition.SetDecoration(this.bunifuThinButton24, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuThinButton24.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton24.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton24.IdleBorderThickness = 1;
+            this.bunifuThinButton24.IdleCornerRadius = 20;
+            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton24.Location = new System.Drawing.Point(204, 215);
+            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton24.Name = "bunifuThinButton24";
+            this.bunifuThinButton24.Size = new System.Drawing.Size(206, 41);
+            this.bunifuThinButton24.TabIndex = 27;
+            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton24.Click += new System.EventHandler(this.bunifuThinButton24_Click);
+            // 
+            // Names
+            // 
+            this.Names.AutoSize = true;
+            this.LeftPanelTransition.SetDecoration(this.Names, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelLogoTransition.SetDecoration(this.Names, BunifuAnimatorNS.DecorationType.None);
+            this.Names.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Names.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.Names.Location = new System.Drawing.Point(176, 144);
+            this.Names.Name = "Names";
+            this.Names.Size = new System.Drawing.Size(43, 21);
+            this.Names.TabIndex = 26;
+            this.Names.Text = "Имя";
+            // 
+            // LastName
+            // 
+            this.LastName.AutoSize = true;
+            this.LeftPanelTransition.SetDecoration(this.LastName, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelLogoTransition.SetDecoration(this.LastName, BunifuAnimatorNS.DecorationType.None);
+            this.LastName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LastName.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.LastName.Location = new System.Drawing.Point(176, 113);
+            this.LastName.Name = "LastName";
+            this.LastName.Size = new System.Drawing.Size(85, 21);
+            this.LastName.TabIndex = 25;
+            this.LastName.Text = "Фамилия";
+            // 
+            // pictureBox5
+            // 
+            this.LeftPanelTransition.SetDecoration(this.pictureBox5, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelLogoTransition.SetDecoration(this.pictureBox5, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox5.Image = global::SystemControllAttendence.Properties.Resources.user_512_1_;
+            this.pictureBox5.Location = new System.Drawing.Point(30, 104);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(140, 140);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 24;
+            this.pictureBox5.TabStop = false;
+            // 
+            // bunifuCustomLabel31
+            // 
+            this.bunifuCustomLabel31.AutoSize = true;
+            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel31, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel31, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel31.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuCustomLabel31.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bunifuCustomLabel31.Location = new System.Drawing.Point(29, 36);
+            this.bunifuCustomLabel31.Name = "bunifuCustomLabel31";
+            this.bunifuCustomLabel31.Size = new System.Drawing.Size(116, 16);
+            this.bunifuCustomLabel31.TabIndex = 23;
+            this.bunifuCustomLabel31.Text = "Номер документа:";
+            // 
+            // SerchUser
+            // 
+            this.SerchUser.BackColor = System.Drawing.Color.Transparent;
+            this.SerchUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LeftPanelLogoTransition.SetDecoration(this.SerchUser, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelTransition.SetDecoration(this.SerchUser, BunifuAnimatorNS.DecorationType.None);
+            this.SerchUser.Image = global::SystemControllAttendence.Properties.Resources.Search_96px;
+            this.SerchUser.ImageActive = null;
+            this.SerchUser.Location = new System.Drawing.Point(336, 42);
+            this.SerchUser.Name = "SerchUser";
+            this.SerchUser.Size = new System.Drawing.Size(63, 54);
+            this.SerchUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SerchUser.TabIndex = 22;
+            this.SerchUser.TabStop = false;
+            this.SerchUser.Zoom = 10;
+            this.SerchUser.Click += new System.EventHandler(this.SerchUser_Click_1);
+            // 
+            // Textbox1
+            // 
+            this.Textbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.LeftPanelLogoTransition.SetDecoration(this.Textbox1, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelTransition.SetDecoration(this.Textbox1, BunifuAnimatorNS.DecorationType.None);
+            this.Textbox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Textbox1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.Textbox1.HintForeColor = System.Drawing.SystemColors.ControlLight;
+            this.Textbox1.HintText = "";
+            this.Textbox1.isPassword = false;
+            this.Textbox1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(106)))), ((int)(((byte)(40)))));
+            this.Textbox1.LineIdleColor = System.Drawing.Color.Gainsboro;
+            this.Textbox1.LineMouseHoverColor = System.Drawing.SystemColors.ControlLight;
+            this.Textbox1.LineThickness = 4;
+            this.Textbox1.Location = new System.Drawing.Point(32, 42);
+            this.Textbox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Textbox1.Name = "Textbox1";
+            this.Textbox1.Size = new System.Drawing.Size(296, 54);
+            this.Textbox1.TabIndex = 21;
+            this.Textbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Textbox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Textbox1_KeyPress);
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.panel8.Controls.Add(this.dateTimePicker3);
+            this.panel8.Controls.Add(this.bunifuCustomLabel34);
+            this.panel8.Controls.Add(this.bunifuCustomLabel33);
+            this.panel8.Controls.Add(this.bunifuThinButton25);
+            this.panel8.Controls.Add(this.comboBox2);
+            this.panel8.Controls.Add(this.comboBox1);
+            this.LeftPanelLogoTransition.SetDecoration(this.panel8, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelTransition.SetDecoration(this.panel8, BunifuAnimatorNS.DecorationType.None);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel8.Location = new System.Drawing.Point(0, 187);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(386, 272);
+            this.panel8.TabIndex = 23;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.CalendarFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateTimePicker3.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.dateTimePicker3.CalendarMonthBackground = System.Drawing.SystemColors.ControlLight;
+            this.dateTimePicker3.CalendarTitleBackColor = System.Drawing.SystemColors.ControlLight;
+            this.dateTimePicker3.CalendarTitleForeColor = System.Drawing.SystemColors.ControlLight;
+            this.dateTimePicker3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LeftPanelTransition.SetDecoration(this.dateTimePicker3, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelLogoTransition.SetDecoration(this.dateTimePicker3, BunifuAnimatorNS.DecorationType.None);
+            this.dateTimePicker3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateTimePicker3.Location = new System.Drawing.Point(108, 169);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker3.TabIndex = 19;
+            // 
+            // bunifuCustomLabel34
+            // 
+            this.bunifuCustomLabel34.AutoSize = true;
+            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel34, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel34, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel34.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuCustomLabel34.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bunifuCustomLabel34.Location = new System.Drawing.Point(46, 95);
+            this.bunifuCustomLabel34.Name = "bunifuCustomLabel34";
+            this.bunifuCustomLabel34.Size = new System.Drawing.Size(66, 20);
+            this.bunifuCustomLabel34.TabIndex = 31;
+            this.bunifuCustomLabel34.Text = "Группа:";
+            // 
+            // bunifuCustomLabel33
+            // 
+            this.bunifuCustomLabel33.AutoSize = true;
+            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel33, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel33, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel33.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuCustomLabel33.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bunifuCustomLabel33.Location = new System.Drawing.Point(46, 29);
+            this.bunifuCustomLabel33.Name = "bunifuCustomLabel33";
+            this.bunifuCustomLabel33.Size = new System.Drawing.Size(50, 20);
+            this.bunifuCustomLabel33.TabIndex = 30;
+            this.bunifuCustomLabel33.Text = "Курс:";
+            // 
+            // bunifuThinButton25
+            // 
+            this.bunifuThinButton25.ActiveBorderThickness = 1;
+            this.bunifuThinButton25.ActiveCornerRadius = 20;
+            this.bunifuThinButton25.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton25.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton25.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.bunifuThinButton25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton25.BackgroundImage")));
+            this.bunifuThinButton25.ButtonText = "Сгенерировать отчёт";
+            this.bunifuThinButton25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LeftPanelLogoTransition.SetDecoration(this.bunifuThinButton25, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelTransition.SetDecoration(this.bunifuThinButton25, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuThinButton25.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton25.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton25.IdleBorderThickness = 1;
+            this.bunifuThinButton25.IdleCornerRadius = 20;
+            this.bunifuThinButton25.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.bunifuThinButton25.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton25.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton25.Location = new System.Drawing.Point(102, 215);
+            this.bunifuThinButton25.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton25.Name = "bunifuThinButton25";
+            this.bunifuThinButton25.Size = new System.Drawing.Size(206, 41);
+            this.bunifuThinButton25.TabIndex = 29;
+            this.bunifuThinButton25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton25.Click += new System.EventHandler(this.bunifuThinButton25_Click);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.LeftPanelLogoTransition.SetDecoration(this.comboBox2, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelTransition.SetDecoration(this.comboBox2, BunifuAnimatorNS.DecorationType.None);
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "111",
+            "112",
+            "113",
+            "114",
+            "115"});
+            this.comboBox2.Location = new System.Drawing.Point(60, 120);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(103, 25);
+            this.comboBox2.TabIndex = 1;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.LeftPanelLogoTransition.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelTransition.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "I",
+            "II",
+            "III",
+            "IV"});
+            this.comboBox1.Location = new System.Drawing.Point(60, 54);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(72, 25);
+            this.comboBox1.TabIndex = 0;
             // 
             // panel5
             // 
@@ -559,6 +819,38 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(739, 187);
             this.panel5.TabIndex = 22;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateTimePicker2.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.dateTimePicker2.CalendarMonthBackground = System.Drawing.SystemColors.ControlLight;
+            this.dateTimePicker2.CalendarTitleBackColor = System.Drawing.SystemColors.ControlLight;
+            this.dateTimePicker2.CalendarTitleForeColor = System.Drawing.SystemColors.ControlLight;
+            this.dateTimePicker2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LeftPanelTransition.SetDecoration(this.dateTimePicker2, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelLogoTransition.SetDecoration(this.dateTimePicker2, BunifuAnimatorNS.DecorationType.None);
+            this.dateTimePicker2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateTimePicker2.Location = new System.Drawing.Point(306, 148);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker2.TabIndex = 18;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.ControlLight;
+            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.SystemColors.ControlLight;
+            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.SystemColors.ControlLight;
+            this.dateTimePicker1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LeftPanelTransition.SetDecoration(this.dateTimePicker1, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelLogoTransition.SetDecoration(this.dateTimePicker1, BunifuAnimatorNS.DecorationType.None);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(41, 148);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker1.TabIndex = 17;
             // 
             // bunifuCustomLabel30
             // 
@@ -1350,22 +1642,22 @@
             // 
             this.LeftPanelLogoTransition.AnimationType = BunifuAnimatorNS.AnimationType.Scale;
             this.LeftPanelLogoTransition.Cursor = null;
-            animation6.AnimateOnlyDifferences = true;
-            animation6.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.BlindCoeff")));
-            animation6.LeafCoeff = 0F;
-            animation6.MaxTime = 1F;
-            animation6.MinTime = 0F;
-            animation6.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicCoeff")));
-            animation6.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicShift")));
-            animation6.MosaicSize = 0;
-            animation6.Padding = new System.Windows.Forms.Padding(0);
-            animation6.RotateCoeff = 0F;
-            animation6.RotateLimit = 0F;
-            animation6.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.ScaleCoeff")));
-            animation6.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.SlideCoeff")));
-            animation6.TimeCoeff = 0F;
-            animation6.TransparencyCoeff = 0F;
-            this.LeftPanelLogoTransition.DefaultAnimation = animation6;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(0);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 0F;
+            this.LeftPanelLogoTransition.DefaultAnimation = animation4;
             // 
             // bunifuDragControl1
             // 
@@ -1381,296 +1673,6 @@
             // printDocument1
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.ControlLight;
-            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.SystemColors.ControlLight;
-            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.SystemColors.ControlLight;
-            this.dateTimePicker1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LeftPanelTransition.SetDecoration(this.dateTimePicker1, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.dateTimePicker1, BunifuAnimatorNS.DecorationType.None);
-            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(41, 148);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePicker1.TabIndex = 17;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dateTimePicker2.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.dateTimePicker2.CalendarMonthBackground = System.Drawing.SystemColors.ControlLight;
-            this.dateTimePicker2.CalendarTitleBackColor = System.Drawing.SystemColors.ControlLight;
-            this.dateTimePicker2.CalendarTitleForeColor = System.Drawing.SystemColors.ControlLight;
-            this.dateTimePicker2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LeftPanelTransition.SetDecoration(this.dateTimePicker2, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.dateTimePicker2, BunifuAnimatorNS.DecorationType.None);
-            this.dateTimePicker2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(306, 148);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePicker2.TabIndex = 18;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.panel8.Controls.Add(this.dateTimePicker3);
-            this.panel8.Controls.Add(this.bunifuCustomLabel34);
-            this.panel8.Controls.Add(this.bunifuCustomLabel33);
-            this.panel8.Controls.Add(this.bunifuThinButton25);
-            this.panel8.Controls.Add(this.comboBox2);
-            this.panel8.Controls.Add(this.comboBox1);
-            this.LeftPanelLogoTransition.SetDecoration(this.panel8, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelTransition.SetDecoration(this.panel8, BunifuAnimatorNS.DecorationType.None);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel8.Location = new System.Drawing.Point(0, 187);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(24, 272);
-            this.panel8.TabIndex = 23;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.bunifuThinButton24);
-            this.panel4.Controls.Add(this.Names);
-            this.panel4.Controls.Add(this.LastName);
-            this.panel4.Controls.Add(this.pictureBox5);
-            this.panel4.Controls.Add(this.bunifuCustomLabel31);
-            this.panel4.Controls.Add(this.SerchUser);
-            this.panel4.Controls.Add(this.Textbox1);
-            this.LeftPanelLogoTransition.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelTransition.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(24, 187);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(416, 272);
-            this.panel4.TabIndex = 24;
-            // 
-            // bunifuThinButton24
-            // 
-            this.bunifuThinButton24.ActiveBorderThickness = 1;
-            this.bunifuThinButton24.ActiveCornerRadius = 20;
-            this.bunifuThinButton24.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
-            this.bunifuThinButton24.ButtonText = "Сгенерировать отчёт";
-            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuThinButton24, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelTransition.SetDecoration(this.bunifuThinButton24, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuThinButton24.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton24.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.IdleBorderThickness = 1;
-            this.bunifuThinButton24.IdleCornerRadius = 20;
-            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.Location = new System.Drawing.Point(204, 215);
-            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton24.Name = "bunifuThinButton24";
-            this.bunifuThinButton24.Size = new System.Drawing.Size(206, 41);
-            this.bunifuThinButton24.TabIndex = 27;
-            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton24.Click += new System.EventHandler(this.bunifuThinButton24_Click);
-            // 
-            // Names
-            // 
-            this.Names.AutoSize = true;
-            this.LeftPanelTransition.SetDecoration(this.Names, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.Names, BunifuAnimatorNS.DecorationType.None);
-            this.Names.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Names.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.Names.Location = new System.Drawing.Point(176, 144);
-            this.Names.Name = "Names";
-            this.Names.Size = new System.Drawing.Size(43, 21);
-            this.Names.TabIndex = 26;
-            this.Names.Text = "Имя";
-            // 
-            // LastName
-            // 
-            this.LastName.AutoSize = true;
-            this.LeftPanelTransition.SetDecoration(this.LastName, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.LastName, BunifuAnimatorNS.DecorationType.None);
-            this.LastName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LastName.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.LastName.Location = new System.Drawing.Point(176, 113);
-            this.LastName.Name = "LastName";
-            this.LastName.Size = new System.Drawing.Size(85, 21);
-            this.LastName.TabIndex = 25;
-            this.LastName.Text = "Фамилия";
-            // 
-            // pictureBox5
-            // 
-            this.LeftPanelTransition.SetDecoration(this.pictureBox5, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.pictureBox5, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox5.Image = global::SystemControllAttendence.Properties.Resources.user_512_1_;
-            this.pictureBox5.Location = new System.Drawing.Point(30, 104);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(140, 140);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 24;
-            this.pictureBox5.TabStop = false;
-            // 
-            // bunifuCustomLabel31
-            // 
-            this.bunifuCustomLabel31.AutoSize = true;
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel31, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel31, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel31.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel31.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel31.Location = new System.Drawing.Point(29, 36);
-            this.bunifuCustomLabel31.Name = "bunifuCustomLabel31";
-            this.bunifuCustomLabel31.Size = new System.Drawing.Size(116, 16);
-            this.bunifuCustomLabel31.TabIndex = 23;
-            this.bunifuCustomLabel31.Text = "Номер документа:";
-            // 
-            // SerchUser
-            // 
-            this.SerchUser.BackColor = System.Drawing.Color.Transparent;
-            this.SerchUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LeftPanelLogoTransition.SetDecoration(this.SerchUser, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelTransition.SetDecoration(this.SerchUser, BunifuAnimatorNS.DecorationType.None);
-            this.SerchUser.Image = global::SystemControllAttendence.Properties.Resources.Search_96px;
-            this.SerchUser.ImageActive = null;
-            this.SerchUser.Location = new System.Drawing.Point(336, 42);
-            this.SerchUser.Name = "SerchUser";
-            this.SerchUser.Size = new System.Drawing.Size(63, 54);
-            this.SerchUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SerchUser.TabIndex = 22;
-            this.SerchUser.TabStop = false;
-            this.SerchUser.Zoom = 10;
-            this.SerchUser.Click += new System.EventHandler(this.SerchUser_Click_1);
-            // 
-            // Textbox1
-            // 
-            this.Textbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.LeftPanelLogoTransition.SetDecoration(this.Textbox1, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelTransition.SetDecoration(this.Textbox1, BunifuAnimatorNS.DecorationType.None);
-            this.Textbox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Textbox1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.Textbox1.HintForeColor = System.Drawing.SystemColors.ControlLight;
-            this.Textbox1.HintText = "";
-            this.Textbox1.isPassword = false;
-            this.Textbox1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(106)))), ((int)(((byte)(40)))));
-            this.Textbox1.LineIdleColor = System.Drawing.Color.Gainsboro;
-            this.Textbox1.LineMouseHoverColor = System.Drawing.SystemColors.ControlLight;
-            this.Textbox1.LineThickness = 4;
-            this.Textbox1.Location = new System.Drawing.Point(32, 42);
-            this.Textbox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.Textbox1.Name = "Textbox1";
-            this.Textbox1.Size = new System.Drawing.Size(296, 54);
-            this.Textbox1.TabIndex = 21;
-            this.Textbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Textbox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Textbox1_KeyPress);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.LeftPanelLogoTransition.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelTransition.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "I",
-            "II",
-            "III",
-            "IV"});
-            this.comboBox1.Location = new System.Drawing.Point(60, 54);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(72, 25);
-            this.comboBox1.TabIndex = 0;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.LeftPanelLogoTransition.SetDecoration(this.comboBox2, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelTransition.SetDecoration(this.comboBox2, BunifuAnimatorNS.DecorationType.None);
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "111",
-            "112",
-            "113",
-            "114",
-            "115"});
-            this.comboBox2.Location = new System.Drawing.Point(60, 120);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(103, 25);
-            this.comboBox2.TabIndex = 1;
-            // 
-            // bunifuThinButton25
-            // 
-            this.bunifuThinButton25.ActiveBorderThickness = 1;
-            this.bunifuThinButton25.ActiveCornerRadius = 20;
-            this.bunifuThinButton25.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton25.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton25.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.bunifuThinButton25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton25.BackgroundImage")));
-            this.bunifuThinButton25.ButtonText = "Сгенерировать отчёт";
-            this.bunifuThinButton25.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuThinButton25, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelTransition.SetDecoration(this.bunifuThinButton25, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuThinButton25.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton25.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton25.IdleBorderThickness = 1;
-            this.bunifuThinButton25.IdleCornerRadius = 20;
-            this.bunifuThinButton25.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.bunifuThinButton25.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton25.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton25.Location = new System.Drawing.Point(102, 215);
-            this.bunifuThinButton25.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton25.Name = "bunifuThinButton25";
-            this.bunifuThinButton25.Size = new System.Drawing.Size(206, 41);
-            this.bunifuThinButton25.TabIndex = 29;
-            this.bunifuThinButton25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bunifuCustomLabel33
-            // 
-            this.bunifuCustomLabel33.AutoSize = true;
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel33, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel33, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel33.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel33.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel33.Location = new System.Drawing.Point(46, 29);
-            this.bunifuCustomLabel33.Name = "bunifuCustomLabel33";
-            this.bunifuCustomLabel33.Size = new System.Drawing.Size(50, 20);
-            this.bunifuCustomLabel33.TabIndex = 30;
-            this.bunifuCustomLabel33.Text = "Курс:";
-            // 
-            // bunifuCustomLabel34
-            // 
-            this.bunifuCustomLabel34.AutoSize = true;
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel34, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel34, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel34.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel34.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel34.Location = new System.Drawing.Point(46, 95);
-            this.bunifuCustomLabel34.Name = "bunifuCustomLabel34";
-            this.bunifuCustomLabel34.Size = new System.Drawing.Size(66, 20);
-            this.bunifuCustomLabel34.TabIndex = 31;
-            this.bunifuCustomLabel34.Text = "Группа:";
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.CalendarFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dateTimePicker3.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.dateTimePicker3.CalendarMonthBackground = System.Drawing.SystemColors.ControlLight;
-            this.dateTimePicker3.CalendarTitleBackColor = System.Drawing.SystemColors.ControlLight;
-            this.dateTimePicker3.CalendarTitleForeColor = System.Drawing.SystemColors.ControlLight;
-            this.dateTimePicker3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LeftPanelTransition.SetDecoration(this.dateTimePicker3, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.dateTimePicker3, BunifuAnimatorNS.DecorationType.None);
-            this.dateTimePicker3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dateTimePicker3.Location = new System.Drawing.Point(108, 169);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePicker3.TabIndex = 19;
             // 
             // Form1
             // 
@@ -1706,6 +1708,12 @@
             this.Homepanel1.ResumeLayout(false);
             this.Homepanel1.PerformLayout();
             this.Rept.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SerchUser)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.LeftPanel.ResumeLayout(false);
@@ -1729,12 +1737,6 @@
             this.Managerpanel4.PerformLayout();
             this.Managerpanel1.ResumeLayout(false);
             this.Managerpanel1.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SerchUser)).EndInit();
             this.ResumeLayout(false);
 
         }

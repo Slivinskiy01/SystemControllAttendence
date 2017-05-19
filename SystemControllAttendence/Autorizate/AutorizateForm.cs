@@ -15,7 +15,6 @@ namespace SystemControllAttendence
         public AutorizateForm()
         {
             InitializeComponent();
-           Helper.GenerateGroopReport();
 
         }
         Form1 Form1 = new Form1();

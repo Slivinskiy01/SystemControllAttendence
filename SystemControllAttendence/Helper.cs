@@ -128,9 +128,9 @@ namespace SystemControllAttendence
         }
 
 
-        public static void GenerateGroopReport()
+        public static void GenerateGroopReport( DateTime Dates)
         {
-            
+
 
             var db = new DataBaseModel();
 
@@ -139,45 +139,69 @@ namespace SystemControllAttendence
             var app = new Microsoft.Office.Interop.Word.Application();
             app.Visible = false;
 
-
+            
             var doc = app.Documents.Open(Environment.CurrentDirectory + @"\GroupAplicationReport.docx");
             
             Table table = doc.Tables[1];
 
 
             int i = 3, PerPresent = 0;
-
-            foreach (var a in Per)
+            try
             {
-                table.Rows.Add();
-                table.Cell(i, 1).Range.Text = a.LastName+" "+a.Name;
-
-                
-                for (int j = 1; j <= DateTime.DaysInMonth(2017, 5); j++)
+                foreach (var a in Per)
                 {
-                    foreach (var b in a.Attendances)
+                    table.Rows.Add();
+                    table.Cell(i, 1).Range.Text = a.LastName + " " + a.Name;
+
+
+                    for (int j = 1; j <= DateTime.DaysInMonth(Dates.Year, Dates.Month); j++)
                     {
-                        if (b.LoginTime.Value.Month == DateTime.Now.Month)
+                        foreach (var b in a.Attendances)
                         {
-                            if (b.LoginTime.Value.Day == j)
+                            if (b.LoginTime.Value.Month == Dates.Month)
                             {
-                                MessageBox.Show("lol" + b.LoginTime.Value.Day);
-                                PerPresent++;
-                                table.Cell(i, j+1).Range.Text = "";
+                                if (b.LoginTime.Value.Day == j)
+                                {
+                                    PerPresent++;
+                                    table.Cell(i, j + 1).Range.Text = "";
+                                    break;
+                                }
+                                else
+                                {
+                                    var ControllDayWeek = new DateTime(Dates.Year, Dates.Month, j);
+                                    if (ControllDayWeek.DayOfWeek == DayOfWeek.Sunday)
+                                    {
+                                        table.Cell(i, j + 1).Range.Bold = 1;
+                                        table.Cell(i, j + 1).Range.Text = "В";
+                                    }
+                                    else
+                                    {
+                                        table.Cell(i, j + 1).Range.Text = "Н";
+                                    }
+                                }
                             }
-                            else table.Cell(i, j+1).Range.Text = "Н";
                         }
                     }
+
+                    table.Cell(i, 33).Range.Text = "" + (DateTime.DaysInMonth(Dates.Year, Dates.Month) - PerPresent);
+                    PerPresent = 0;
+                    i++;
                 }
+
+                ReplaceWordSub("{Departaments}", "413 Группа", doc);
+                ReplaceWordSub("{Monath}", Dates.Month + "", doc);
+                ReplaceWordSub("{Year}", Dates.Year + "", doc);
+
+                doc.SaveAs(@"C:\Users\Lorem\Desktop\1.docx");
+                doc.Close();
+                MessageBox.Show("Отчет сгенерирован", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //
             }
-
-            table.Cell(i, 33).Range.Text = ""+(DateTime.DaysInMonth(2017, 5) - PerPresent);
-            ReplaceWordSub("{Departaments}", "413 Группа", doc);
-            ReplaceWordSub("{Monath}", DateTime.Now.Month+"", doc);
-
-            doc.SaveAs(@"C:\Users\Maxim\Desktop\1.docx");
-            doc.Close();
-            //
+            catch
+            {
+                MessageBox.Show("Ошибка при генирации отчета","",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                doc.Close();
+            }
         }
 
         /// <summary>

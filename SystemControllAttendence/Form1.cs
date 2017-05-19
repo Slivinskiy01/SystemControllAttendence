@@ -272,5 +272,15 @@ namespace SystemControllAttendence
                 //}
             }
         }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuThinButton25_Click(object sender, EventArgs e)
+        {
+            Helper.GenerateGroopReport(dateTimePicker3.Value);
+        }
     }
 }
