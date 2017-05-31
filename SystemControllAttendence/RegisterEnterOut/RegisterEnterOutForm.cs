@@ -88,7 +88,7 @@ namespace SystemControllAttendence
                 DocNumber.Text = Doc.Number.ToString();
 
                 Status.BackColor = Color.SeaGreen;
-                Status.Text = "Allowed";
+                Status.Text = "Разрешен";
                 textBox4.Text = "";
 
                 using (var db = new DataBaseModel())
@@ -161,7 +161,7 @@ namespace SystemControllAttendence
             else
             {
                 Status.BackColor = Color.FromArgb(217, 83, 79);
-                Status.Text = "Locked";
+                Status.Text = "Документ не найден";
                 FormClear();
             }
         }

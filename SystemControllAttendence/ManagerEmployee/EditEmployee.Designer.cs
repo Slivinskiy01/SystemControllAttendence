@@ -188,9 +188,9 @@
             this.bunifuCustomLabel3.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.bunifuCustomLabel3.Location = new System.Drawing.Point(34, 9);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(196, 20);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(314, 20);
             this.bunifuCustomLabel3.TabIndex = 4;
-            this.bunifuCustomLabel3.Text = "Добавление сотрудника";
+            this.bunifuCustomLabel3.Text = "Редактирование студента  (сотрудника)";
             // 
             // bunifuCustomLabel2
             // 

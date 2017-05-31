@@ -121,8 +121,8 @@ namespace SystemControllAttendence
         {
             if (Login.Text != "")
             { 
-                try
-                {
+               try
+               {
                     var User = UserManipulation.Instance.Quit_password(Login.Text);
 
                     if (User == null)
@@ -131,7 +131,7 @@ namespace SystemControllAttendence
                         return;
                     }
 
-                    MailAddress from = new MailAddress("MaximSlivinsky@yandex.ru", "SystemControllAttendence");
+                    MailAddress from = new MailAddress("slivinschii03@gmail.com", "Программа учета посещаемости");
 
                     MailAddress to = new MailAddress(User.email);
 
@@ -139,17 +139,21 @@ namespace SystemControllAttendence
 
                     m.Subject = "Пароль для работы в программе";
 
-                    m.Body = "Ваш пароль:" + User.Password;
+                    m.Body = "Ваш пароль для работы в программе <br>Ваш пароль:" + User.Password;
 
                     m.IsBodyHtml = true;
+                    
+                
+                    SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
 
-                    SmtpClient smtp = new SmtpClient("smtp.yandex.ru", 25);
+                    smtp.Credentials = new NetworkCredential("slivinschii03@gmail.com", "079655686m");
 
-                    smtp.Credentials = new NetworkCredential("MaximSlivinsky@yandex.ru", "123456789a");
                     smtp.EnableSsl = true;
+
                     smtp.Send(m);
-                    Console.Write("Все");
-                }
+                    MessageBox.Show("Сообщение с паролем отправленно на почту", "Информация",MessageBoxButtons.OK,MessageBoxIcon.Information);
+               }
+
                 catch(Exception ex) { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
             }
             else MessageBox.Show("Введите логин","", MessageBoxButtons.OK, MessageBoxIcon.Information);

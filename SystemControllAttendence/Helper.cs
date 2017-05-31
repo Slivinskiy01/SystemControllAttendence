@@ -10,7 +10,6 @@ using SystemControllAttendence.DataModell;
 using SystemControllAttendence.Properties;
 using System.Data.Entity;
 using System.Windows.Forms;
-using System.IO;
 
 namespace SystemControllAttendence
 {
@@ -100,7 +99,7 @@ namespace SystemControllAttendence
                                 table.Rows.Add();
                                 table.Cell(i, 1).Range.Text = (i - 1).ToString();
                                 table.Cell(i, 2).Range.Text = String.Format("{0:dd/MM/yyyy}", Ft);
-                                table.Cell(i, 3).Range.Text = "Lipsed";
+                                table.Cell(i, 3).Range.Text = "отсутствовал(а)";
                                 table.Cell(i, 4).Range.Text = "";
                                 table.Cell(i, 5).Range.Text = "0";
                                 TotalLypsedDay++;
@@ -128,7 +127,7 @@ namespace SystemControllAttendence
         }
 
 
-        public static void GenerateGroopReport( DateTime Dates)
+        public static void GenerateGroopReport(DateTime Dates, string filenameSave)
         {
 
 
@@ -192,7 +191,7 @@ namespace SystemControllAttendence
                 ReplaceWordSub("{Monath}", Dates.Month + "", doc);
                 ReplaceWordSub("{Year}", Dates.Year + "", doc);
 
-                doc.SaveAs(@"C:\Users\Lorem\Desktop\1.docx");
+                doc.SaveAs(filenameSave);
                 doc.Close();
                 MessageBox.Show("Отчет сгенерирован", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //

@@ -293,7 +293,14 @@ namespace SystemControllAttendence
 
         private void bunifuThinButton25_Click(object sender, EventArgs e)
         {
-            Helper.GenerateGroopReport(dateTimePicker3.Value);
+                saveFileDialog1.Filter = "Word | *.docx";
+                saveFileDialog1.DefaultExt = "docx";
+                if (saveFileDialog1.ShowDialog() == DialogResult.Cancel)
+                    return;
+
+                // получаем выбранный файл
+                string filenameSave = saveFileDialog1.FileName;
+                Helper.GenerateGroopReport(dateTimePicker3.Value,filenameSave);
         }
     }
 }
