@@ -28,6 +28,7 @@ namespace SystemControllAttendence
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
             Close();
+            
         }
 
         int Npp=0;
