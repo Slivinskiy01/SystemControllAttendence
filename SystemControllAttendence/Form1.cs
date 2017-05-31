@@ -17,9 +17,17 @@ namespace SystemControllAttendence
         public Form1()
         {
             InitializeComponent();
+
+
+
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+
+            LastNameCurentUser.Text = Program.AutorizateForms.CurentUser.LastName;
+            NameCurentUser.Text = Program.AutorizateForms.CurentUser.Name;
+            PhotoCurentUser.Image = Helper.byteArrayToImage(Program.AutorizateForms.CurentUser.Photo);
+            CurentUserRolles.Text = "Администратор";
             HomeBtn.selected = true;
             
         }
@@ -109,31 +117,36 @@ namespace SystemControllAttendence
             Rept.Visible = false;
             Setings.Visible = false;
         }
-        ManagerEmployee ManEmp = new ManagerEmployee();
+
+        
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
+            ManagerEmployee ManEmp = new ManagerEmployee();
             this.Visible = false;
             ManEmp.ShowDialog();
             this.Visible = true;
 
         }
-        AddEmployee AddEmployee = new AddEmployee();
+        
         private void bunifuThinButton23_Click(object sender, EventArgs e)
         {
+            AddEmployee AddEmployee = new AddEmployee();
             this.Visible = false;
             AddEmployee.ShowDialog();
             this.Visible = true;
         }
-        AddUser AddUser = new AddUser();
+        
         private void AddUserBtn_Click(object sender, EventArgs e)
         {
+            AddUser AddUser = new AddUser();
             Visible = false;
             AddUser.ShowDialog();
             Visible = true;
         }
-        ManagerUser ManagerUser = new ManagerUser();
+       
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
+            ManagerUser ManagerUser = new ManagerUser();
             Visible = false;
             ManagerUser.ShowDialog();
             Visible = true;

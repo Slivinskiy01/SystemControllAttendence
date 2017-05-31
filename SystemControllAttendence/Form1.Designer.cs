@@ -29,33 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             this.Homepanel3 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.bunifuCustomLabel18 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel19 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel20 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel21 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel22 = new ns1.BunifuCustomLabel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuCustomLabel13 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel14 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel15 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel16 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel17 = new ns1.BunifuCustomLabel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuCustomLabel12 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel11 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel10 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel9 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel8 = new ns1.BunifuCustomLabel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.CurentUserRolles = new ns1.BunifuCustomLabel();
+            this.LastNameCurentUser = new ns1.BunifuCustomLabel();
+            this.NameCurentUser = new ns1.BunifuCustomLabel();
+            this.PhotoCurentUser = new System.Windows.Forms.PictureBox();
             this.Homes = new System.Windows.Forms.Panel();
-            this.Homepanel2 = new System.Windows.Forms.Panel();
             this.Homepanel1 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel4 = new ns1.BunifuCustomLabel();
             this.LeftPanelTransition = new BunifuAnimatorNS.BunifuTransition(this.components);
@@ -129,13 +111,12 @@
             this.bunifuDragControl1 = new ns1.BunifuDragControl(this.components);
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.bunifuCustomLabel8 = new ns1.BunifuCustomLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.bunifuCustomLabel9 = new ns1.BunifuCustomLabel();
+            this.bunifuCustomLabel10 = new ns1.BunifuCustomLabel();
             this.Homepanel3.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PhotoCurentUser)).BeginInit();
             this.Homes.SuspendLayout();
             this.Homepanel1.SuspendLayout();
             this.Rept.SuspendLayout();
@@ -159,308 +140,79 @@
             this.Managerpanel3.SuspendLayout();
             this.Managerpanel4.SuspendLayout();
             this.Managerpanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Homepanel3
             // 
-            this.Homepanel3.Controls.Add(this.panel3);
-            this.Homepanel3.Controls.Add(this.panel2);
+            this.Homepanel3.Controls.Add(this.bunifuCustomLabel10);
             this.Homepanel3.Controls.Add(this.panel1);
+            this.Homepanel3.Controls.Add(this.bunifuCustomLabel8);
+            this.Homepanel3.Controls.Add(this.CurentUserRolles);
+            this.Homepanel3.Controls.Add(this.LastNameCurentUser);
+            this.Homepanel3.Controls.Add(this.NameCurentUser);
+            this.Homepanel3.Controls.Add(this.PhotoCurentUser);
             this.LeftPanelLogoTransition.SetDecoration(this.Homepanel3, BunifuAnimatorNS.DecorationType.None);
             this.LeftPanelTransition.SetDecoration(this.Homepanel3, BunifuAnimatorNS.DecorationType.None);
             this.Homepanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Homepanel3.Location = new System.Drawing.Point(0, 53);
             this.Homepanel3.Name = "Homepanel3";
-            this.Homepanel3.Size = new System.Drawing.Size(521, 406);
+            this.Homepanel3.Size = new System.Drawing.Size(739, 406);
             this.Homepanel3.TabIndex = 4;
             // 
-            // panel3
+            // CurentUserRolles
             // 
-            this.panel3.Controls.Add(this.bunifuCustomLabel18);
-            this.panel3.Controls.Add(this.bunifuCustomLabel19);
-            this.panel3.Controls.Add(this.bunifuCustomLabel20);
-            this.panel3.Controls.Add(this.bunifuCustomLabel21);
-            this.panel3.Controls.Add(this.bunifuCustomLabel22);
-            this.panel3.Controls.Add(this.pictureBox4);
-            this.LeftPanelLogoTransition.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelTransition.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 172);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(521, 86);
-            this.panel3.TabIndex = 2;
+            this.CurentUserRolles.AutoSize = true;
+            this.LeftPanelTransition.SetDecoration(this.CurentUserRolles, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelLogoTransition.SetDecoration(this.CurentUserRolles, BunifuAnimatorNS.DecorationType.None);
+            this.CurentUserRolles.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CurentUserRolles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(106)))), ((int)(((byte)(40)))));
+            this.CurentUserRolles.Location = new System.Drawing.Point(266, 146);
+            this.CurentUserRolles.Name = "CurentUserRolles";
+            this.CurentUserRolles.Size = new System.Drawing.Size(0, 22);
+            this.CurentUserRolles.TabIndex = 3;
             // 
-            // bunifuCustomLabel18
+            // LastNameCurentUser
             // 
-            this.bunifuCustomLabel18.AutoSize = true;
-            this.bunifuCustomLabel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(83)))), ((int)(((byte)(79)))));
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel18, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel18, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel18.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel18.Location = new System.Drawing.Point(123, 59);
-            this.bunifuCustomLabel18.Name = "bunifuCustomLabel18";
-            this.bunifuCustomLabel18.Size = new System.Drawing.Size(61, 20);
-            this.bunifuCustomLabel18.TabIndex = 5;
-            this.bunifuCustomLabel18.Text = "Locked";
+            this.LastNameCurentUser.AutoSize = true;
+            this.LeftPanelTransition.SetDecoration(this.LastNameCurentUser, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelLogoTransition.SetDecoration(this.LastNameCurentUser, BunifuAnimatorNS.DecorationType.None);
+            this.LastNameCurentUser.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LastNameCurentUser.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.LastNameCurentUser.Location = new System.Drawing.Point(241, 111);
+            this.LastNameCurentUser.Name = "LastNameCurentUser";
+            this.LastNameCurentUser.Size = new System.Drawing.Size(15, 22);
+            this.LastNameCurentUser.TabIndex = 2;
+            this.LastNameCurentUser.Text = " ";
             // 
-            // bunifuCustomLabel19
+            // NameCurentUser
             // 
-            this.bunifuCustomLabel19.AutoSize = true;
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel19, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel19, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel19.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel19.Location = new System.Drawing.Point(407, 38);
-            this.bunifuCustomLabel19.Name = "bunifuCustomLabel19";
-            this.bunifuCustomLabel19.Size = new System.Drawing.Size(99, 20);
-            this.bunifuCustomLabel19.TabIndex = 4;
-            this.bunifuCustomLabel19.Text = "#123456789";
+            this.NameCurentUser.AutoSize = true;
+            this.LeftPanelTransition.SetDecoration(this.NameCurentUser, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelLogoTransition.SetDecoration(this.NameCurentUser, BunifuAnimatorNS.DecorationType.None);
+            this.NameCurentUser.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NameCurentUser.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.NameCurentUser.Location = new System.Drawing.Point(241, 76);
+            this.NameCurentUser.Name = "NameCurentUser";
+            this.NameCurentUser.Size = new System.Drawing.Size(15, 22);
+            this.NameCurentUser.TabIndex = 1;
+            this.NameCurentUser.Text = " ";
             // 
-            // bunifuCustomLabel20
+            // PhotoCurentUser
             // 
-            this.bunifuCustomLabel20.AutoSize = true;
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel20, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel20, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel20.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel20.Location = new System.Drawing.Point(407, 12);
-            this.bunifuCustomLabel20.Name = "bunifuCustomLabel20";
-            this.bunifuCustomLabel20.Size = new System.Drawing.Size(83, 20);
-            this.bunifuCustomLabel20.TabIndex = 3;
-            this.bunifuCustomLabel20.Text = "Document";
-            // 
-            // bunifuCustomLabel21
-            // 
-            this.bunifuCustomLabel21.AutoSize = true;
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel21, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel21, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel21.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel21.Location = new System.Drawing.Point(224, 38);
-            this.bunifuCustomLabel21.Name = "bunifuCustomLabel21";
-            this.bunifuCustomLabel21.Size = new System.Drawing.Size(97, 20);
-            this.bunifuCustomLabel21.TabIndex = 2;
-            this.bunifuCustomLabel21.Text = "MiddleName";
-            // 
-            // bunifuCustomLabel22
-            // 
-            this.bunifuCustomLabel22.AutoSize = true;
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel22, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel22, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel22.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel22.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel22.Location = new System.Drawing.Point(108, 12);
-            this.bunifuCustomLabel22.Name = "bunifuCustomLabel22";
-            this.bunifuCustomLabel22.Size = new System.Drawing.Size(200, 24);
-            this.bunifuCustomLabel22.TabIndex = 1;
-            this.bunifuCustomLabel22.Text = "Noname Noname";
-            // 
-            // pictureBox4
-            // 
-            this.LeftPanelTransition.SetDecoration(this.pictureBox4, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.pictureBox4, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(16, 9);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.bunifuCustomLabel13);
-            this.panel2.Controls.Add(this.bunifuCustomLabel14);
-            this.panel2.Controls.Add(this.bunifuCustomLabel15);
-            this.panel2.Controls.Add(this.bunifuCustomLabel16);
-            this.panel2.Controls.Add(this.bunifuCustomLabel17);
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.LeftPanelLogoTransition.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelTransition.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 86);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(521, 86);
-            this.panel2.TabIndex = 1;
-            // 
-            // bunifuCustomLabel13
-            // 
-            this.bunifuCustomLabel13.AutoSize = true;
-            this.bunifuCustomLabel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(106)))), ((int)(((byte)(40)))));
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel13, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel13, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel13.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel13.Location = new System.Drawing.Point(123, 59);
-            this.bunifuCustomLabel13.Name = "bunifuCustomLabel13";
-            this.bunifuCustomLabel13.Size = new System.Drawing.Size(77, 20);
-            this.bunifuCustomLabel13.TabIndex = 5;
-            this.bunifuCustomLabel13.Text = "Warnning";
-            // 
-            // bunifuCustomLabel14
-            // 
-            this.bunifuCustomLabel14.AutoSize = true;
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel14, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel14, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel14.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel14.Location = new System.Drawing.Point(407, 38);
-            this.bunifuCustomLabel14.Name = "bunifuCustomLabel14";
-            this.bunifuCustomLabel14.Size = new System.Drawing.Size(99, 20);
-            this.bunifuCustomLabel14.TabIndex = 4;
-            this.bunifuCustomLabel14.Text = "#123456789";
-            // 
-            // bunifuCustomLabel15
-            // 
-            this.bunifuCustomLabel15.AutoSize = true;
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel15, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel15, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel15.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel15.Location = new System.Drawing.Point(407, 12);
-            this.bunifuCustomLabel15.Name = "bunifuCustomLabel15";
-            this.bunifuCustomLabel15.Size = new System.Drawing.Size(83, 20);
-            this.bunifuCustomLabel15.TabIndex = 3;
-            this.bunifuCustomLabel15.Text = "Document";
-            // 
-            // bunifuCustomLabel16
-            // 
-            this.bunifuCustomLabel16.AutoSize = true;
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel16, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel16, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel16.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel16.Location = new System.Drawing.Point(224, 38);
-            this.bunifuCustomLabel16.Name = "bunifuCustomLabel16";
-            this.bunifuCustomLabel16.Size = new System.Drawing.Size(97, 20);
-            this.bunifuCustomLabel16.TabIndex = 2;
-            this.bunifuCustomLabel16.Text = "MiddleName";
-            // 
-            // bunifuCustomLabel17
-            // 
-            this.bunifuCustomLabel17.AutoSize = true;
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel17, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel17, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel17.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel17.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel17.Location = new System.Drawing.Point(108, 12);
-            this.bunifuCustomLabel17.Name = "bunifuCustomLabel17";
-            this.bunifuCustomLabel17.Size = new System.Drawing.Size(200, 24);
-            this.bunifuCustomLabel17.TabIndex = 1;
-            this.bunifuCustomLabel17.Text = "Noname Noname";
-            // 
-            // pictureBox3
-            // 
-            this.LeftPanelTransition.SetDecoration(this.pictureBox3, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.pictureBox3, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(16, 9);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.bunifuCustomLabel12);
-            this.panel1.Controls.Add(this.bunifuCustomLabel11);
-            this.panel1.Controls.Add(this.bunifuCustomLabel10);
-            this.panel1.Controls.Add(this.bunifuCustomLabel9);
-            this.panel1.Controls.Add(this.bunifuCustomLabel8);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.LeftPanelLogoTransition.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelTransition.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(521, 86);
-            this.panel1.TabIndex = 0;
-            // 
-            // bunifuCustomLabel12
-            // 
-            this.bunifuCustomLabel12.AutoSize = true;
-            this.bunifuCustomLabel12.BackColor = System.Drawing.Color.SeaGreen;
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel12, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel12, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel12.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel12.Location = new System.Drawing.Point(123, 59);
-            this.bunifuCustomLabel12.Name = "bunifuCustomLabel12";
-            this.bunifuCustomLabel12.Size = new System.Drawing.Size(64, 20);
-            this.bunifuCustomLabel12.TabIndex = 5;
-            this.bunifuCustomLabel12.Text = "Allowed";
-            // 
-            // bunifuCustomLabel11
-            // 
-            this.bunifuCustomLabel11.AutoSize = true;
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel11, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel11, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel11.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel11.Location = new System.Drawing.Point(407, 38);
-            this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
-            this.bunifuCustomLabel11.Size = new System.Drawing.Size(99, 20);
-            this.bunifuCustomLabel11.TabIndex = 4;
-            this.bunifuCustomLabel11.Text = "#123456789";
-            // 
-            // bunifuCustomLabel10
-            // 
-            this.bunifuCustomLabel10.AutoSize = true;
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel10, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel10, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel10.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel10.Location = new System.Drawing.Point(407, 12);
-            this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
-            this.bunifuCustomLabel10.Size = new System.Drawing.Size(83, 20);
-            this.bunifuCustomLabel10.TabIndex = 3;
-            this.bunifuCustomLabel10.Text = "Document";
-            // 
-            // bunifuCustomLabel9
-            // 
-            this.bunifuCustomLabel9.AutoSize = true;
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel9, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel9, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel9.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(224, 38);
-            this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
-            this.bunifuCustomLabel9.Size = new System.Drawing.Size(97, 20);
-            this.bunifuCustomLabel9.TabIndex = 2;
-            this.bunifuCustomLabel9.Text = "MiddleName";
-            // 
-            // bunifuCustomLabel8
-            // 
-            this.bunifuCustomLabel8.AutoSize = true;
-            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel8, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel8, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel8.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel8.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(108, 12);
-            this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(200, 24);
-            this.bunifuCustomLabel8.TabIndex = 1;
-            this.bunifuCustomLabel8.Text = "Noname Noname";
-            // 
-            // pictureBox2
-            // 
-            this.LeftPanelTransition.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelLogoTransition.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(16, 9);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.LeftPanelTransition.SetDecoration(this.PhotoCurentUser, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelLogoTransition.SetDecoration(this.PhotoCurentUser, BunifuAnimatorNS.DecorationType.None);
+            this.PhotoCurentUser.Location = new System.Drawing.Point(47, 18);
+            this.PhotoCurentUser.Name = "PhotoCurentUser";
+            this.PhotoCurentUser.Size = new System.Drawing.Size(182, 176);
+            this.PhotoCurentUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PhotoCurentUser.TabIndex = 0;
+            this.PhotoCurentUser.TabStop = false;
             // 
             // Homes
             // 
             this.Homes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.Homes.Controls.Add(this.Homepanel3);
-            this.Homes.Controls.Add(this.Homepanel2);
             this.Homes.Controls.Add(this.Homepanel1);
             this.LeftPanelLogoTransition.SetDecoration(this.Homes, BunifuAnimatorNS.DecorationType.None);
             this.LeftPanelTransition.SetDecoration(this.Homes, BunifuAnimatorNS.DecorationType.None);
@@ -469,16 +221,6 @@
             this.Homes.Name = "Homes";
             this.Homes.Size = new System.Drawing.Size(739, 459);
             this.Homes.TabIndex = 2;
-            // 
-            // Homepanel2
-            // 
-            this.LeftPanelLogoTransition.SetDecoration(this.Homepanel2, BunifuAnimatorNS.DecorationType.None);
-            this.LeftPanelTransition.SetDecoration(this.Homepanel2, BunifuAnimatorNS.DecorationType.None);
-            this.Homepanel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Homepanel2.Location = new System.Drawing.Point(521, 53);
-            this.Homepanel2.Name = "Homepanel2";
-            this.Homepanel2.Size = new System.Drawing.Size(218, 406);
-            this.Homepanel2.TabIndex = 3;
             // 
             // Homepanel1
             // 
@@ -509,22 +251,22 @@
             // 
             this.LeftPanelTransition.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndHorizSlide;
             this.LeftPanelTransition.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.LeftPanelTransition.DefaultAnimation = animation3;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.LeftPanelTransition.DefaultAnimation = animation1;
             // 
             // Rept
             // 
@@ -553,7 +295,7 @@
             this.LeftPanelLogoTransition.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
             this.LeftPanelTransition.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(386, 187);
+            this.panel4.Location = new System.Drawing.Point(10, 187);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(416, 272);
             this.panel4.TabIndex = 24;
@@ -690,7 +432,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel8.Location = new System.Drawing.Point(0, 187);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(386, 272);
+            this.panel8.Size = new System.Drawing.Size(10, 272);
             this.panel8.TabIndex = 23;
             this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
@@ -1642,22 +1384,22 @@
             // 
             this.LeftPanelLogoTransition.AnimationType = BunifuAnimatorNS.AnimationType.Scale;
             this.LeftPanelLogoTransition.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 0;
-            animation4.Padding = new System.Windows.Forms.Padding(0);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 0F;
-            this.LeftPanelLogoTransition.DefaultAnimation = animation4;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.LeftPanelLogoTransition.DefaultAnimation = animation2;
             // 
             // bunifuDragControl1
             // 
@@ -1674,15 +1416,66 @@
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
+            // bunifuCustomLabel8
+            // 
+            this.bunifuCustomLabel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuCustomLabel8.AutoSize = true;
+            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel8, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel8, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuCustomLabel8.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bunifuCustomLabel8.Location = new System.Drawing.Point(118, 225);
+            this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
+            this.bunifuCustomLabel8.Size = new System.Drawing.Size(515, 22);
+            this.bunifuCustomLabel8.TabIndex = 4;
+            this.bunifuCustomLabel8.Text = "Автоматизированная система учета посещаемости";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.bunifuCustomLabel9);
+            this.LeftPanelLogoTransition.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelTransition.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 271);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(739, 135);
+            this.panel1.TabIndex = 5;
+            // 
+            // bunifuCustomLabel9
+            // 
+            this.bunifuCustomLabel9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel9, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel9, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuCustomLabel9.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bunifuCustomLabel9.Location = new System.Drawing.Point(16, 11);
+            this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
+            this.bunifuCustomLabel9.Size = new System.Drawing.Size(693, 108);
+            this.bunifuCustomLabel9.TabIndex = 5;
+            this.bunifuCustomLabel9.Text = resources.GetString("bunifuCustomLabel9.Text");
+            // 
+            // bunifuCustomLabel10
+            // 
+            this.bunifuCustomLabel10.AutoSize = true;
+            this.LeftPanelTransition.SetDecoration(this.bunifuCustomLabel10, BunifuAnimatorNS.DecorationType.None);
+            this.LeftPanelLogoTransition.SetDecoration(this.bunifuCustomLabel10, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuCustomLabel10.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bunifuCustomLabel10.Location = new System.Drawing.Point(241, 21);
+            this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
+            this.bunifuCustomLabel10.Size = new System.Drawing.Size(190, 22);
+            this.bunifuCustomLabel10.TabIndex = 6;
+            this.bunifuCustomLabel10.Text = "Добро пожаловать";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(959, 494);
+            this.Controls.Add(this.Homes);
             this.Controls.Add(this.Rept);
             this.Controls.Add(this.Setings);
-            this.Controls.Add(this.Homes);
             this.Controls.Add(this.Managers);
             this.Controls.Add(this.LeftPanel);
             this.Controls.Add(this.Heder);
@@ -1695,15 +1488,8 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Homepanel3.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Homepanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PhotoCurentUser)).EndInit();
             this.Homes.ResumeLayout(false);
             this.Homepanel1.ResumeLayout(false);
             this.Homepanel1.PerformLayout();
@@ -1737,6 +1523,7 @@
             this.Managerpanel4.PerformLayout();
             this.Managerpanel1.ResumeLayout(false);
             this.Managerpanel1.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1744,31 +1531,9 @@
         #endregion
 
         private System.Windows.Forms.Panel Homepanel3;
-        private System.Windows.Forms.Panel panel3;
-        private ns1.BunifuCustomLabel bunifuCustomLabel18;
         private BunifuAnimatorNS.BunifuTransition LeftPanelTransition;
         private BunifuAnimatorNS.BunifuTransition LeftPanelLogoTransition;
-        private ns1.BunifuCustomLabel bunifuCustomLabel19;
-        private ns1.BunifuCustomLabel bunifuCustomLabel20;
-        private ns1.BunifuCustomLabel bunifuCustomLabel21;
-        private ns1.BunifuCustomLabel bunifuCustomLabel22;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Panel panel2;
-        private ns1.BunifuCustomLabel bunifuCustomLabel13;
-        private ns1.BunifuCustomLabel bunifuCustomLabel14;
-        private ns1.BunifuCustomLabel bunifuCustomLabel15;
-        private ns1.BunifuCustomLabel bunifuCustomLabel16;
-        private ns1.BunifuCustomLabel bunifuCustomLabel17;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel1;
-        private ns1.BunifuCustomLabel bunifuCustomLabel12;
-        private ns1.BunifuCustomLabel bunifuCustomLabel11;
-        private ns1.BunifuCustomLabel bunifuCustomLabel10;
-        private ns1.BunifuCustomLabel bunifuCustomLabel9;
-        private ns1.BunifuCustomLabel bunifuCustomLabel8;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel Homes;
-        private System.Windows.Forms.Panel Homepanel2;
         private System.Windows.Forms.Panel Homepanel1;
         private ns1.BunifuCustomLabel bunifuCustomLabel4;
         private System.Windows.Forms.Panel Rept;
@@ -1840,6 +1605,14 @@
         private ns1.BunifuCustomLabel bunifuCustomLabel34;
         private ns1.BunifuCustomLabel bunifuCustomLabel33;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private ns1.BunifuCustomLabel CurentUserRolles;
+        private ns1.BunifuCustomLabel LastNameCurentUser;
+        private ns1.BunifuCustomLabel NameCurentUser;
+        private System.Windows.Forms.PictureBox PhotoCurentUser;
+        private ns1.BunifuCustomLabel bunifuCustomLabel8;
+        private System.Windows.Forms.Panel panel1;
+        private ns1.BunifuCustomLabel bunifuCustomLabel10;
+        private ns1.BunifuCustomLabel bunifuCustomLabel9;
     }
 }
 

@@ -72,6 +72,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AttentenceControl.cs" />
     <Compile Include="ManagerUser\AddUser.cs">
       <SubType>Form</SubType>
     </Compile>

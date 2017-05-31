@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -113,6 +115,44 @@ namespace SystemControllAttendence
         public void Close_aplication()
         {
             this.Close();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (Login.Text != "")
+            { 
+                try
+                {
+                    var User = UserManipulation.Instance.Quit_password(Login.Text);
+
+                    if (User == null)
+                    {
+                        MessageBox.Show("Такого пользователя не существует", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    MailAddress from = new MailAddress("MaximSlivinsky@yandex.ru", "SystemControllAttendence");
+
+                    MailAddress to = new MailAddress(User.email);
+
+                    MailMessage m = new MailMessage(from, to);
+
+                    m.Subject = "Пароль для работы в программе";
+
+                    m.Body = "Ваш пароль:" + User.Password;
+
+                    m.IsBodyHtml = true;
+
+                    SmtpClient smtp = new SmtpClient("smtp.yandex.ru", 25);
+
+                    smtp.Credentials = new NetworkCredential("MaximSlivinsky@yandex.ru", "123456789a");
+                    smtp.EnableSsl = true;
+                    smtp.Send(m);
+                    Console.Write("Все");
+                }
+                catch(Exception ex) { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            }
+            else MessageBox.Show("Введите логин","", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

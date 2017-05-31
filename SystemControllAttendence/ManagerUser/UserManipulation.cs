@@ -40,6 +40,27 @@ namespace SystemControllAttendence
             return null;
         }
         /// <summary>
+        /// Quit password
+        /// </summary>
+        /// <param name="login"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        public User Quit_password(string login)
+        {
+            ControllDataBaseDacaEsteDesharta();
+
+            using (var db = new DataBaseModel())
+            {
+                var User = db.Users.Where(x => x.Login == login).FirstOrDefault();
+
+                if (User != null)
+                {
+                    return User;
+                }
+            }
+            return null;
+        }
+        /// <summary>
         /// Метод добавления нового пользователя
         /// </summary>
         /// <param name="_User">Модель пользователя</param>
