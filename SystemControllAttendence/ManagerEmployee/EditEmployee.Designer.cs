@@ -52,7 +52,6 @@
             this.bunifuElipse4 = new ns1.BunifuElipse(this.components);
             this.Photo = new System.Windows.Forms.PictureBox();
             this.SaveChange = new ns1.BunifuThinButton2();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.DocName = new System.Windows.Forms.ComboBox();
             this.bunifuCustomLabel5 = new ns1.BunifuCustomLabel();
             this.PositionName = new System.Windows.Forms.ComboBox();
@@ -298,23 +297,6 @@
             this.SaveChange.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.SaveChange.Click += new System.EventHandler(this.SaveChange_Click);
             // 
-            // listBox1
-            // 
-            this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox1.Enabled = false;
-            this.listBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.listBox1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 21;
-            this.listBox1.Items.AddRange(new object[] {
-            "Студенчиский",
-            "Паспорт"});
-            this.listBox1.Location = new System.Drawing.Point(383, 128);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(138, 42);
-            this.listBox1.TabIndex = 30;
-            // 
             // DocName
             // 
             this.DocName.BackColor = System.Drawing.Color.White;
@@ -322,7 +304,7 @@
             this.DocName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DocName.FormattingEnabled = true;
             this.DocName.Items.AddRange(new object[] {
-            "Студенчиский",
+            "Студенческий",
             "Паспорт"});
             this.DocName.Location = new System.Drawing.Point(377, 183);
             this.DocName.Name = "DocName";
@@ -348,7 +330,7 @@
             this.PositionName.FormattingEnabled = true;
             this.PositionName.Items.AddRange(new object[] {
             "Студент",
-            "Преподователь"});
+            "Преподаватель"});
             this.PositionName.Location = new System.Drawing.Point(162, 239);
             this.PositionName.Name = "PositionName";
             this.PositionName.Size = new System.Drawing.Size(144, 29);
@@ -363,7 +345,6 @@
             this.Controls.Add(this.PositionName);
             this.Controls.Add(this.bunifuCustomLabel5);
             this.Controls.Add(this.DocName);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.SaveChange);
             this.Controls.Add(this.bunifuCustomLabel4);
             this.Controls.Add(this.panel3);
@@ -417,7 +398,6 @@
         private ns1.BunifuDragControl bunifuDragControl1;
         private ns1.BunifuElipse bunifuElipse4;
         private ns1.BunifuThinButton2 SaveChange;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ComboBox DocName;
         private ns1.BunifuCustomLabel bunifuCustomLabel5;
         private System.Windows.Forms.ComboBox PositionName;

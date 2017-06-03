@@ -53,6 +53,7 @@
             this.Position = new ns1.BunifuDropdown();
             this.AddEmployees = new ns1.BunifuThinButton2();
             this.Photo = new System.Windows.Forms.PictureBox();
+            this.PicerBarCode = new System.Windows.Forms.PictureBox();
             this.Heder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IconLogo)).BeginInit();
             this.panel1.SuspendLayout();
@@ -60,6 +61,7 @@
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Photo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicerBarCode)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -228,7 +230,7 @@
             this.DocName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DocName.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.DocName.Items = new string[] {
-        "Студенчиский",
+        "Студенческий",
         "Паспорт"};
             this.DocName.Location = new System.Drawing.Point(150, 191);
             this.DocName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
@@ -270,6 +272,7 @@
             this.DocNumber.Size = new System.Drawing.Size(196, 20);
             this.DocNumber.TabIndex = 0;
             this.DocNumber.Text = "Номер";
+            this.DocNumber.TextChanged += new System.EventHandler(this.DocNumber_TextChanged);
             this.DocNumber.Enter += new System.EventHandler(this.RemoveText);
             this.DocNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DocNumber_KeyPress);
             this.DocNumber.Leave += new System.EventHandler(this.AddText);
@@ -294,13 +297,13 @@
             this.Position.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.Position.Items = new string[] {
         "Студент",
-        "Преподователь"};
+        "Преподаватель"};
             this.Position.Location = new System.Drawing.Point(152, 241);
             this.Position.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Position.Name = "Position";
             this.Position.NomalColor = System.Drawing.Color.Transparent;
             this.Position.onHoverColor = System.Drawing.Color.Transparent;
-            this.Position.selectedIndex = 0;
+            this.Position.selectedIndex = -1;
             this.Position.Size = new System.Drawing.Size(157, 40);
             this.Position.TabIndex = 20;
             // 
@@ -342,12 +345,21 @@
             this.Photo.TabStop = false;
             this.Photo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // PicerBarCode
+            // 
+            this.PicerBarCode.Location = new System.Drawing.Point(315, 237);
+            this.PicerBarCode.Name = "PicerBarCode";
+            this.PicerBarCode.Size = new System.Drawing.Size(212, 72);
+            this.PicerBarCode.TabIndex = 29;
+            this.PicerBarCode.TabStop = false;
+            // 
             // AddEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(539, 453);
+            this.Controls.Add(this.PicerBarCode);
             this.Controls.Add(this.bunifuCustomLabel5);
             this.Controls.Add(this.Position);
             this.Controls.Add(this.panel4);
@@ -375,6 +387,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Photo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicerBarCode)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -405,5 +418,6 @@
         private ns1.BunifuCustomLabel bunifuCustomLabel4;
         private ns1.BunifuCustomLabel bunifuCustomLabel5;
         private ns1.BunifuDropdown Position;
+        private System.Windows.Forms.PictureBox PicerBarCode;
     }
 }

@@ -20,7 +20,7 @@ namespace SystemControllAttendence
         /// <param name="Docum">Модель документ</param>
         public void AddEmployee(Personnel Person, Document Docum)
         {
-            DialogResult dialogResult = MessageBox.Show("Вы действительно хотите добавить сотрудника?", "Подтверждение", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Вы действительно хотите добавить Студента (сотрудника)?", "Подтверждение", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 using (var Db = new DataBaseModel())
@@ -39,7 +39,7 @@ namespace SystemControllAttendence
                     try
                     {
                         Db.SaveChanges();
-                        MessageBox.Show("Сотрудник добавлен", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Студент (сотрудник) добавлен", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     catch
                     {

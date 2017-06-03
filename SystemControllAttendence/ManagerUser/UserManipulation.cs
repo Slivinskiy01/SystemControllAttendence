@@ -158,83 +158,90 @@ namespace SystemControllAttendence
         {
             using(var db = new DataBaseModel())
             {
-                if(db.Users.Where(x => x.Login == "admin").FirstOrDefault() == null)
+                try
                 {
-                    db.Users.Add(new User()
+                    if (db.Users.Where(x => x.Login == "admin").FirstOrDefault() == null)
                     {
-                        Name = "Admin",
-                        LastName = "Admin",
-                        Login = "admin",
-                        Password = "admin",
-                        email = "admin@mail.ru",
-                        roles = Roles.Admin,
-                        Photo = Helper.imageToByteArray(Resources.user_512_1_)
-                    });
+                        db.Users.Add(new User()
+                        {
+                            Name = "Admin",
+                            LastName = "Admin",
+                            Login = "admin",
+                            Password = "admin",
+                            email = "admin@mail.ru",
+                            roles = Roles.Admin,
+                            Photo = Helper.imageToByteArray(Resources.user_512_1_)
+                        });
 
-                    db.Users.Add(new User()
-                    {
-                        Name = "User",
-                        LastName = "User",
-                        Login = "user",
-                        Password = "user",
-                        email = "user@mail.ru",
-                        roles = Roles.User,
-                        Photo = Helper.imageToByteArray(Resources.user_512_1_)
-                    });
+                        db.Users.Add(new User()
+                        {
+                            Name = "User",
+                            LastName = "User",
+                            Login = "user",
+                            Password = "user",
+                            email = "user@mail.ru",
+                            roles = Roles.User,
+                            Photo = Helper.imageToByteArray(Resources.user_512_1_)
+                        });
 
-                    db.SaveChanges();
-                     
-                    var Per = new Personnel()
-                    {
-                        Name = "Максим",
-                        LastName = "Сливинский",
-                        MiddleName = "Леонидович",
-                        Position = "Студент",
-                        Photo = Helper.imageToByteArray(Resources.mU_SI23s0fs_1_)
-                    };
+                        db.SaveChanges();
 
-                    var Doc = new Document()
-                    {
-                        Name = "Студенчиский",
-                        Number = 14008,
-                        Personnel = Per
-                    };
-                    EmployeeManipulation.Instance.AddEmployee(Per,Doc);
+                        var Per = new Personnel()
+                        {
+                            Name = "Максим",
+                            LastName = "Сливинский",
+                            MiddleName = "Леонидович",
+                            Position = "Студент",
+                            Photo = Helper.imageToByteArray(Resources.mU_SI23s0fs_1_)
+                        };
 
-                    var Per1 = new Personnel()
-                    {
-                        Name = "Сергей",
-                        LastName = "Варнава",
-                        MiddleName = " ",
-                        Position = "Студент",
-                        Photo = Helper.imageToByteArray(Resources.sEmeO7KaGVw_1_)
-                    };
+                        var Doc = new Document()
+                        {
+                            Name = "Студенческий",
+                            Number = 14008,
+                            Personnel = Per
+                        };
+                        EmployeeManipulation.Instance.AddEmployee(Per, Doc);
 
-                    var Doc1 = new Document()
-                    {
-                        Name = "Студенчиский",
-                        Number = 14040,
-                        Personnel = Per1
-                    };
-                    EmployeeManipulation.Instance.AddEmployee(Per1, Doc1);
+                        var Per1 = new Personnel()
+                        {
+                            Name = "Сергей",
+                            LastName = "Варнава",
+                            MiddleName = " ",
+                            Position = "Студент",
+                            Photo = Helper.imageToByteArray(Resources.sEmeO7KaGVw_1_)
+                        };
 
-                    var Per2 = new Personnel()
-                    {
-                        Name = "Михаил",
-                        LastName = "Скрипцов",
-                        MiddleName = " ",
-                        Position = "Студент",
-                        Photo = Helper.imageToByteArray(Resources.bFCN6iCe2Tc_3_)
-                    };
+                        var Doc1 = new Document()
+                        {
+                            Name = "Студенческий",
+                            Number = 14040,
+                            Personnel = Per1
+                        };
+                        EmployeeManipulation.Instance.AddEmployee(Per1, Doc1);
 
-                    var Doc2 = new Document()
-                    {
-                        Name = "Студенчиский",
-                        Number = 14007,
-                        Personnel = Per2
-                    };
-                    EmployeeManipulation.Instance.AddEmployee(Per2, Doc2);
+                        var Per2 = new Personnel()
+                        {
+                            Name = "Михаил",
+                            LastName = "Скрипцов",
+                            MiddleName = " ",
+                            Position = "Студент",
+                            Photo = Helper.imageToByteArray(Resources.bFCN6iCe2Tc_3_)
+                        };
 
+                        var Doc2 = new Document()
+                        {
+                            Name = "Студенческий",
+                            Number = 14007,
+                            Personnel = Per2
+                        };
+                        EmployeeManipulation.Instance.AddEmployee(Per2, Doc2);
+
+                    }
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }

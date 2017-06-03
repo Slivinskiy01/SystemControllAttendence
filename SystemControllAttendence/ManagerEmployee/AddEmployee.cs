@@ -130,5 +130,18 @@ namespace SystemControllAttendence
                 e.Handled = true;
             }
         }
+
+        private void DocNumber_TextChanged(object sender, EventArgs e)
+        {
+            if (DocNumber.Text != "")
+            {
+                Zen.Barcode.BarcodeSymbology s = Zen.Barcode.BarcodeSymbology.Code128;
+                Zen.Barcode.BarcodeDraw drawObject = Zen.Barcode.BarcodeDrawFactory.GetSymbology(s);
+                var metrics = drawObject.GetDefaultMetrics(60);
+                metrics.Scale = 2;
+                PicerBarCode.Image = drawObject.Draw(DocNumber.Text, metrics);
+            }
+            else PicerBarCode.Image = null;
+        }
     }
 }

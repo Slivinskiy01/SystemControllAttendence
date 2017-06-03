@@ -52,7 +52,7 @@ namespace SystemControllAttendence
                 Position EditEmployee = new Position(Doc);
                 EditEmployee.ShowDialog();
             }
-            else MessageBox.Show("Сотрудник не найден", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else MessageBox.Show("Студент (сотрудник) не найден", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void DeletEmployeeBtn_Click(object sender, EventArgs e)
@@ -60,10 +60,10 @@ namespace SystemControllAttendence
             if (Doc != null)
             {
                 EmployeeManipulation.Instance.DelletPersonnelById(Doc.Personnel.Id);
-                MessageBox.Show("Сотрудник был удален", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Студент (сотрудник) был удален", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Clear_Form();
             }
-            else MessageBox.Show("Сотрудник не найден", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else MessageBox.Show("Студент (сотрудник) не найден", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void Clear_Form()
