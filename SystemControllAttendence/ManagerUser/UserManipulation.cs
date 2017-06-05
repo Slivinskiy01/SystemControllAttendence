@@ -47,7 +47,7 @@ namespace SystemControllAttendence
         /// <returns></returns>
         public User Quit_password(string login)
         {
-            ControllDataBaseDacaEsteDesharta();
+            //ControllDataBaseDacaEsteDesharta();
 
             using (var db = new DataBaseModel())
             {
@@ -153,7 +153,7 @@ namespace SystemControllAttendence
                 }
             }
         }
-
+        
         private void ControllDataBaseDacaEsteDesharta()
         {
             using(var db = new DataBaseModel())
@@ -185,7 +185,7 @@ namespace SystemControllAttendence
                         });
 
                         db.SaveChanges();
-
+                        /*
                         var Per = new Personnel()
                         {
                             Name = "Максим",
@@ -201,7 +201,7 @@ namespace SystemControllAttendence
                             Number = 14008,
                             Personnel = Per
                         };
-                        EmployeeManipulation.Instance.AddEmployee(Per, Doc);
+                        EmployeeManipulation.Instance.AddEmployee(Per, Doc,23);
 
                         var Per1 = new Personnel()
                         {
@@ -218,7 +218,7 @@ namespace SystemControllAttendence
                             Number = 14040,
                             Personnel = Per1
                         };
-                        EmployeeManipulation.Instance.AddEmployee(Per1, Doc1);
+                        EmployeeManipulation.Instance.AddEmployee(Per1, Doc1,25);
 
                         var Per2 = new Personnel()
                         {
@@ -235,8 +235,8 @@ namespace SystemControllAttendence
                             Number = 14007,
                             Personnel = Per2
                         };
-                        EmployeeManipulation.Instance.AddEmployee(Per2, Doc2);
-
+                        EmployeeManipulation.Instance.AddEmployee(Per2, Doc2,23);
+                        */
                     }
                 }
                 catch(Exception ex)
@@ -244,6 +244,7 @@ namespace SystemControllAttendence
                     MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            
         }
     }
 }

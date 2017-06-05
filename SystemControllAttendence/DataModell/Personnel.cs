@@ -17,9 +17,10 @@ namespace SystemControllAttendence.DataModell
         [Column(TypeName = "Image")]
         public byte[] Photo { get; set; }
 
+        public Departament Departaments { get; set; }
+
         public ICollection<Document> Documents { get; set; }
         public ICollection<Attendance> Attendances { get; set; }
-       // public ICollection<Departament> Departaments { get; set; }
         
         public Personnel()
         {

@@ -28,7 +28,7 @@ namespace SystemControllAttendence
            // MessageBox.Show(""+ Environment.CurrentDirectory);
            // Application.Run(new RegisterEnterOutForm());
 
-            //Application.Run(new Form1());
+            //Application.Run(new AddEmployee());
         }
     }
 }

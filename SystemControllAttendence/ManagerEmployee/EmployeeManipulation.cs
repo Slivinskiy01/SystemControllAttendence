@@ -18,39 +18,44 @@ namespace SystemControllAttendence
         /// </summary>
         /// <param name="Person">Модель Сотрудник</param>
         /// <param name="Docum">Модель документ</param>
-        public void AddEmployee(Personnel Person, Document Docum)
+        public void AddEmployee(Personnel Person, Document Docum, int _Departament)
         {
-            DialogResult dialogResult = MessageBox.Show("Вы действительно хотите добавить Студента (сотрудника)?", "Подтверждение", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
+            try
             {
-                using (var Db = new DataBaseModel())
+                DialogResult dialogResult = MessageBox.Show("Вы действительно хотите добавить Студента (сотрудника)?", "Подтверждение", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
                 {
-                    var Doc = Db.Documents.ToList();
-                    foreach (var a in Doc)
+                    using (var Db = new DataBaseModel())
                     {
-                        if (Docum.Number == a.Number)
+                        var Doc = Db.Documents.ToList();
+                        foreach (var a in Doc)
                         {
-                            MessageBox.Show("Такой номер документа уже существует", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return;
+                            if (Docum.Number == a.Number)
+                            {
+                                MessageBox.Show("Такой номер документа уже существует", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return;
+                            }
+                        }
+                        Person.Departaments = Db.Departaments.Where(x => x.Id == _Departament).FirstOrDefault();
+                        Db.Personnels.Add(Person);
+                        Db.Documents.Add(Docum);
+                        try
+                        {
+                            Db.SaveChanges();
+                            MessageBox.Show("Студент (сотрудник) добавлен", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Ошибка при добавлении записи в БД", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
-                    Db.Personnels.Add(Person);
-                    Db.Documents.Add(Docum);
-                    try
-                    {
-                        Db.SaveChanges();
-                        MessageBox.Show("Студент (сотрудник) добавлен", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Ошибка при добавлении записи в БД", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                    MessageBox.Show("Изменения не сохранены", "Информация");
                 }
             }
-            else if (dialogResult == DialogResult.No)
-            {
-                MessageBox.Show("Изменения не сохранены", "Информация");
-            }
+            catch { };
         }
         /// <summary>
         /// Метод фиксации изминений.

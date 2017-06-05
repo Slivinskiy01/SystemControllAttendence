@@ -54,6 +54,8 @@
             this.AddEmployees = new ns1.BunifuThinButton2();
             this.Photo = new System.Windows.Forms.PictureBox();
             this.PicerBarCode = new System.Windows.Forms.PictureBox();
+            this.bunifuDropdown1 = new ns1.BunifuDropdown();
+            this.bunifuDropdown2 = new ns1.BunifuDropdown();
             this.Heder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IconLogo)).BeginInit();
             this.panel1.SuspendLayout();
@@ -295,9 +297,7 @@
             this.Position.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Position.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Position.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.Position.Items = new string[] {
-        "Студент",
-        "Преподаватель"};
+            this.Position.Items = new string[0];
             this.Position.Location = new System.Drawing.Point(152, 241);
             this.Position.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Position.Name = "Position";
@@ -306,6 +306,7 @@
             this.Position.selectedIndex = -1;
             this.Position.Size = new System.Drawing.Size(157, 40);
             this.Position.TabIndex = 20;
+            this.Position.onItemSelected += new System.EventHandler(this.Position_onItemSelected);
             // 
             // AddEmployees
             // 
@@ -353,12 +354,52 @@
             this.PicerBarCode.TabIndex = 29;
             this.PicerBarCode.TabStop = false;
             // 
+            // bunifuDropdown1
+            // 
+            this.bunifuDropdown1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuDropdown1.BorderRadius = 3;
+            this.bunifuDropdown1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuDropdown1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuDropdown1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bunifuDropdown1.Items = new string[0];
+            this.bunifuDropdown1.Location = new System.Drawing.Point(152, 291);
+            this.bunifuDropdown1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuDropdown1.Name = "bunifuDropdown1";
+            this.bunifuDropdown1.NomalColor = System.Drawing.Color.Transparent;
+            this.bunifuDropdown1.onHoverColor = System.Drawing.Color.Transparent;
+            this.bunifuDropdown1.selectedIndex = -1;
+            this.bunifuDropdown1.Size = new System.Drawing.Size(157, 40);
+            this.bunifuDropdown1.TabIndex = 30;
+            this.bunifuDropdown1.Visible = false;
+            this.bunifuDropdown1.onItemSelected += new System.EventHandler(this.bunifuDropdown1_onItemSelected);
+            // 
+            // bunifuDropdown2
+            // 
+            this.bunifuDropdown2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuDropdown2.BorderRadius = 3;
+            this.bunifuDropdown2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuDropdown2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuDropdown2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bunifuDropdown2.Items = new string[0];
+            this.bunifuDropdown2.Location = new System.Drawing.Point(152, 341);
+            this.bunifuDropdown2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuDropdown2.Name = "bunifuDropdown2";
+            this.bunifuDropdown2.NomalColor = System.Drawing.Color.Transparent;
+            this.bunifuDropdown2.onHoverColor = System.Drawing.Color.Transparent;
+            this.bunifuDropdown2.selectedIndex = -1;
+            this.bunifuDropdown2.Size = new System.Drawing.Size(157, 40);
+            this.bunifuDropdown2.TabIndex = 31;
+            this.bunifuDropdown2.Visible = false;
+            this.bunifuDropdown2.onItemSelected += new System.EventHandler(this.bunifuDropdown2_onItemSelected);
+            // 
             // AddEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(539, 453);
+            this.Controls.Add(this.bunifuDropdown2);
+            this.Controls.Add(this.bunifuDropdown1);
             this.Controls.Add(this.PicerBarCode);
             this.Controls.Add(this.bunifuCustomLabel5);
             this.Controls.Add(this.Position);
@@ -419,5 +460,7 @@
         private ns1.BunifuCustomLabel bunifuCustomLabel5;
         private ns1.BunifuDropdown Position;
         private System.Windows.Forms.PictureBox PicerBarCode;
+        private ns1.BunifuDropdown bunifuDropdown2;
+        private ns1.BunifuDropdown bunifuDropdown1;
     }
 }

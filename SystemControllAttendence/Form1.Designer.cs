@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             this.Homepanel3 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel10 = new ns1.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -302,22 +302,22 @@
             // 
             this.LeftPanelTransition.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndHorizSlide;
             this.LeftPanelTransition.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.LeftPanelTransition.DefaultAnimation = animation3;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.LeftPanelTransition.DefaultAnimation = animation1;
             // 
             // Rept
             // 
@@ -560,6 +560,7 @@
             // comboBox2
             // 
             this.comboBox2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.comboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LeftPanelLogoTransition.SetDecoration(this.comboBox2, BunifuAnimatorNS.DecorationType.None);
             this.LeftPanelTransition.SetDecoration(this.comboBox2, BunifuAnimatorNS.DecorationType.None);
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -573,12 +574,13 @@
             "115"});
             this.comboBox2.Location = new System.Drawing.Point(60, 120);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(103, 25);
+            this.comboBox2.Size = new System.Drawing.Size(101, 25);
             this.comboBox2.TabIndex = 1;
             // 
             // comboBox1
             // 
             this.comboBox1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LeftPanelLogoTransition.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
             this.LeftPanelTransition.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -591,8 +593,9 @@
             "IV"});
             this.comboBox1.Location = new System.Drawing.Point(60, 54);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(72, 25);
+            this.comboBox1.Size = new System.Drawing.Size(87, 25);
             this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // panel5
             // 
@@ -694,9 +697,9 @@
             this.bunifuCustomLabel28.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.bunifuCustomLabel28.Location = new System.Drawing.Point(37, 63);
             this.bunifuCustomLabel28.Name = "bunifuCustomLabel28";
-            this.bunifuCustomLabel28.Size = new System.Drawing.Size(227, 20);
+            this.bunifuCustomLabel28.Size = new System.Drawing.Size(163, 20);
             this.bunifuCustomLabel28.TabIndex = 14;
-            this.bunifuCustomLabel28.Text = "По определенной категории";
+            this.bunifuCustomLabel28.Text = "По группе студентов";
             // 
             // bunifuCustomLabel27
             // 
@@ -707,9 +710,9 @@
             this.bunifuCustomLabel27.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.bunifuCustomLabel27.Location = new System.Drawing.Point(37, 17);
             this.bunifuCustomLabel27.Name = "bunifuCustomLabel27";
-            this.bunifuCustomLabel27.Size = new System.Drawing.Size(249, 20);
+            this.bunifuCustomLabel27.Size = new System.Drawing.Size(333, 20);
             this.bunifuCustomLabel27.TabIndex = 13;
-            this.bunifuCustomLabel27.Text = "По определенному сотруднику";
+            this.bunifuCustomLabel27.Text = "По определенному  студенту (сотруднику)";
             // 
             // bunifuCheckbox2
             // 
@@ -1432,22 +1435,22 @@
             // 
             this.LeftPanelLogoTransition.AnimationType = BunifuAnimatorNS.AnimationType.Scale;
             this.LeftPanelLogoTransition.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 0;
-            animation4.Padding = new System.Windows.Forms.Padding(0);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 0F;
-            this.LeftPanelLogoTransition.DefaultAnimation = animation4;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.LeftPanelLogoTransition.DefaultAnimation = animation2;
             // 
             // bunifuDragControl1
             // 
@@ -1470,10 +1473,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(959, 494);
-            this.Controls.Add(this.Setings);
-            this.Controls.Add(this.Homes);
             this.Controls.Add(this.Managers);
             this.Controls.Add(this.Rept);
+            this.Controls.Add(this.Setings);
+            this.Controls.Add(this.Homes);
             this.Controls.Add(this.LeftPanel);
             this.Controls.Add(this.Heder);
             this.LeftPanelTransition.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);

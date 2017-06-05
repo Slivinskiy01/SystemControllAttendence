@@ -127,13 +127,13 @@ namespace SystemControllAttendence
         }
 
 
-        public static void GenerateGroopReport(DateTime Dates, string filenameSave)
+        public static void GenerateGroopReport(DateTime Dates, string filenameSave, string Group)
         {
 
 
             var db = new DataBaseModel();
 
-            var Per = db.Personnels.Include(x => x.Attendances).ToList();
+            var Per = db.Personnels.Include(x => x.Attendances).Include(x => x.Departaments).Where(x => x.Departaments.Name == Group).ToList();
 
             var app = new Microsoft.Office.Interop.Word.Application();
             app.Visible = false;

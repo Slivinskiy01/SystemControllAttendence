@@ -23,12 +23,15 @@ namespace SystemControllAttendence
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-
-            LastNameCurentUser.Text = Program.AutorizateForms.CurentUser.LastName;
-            NameCurentUser.Text = Program.AutorizateForms.CurentUser.Name;
-            PhotoCurentUser.Image = Helper.byteArrayToImage(Program.AutorizateForms.CurentUser.Photo);
-            CurentUserRolles.Text = "Администратор";
-            HomeBtn.selected = true;
+            try
+            {
+                LastNameCurentUser.Text = Program.AutorizateForms.CurentUser.LastName;
+                NameCurentUser.Text = Program.AutorizateForms.CurentUser.Name;
+                PhotoCurentUser.Image = Helper.byteArrayToImage(Program.AutorizateForms.CurentUser.Photo);
+                CurentUserRolles.Text = "Администратор";
+                HomeBtn.selected = true;
+            }
+            catch { }
             
         }
 
@@ -96,6 +99,17 @@ namespace SystemControllAttendence
         {
             StealthControllPanel();
             Rept.Visible = true;
+
+            comboBox1.Items.Clear();
+            using (var db = new DataBaseModel())
+            {
+                int i = 0;
+                foreach (var aw in db.Departaments.Where(x => x.ParentId == 1).ToList())
+                {
+                    comboBox1.Items.Add(aw.Name);
+                    i++;
+                }
+            }
         }
         /// <summary>
         /// Кнопка нстроек
@@ -293,6 +307,8 @@ namespace SystemControllAttendence
 
         private void bunifuThinButton25_Click(object sender, EventArgs e)
         {
+            if (comboBox2.Text != "")
+            {
                 saveFileDialog1.Filter = "Word | *.docx";
                 saveFileDialog1.DefaultExt = "docx";
                 if (saveFileDialog1.ShowDialog() == DialogResult.Cancel)
@@ -300,7 +316,37 @@ namespace SystemControllAttendence
 
                 // получаем выбранный файл
                 string filenameSave = saveFileDialog1.FileName;
-                Helper.GenerateGroopReport(dateTimePicker3.Value,filenameSave);
+                Helper.GenerateGroopReport(dateTimePicker3.Value, filenameSave, comboBox2.Text);
+            }
+            else MessageBox.Show("Выберите группу");
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBox2.Items.Clear();
+            using (var db = new DataBaseModel())
+            {
+                int a = GetIdCategory(comboBox1.Text);
+                var Dep = db.Departaments.Where(x => x.ParentId == a);
+                if (Dep.FirstOrDefault() != null)
+                {
+                    int i = 0;
+                    foreach (var aw in Dep)
+                    {
+                        comboBox2.Items.Add(aw.Name);
+                        i++;
+                    }
+
+                }
+            }
+        }
+
+        private int GetIdCategory(string _name)
+        {
+            using (var db = new DataBaseModel())
+            {
+                return db.Departaments.Where(x => x.Name == _name).FirstOrDefault().Id;
+            }
         }
     }
 }

@@ -145,6 +145,14 @@
     <Compile Include="Migrations\201705011209055_DeletDeportaments.Designer.cs">
       <DependentUpon>201705011209055_DeletDeportaments.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706041543459_deps.cs" />
+    <Compile Include="Migrations\201706041543459_deps.Designer.cs">
+      <DependentUpon>201706041543459_deps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706041545353_deps1.cs" />
+    <Compile Include="Migrations\201706041545353_deps1.Designer.cs">
+      <DependentUpon>201706041545353_deps1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="TempDump\ProgresWaitForm.cs">
@@ -196,6 +204,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705011209055_DeletDeportaments.resx">
       <DependentUpon>201705011209055_DeletDeportaments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706041543459_deps.resx">
+      <DependentUpon>201706041543459_deps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706041545353_deps1.resx">
+      <DependentUpon>201706041545353_deps1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TempDump\ProgresWaitForm.resx">
       <DependentUpon>ProgresWaitForm.cs</DependentUpon>
