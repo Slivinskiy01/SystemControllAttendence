@@ -36,7 +36,9 @@ namespace SystemControllAttendence
                                 return;
                             }
                         }
-                        Person.Departaments = Db.Departaments.Where(x => x.Id == _Departament).FirstOrDefault();
+                        var _dep = Db.Departaments.Where(x => x.Id == _Departament).FirstOrDefault();
+                        if (_dep != null)
+                            Person.Departaments = _dep;
                         Db.Personnels.Add(Person);
                         Db.Documents.Add(Docum);
                         try

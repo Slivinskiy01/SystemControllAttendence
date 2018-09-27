@@ -115,7 +115,7 @@ namespace SystemControllAttendence
                 Name = Names.Text,
                 LastName = LastName.Text,
                 MiddleName = MiddleName.Text,
-                Position = Position.selectedValue,
+               // Position = Position.selectedValue,
                 Photo = Helper.imageToByteArray(Photo.Image)
             };
 
