@@ -18,25 +18,6 @@ namespace SystemControllAttendence
         public AutorizateForm()
         {
             InitializeComponent();
-            /*
-            using(var db = new DataBaseModel())
-            {
-
-                MessageBox.Show(db.Personnels.Include(x=>x.Departaments).Where(w => w.Id == 6).FirstOrDefault().Departaments.Name);
-
-                var Per = new Personnel()
-                {
-                    Name = "Максим",
-                    LastName = "Сливинский",
-                    MiddleName = "Леонидович",
-                    Position = "Студент",
-                    Departaments = db.Departaments.Where(x => x.Id == 25).FirstOrDefault()
-                };
-                db.Personnels.Add(Per);
-                db.SaveChanges();
-                MessageBox.Show("");
-            }
-            */
         }
         Form1 Form1 = new Form1();
         RegisterEnterOutForm Form2 = new RegisterEnterOutForm();
