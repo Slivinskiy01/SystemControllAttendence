@@ -2,22 +2,22 @@
 
 ### User Interface 
 
-1. Login Form
+#### 1. Login Form
+  
+  <img src="Source\Screenshot_1.png"></img>
 
-   ![1](Source\Screenshot_1.png)
-
-2. Bar Code Generator
+#### 2. Bar Code Generator
 
   <img src="Source\Screenshot_4.png"></img>
+  
+#### 3. Report Form
 
-3. Report Form
+  <img src="Source\Screenshot_3.png"></img>
+  
+#### 4. Add User Form
 
-   ![3](Source\Screenshot_3.png)
+  <img src="Source\Screenshot_2.png"></img>
 
-4. Add User Form
+#### 5. User Form
 
-   ![](Source\Screenshot_2.png)
-
-5. User Form
-
-![](Source\Screenshot_5.png)
+  <img src="Source\Screenshot_5.png"></img>
