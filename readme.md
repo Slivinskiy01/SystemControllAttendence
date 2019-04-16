@@ -8,7 +8,7 @@
 
 2. Bar Code Generator
 
-   ![2](Source\Screenshot_4.png)
+  <img src="Source\Screenshot_4.png"></img>
 
 3. Report Form
 
